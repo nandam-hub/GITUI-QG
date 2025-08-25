@@ -53,7 +53,18 @@ jobs:
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Verify Gradle wrapper
+      # 8️⃣ Download Gradle explicitly
+      - name: Download Gradle
+        shell: pwsh
+        run: |
+          $gradleVersion = "6.5.1"
+          $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
+          Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
+          Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
+          $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
+          Write-Host "Gradle downloaded and PATH updated"
+
+      # 9️⃣ Verify Gradle wrapper
       - name: Verify Gradle Wrapper
         shell: pwsh
         run: |
@@ -74,25 +85,23 @@ jobs:
           }
           Write-Host "Gradle wrapper verified successfully."
 
-      # 9️⃣ Make Gradle wrapper executable
+      # 🔟 Make Gradle wrapper executable
       - name: Make Gradle wrapper executable
         shell: pwsh
         run: icacls .\gradlew.bat /grant Everyone:F
 
-      # 🔟 List all files in repo root
+      # 1️⃣1️⃣ List all files in repo root
       - name: List files in repo root
         shell: pwsh
-        run: |
-          Write-Host "Listing all files in repo root:"
-          Get-ChildItem -Path . -Recurse | ForEach-Object { Write-Host $_.FullName }
+        run: Get-ChildItem -Path . -Recurse | ForEach-Object { Write-Host $_.FullName }
 
-      # 1️⃣1️⃣ Clean Gradle and build folders
+      # 1️⃣2️⃣ Clean Gradle and build folders
       - name: Clean Gradle and build folders
         shell: pwsh
         run: |
           Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
 
-      # 1️⃣2️⃣ Install npm dependencies with retry
+      # 1️⃣3️⃣ Install npm dependencies with retry
       - name: Install npm dependencies
         shell: pwsh
         run: |
@@ -114,7 +123,7 @@ jobs:
               }
           }
 
-      # 1️⃣3️⃣ Run GT UI Tests
+      # 1️⃣4️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
