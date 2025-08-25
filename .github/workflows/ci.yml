@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -49,11 +49,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      # 7️⃣ Configure node-gyp to use VS2019
+      # 7️⃣ Configure node-gyp
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Pre-check Gradle wrapper
+      # 8️⃣ Verify Gradle wrapper
       - name: Verify Gradle Wrapper
         shell: pwsh
         run: |
@@ -79,13 +79,20 @@ jobs:
         shell: pwsh
         run: icacls .\gradlew.bat /grant Everyone:F
 
-      # 🔟 Clean Gradle and build folders (optional, ensures reproducibility)
+      # 🔟 List all files in repo root
+      - name: List files in repo root
+        shell: pwsh
+        run: |
+          Write-Host "Listing all files in repo root:"
+          Get-ChildItem -Path . -Recurse | ForEach-Object { Write-Host $_.FullName }
+
+      # 1️⃣1️⃣ Clean Gradle and build folders
       - name: Clean Gradle and build folders
         shell: pwsh
         run: |
           Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
 
-      # 1️⃣1️⃣ Install npm dependencies with retry
+      # 1️⃣2️⃣ Install npm dependencies with retry
       - name: Install npm dependencies
         shell: pwsh
         run: |
@@ -107,7 +114,7 @@ jobs:
               }
           }
 
-      # 1️⃣2️⃣ Run GT UI Tests
+      # 1️⃣3️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
