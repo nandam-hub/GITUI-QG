@@ -27,7 +27,7 @@ jobs:
           vs-version: '[16.0,17.0)'
 
       # 4️⃣ Setup JDK 11 (Amazon Corretto)
-      - name: Set up JDK 11 (Corretto)
+      - name: Set up JDK 11
         uses: actions/setup-java@v4
         with:
           java-version: '11'
@@ -50,28 +50,22 @@ jobs:
       # 7️⃣ Configure node-gyp to use VS2019
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
-      - name: Check Gradle wrapper
-        run: dir /s /b gradlew*
 
-      # 8️⃣ Ensure Gradle wrapper is present
-      - name: Check Gradle Wrapper
+      # 8️⃣ Check Gradle wrapper files
+      - name: Verify Gradle Wrapper
         shell: pwsh
         run: |
-          Write-Host "Listing gradle\wrapper contents"
-          Get-ChildItem gradle\wrapper
+          Write-Host "Looking for gradlew files recursively"
+          Get-ChildItem -Path . -Recurse -Filter "gradlew*"
           if (-not (Test-Path .\gradlew.bat)) {
-              Write-Error "gradlew.bat not found! Ensure wrapper is committed."
+              Write-Error "gradlew.bat missing! Ensure wrapper is committed."
               exit 1
           }
           if (-not (Test-Path .\gradle\wrapper\gradle-wrapper.jar)) {
-              Write-Error "gradle-wrapper.jar not found! Ensure wrapper is committed."
+              Write-Error "gradle-wrapper.jar missing! Ensure wrapper is committed."
               exit 1
           }
-
-      # 8️⃣1️⃣ Make Gradle wrapper executable
-      - name: Make Gradle wrapper executable
-        shell: pwsh
-        run: icacls .\gradlew.bat /grant Everyone:F
+          Write-Host "Gradle wrapper verified successfully."
 
       # 9️⃣ Install npm dependencies with retry
       - name: Install npm dependencies
@@ -95,7 +89,7 @@ jobs:
               }
           }
 
-      # 1️⃣2️⃣ Run GT UI Tests
+      # 🔟 Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
