@@ -101,10 +101,7 @@ jobs:
               }
           }
 
-      # 1️⃣3️⃣ Build API module using Gradle
-      - name: Build API module
-        shell: pwsh
-        run: .\gradlew.bat :api:createApiJar --build-cache
+     
 
       # 1️⃣4️⃣ Run GT UI Tests
       - name: Run GT UI Tests
