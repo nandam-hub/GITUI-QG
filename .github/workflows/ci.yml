@@ -83,29 +83,30 @@ jobs:
       #   run: |
       #     Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
       
-      - name: Build with Gradle
-        run: ./gradlew build
-        shell: pwsh
+    
         
   
 
       # 1️⃣2️⃣ Install npm dependencies
       - name: Install npm dependencies
-        shell: pwsh
-        run: |
-          $maxRetries = 5
-          $retryDelay = 10
-          for ($i=1; $i -le $maxRetries; $i++) {
-              try {
-                  npm ci --prefer-offline
-                  Write-Host "npm ci succeeded"
-                  break
-              } catch {
-                  if ($i -eq $maxRetries) { Write-Error "npm ci failed after $maxRetries attempts"; exit 1 }
-                  Write-Host "npm ci failed (attempt $i). Retrying in $retryDelay seconds..."
-                  Start-Sleep -Seconds $retryDelay
-              }
-          }
+        run: npm install
+          # $maxRetries = 5
+          # $retryDelay = 10
+          # for ($i=1; $i -le $maxRetries; $i++) {
+          #     try {
+          #         npm ci --prefer-offline
+          #         Write-Host "npm ci succeeded"
+          #         break
+          #     } catch {
+          #         if ($i -eq $maxRetries) { Write-Error "npm ci failed after $maxRetries attempts"; exit 1 }
+          #         Write-Host "npm ci failed (attempt $i). Retrying in $retryDelay seconds..."
+          #         Start-Sleep -Seconds $retryDelay
+          #     }
+          # }
+
+      - name: Build with Gradle
+        run: ./gradlew build
+        shell: bash
 
      
 
