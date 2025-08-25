@@ -53,35 +53,41 @@ jobs:
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Download Gradle 6.5.1
-      - name: Download Gradle
-        shell: pwsh
-        run: |
-          $gradleVersion = "6.5.1"
-          $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
-          Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
-          Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
-          $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
-          Write-Host "Gradle 6.5.1 downloaded and PATH updated"
+      # # 8️⃣ Download Gradle 6.5.1
+      # - name: Download Gradle
+      #   shell: pwsh
+      #   run: |
+      #     $gradleVersion = "6.5.1"
+      #     $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
+      #     Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
+      #     Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
+      #     $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
+      #     Write-Host "Gradle 6.5.1 downloaded and PATH updated"
 
-      # 9️⃣ Verify Gradle wrapper exists
-      - name: Verify Gradle Wrapper
-        shell: pwsh
-        run: |
-          if (-not (Test-Path .\gradlew.bat)) { Write-Error "gradlew.bat missing! Commit wrapper."; exit 1 }
-          if (-not (Test-Path .\gradle\wrapper\gradle-wrapper.jar)) { Write-Error "gradle-wrapper.jar missing! Commit wrapper."; exit 1 }
-          Write-Host "Gradle wrapper verified successfully"
+      # # 9️⃣ Verify Gradle wrapper exists
+      # - name: Verify Gradle Wrapper
+      #   shell: pwsh
+      #   run: |
+      #     if (-not (Test-Path .\gradlew.bat)) { Write-Error "gradlew.bat missing! Commit wrapper."; exit 1 }
+      #     if (-not (Test-Path .\gradle\wrapper\gradle-wrapper.jar)) { Write-Error "gradle-wrapper.jar missing! Commit wrapper."; exit 1 }
+      #     Write-Host "Gradle wrapper verified successfully"
 
-      # 🔟 Make Gradle wrapper executable
-      - name: Make Gradle wrapper executable
-        shell: pwsh
-        run: icacls .\gradlew.bat /grant Everyone:F
+      # # 🔟 Make Gradle wrapper executable
+      # - name: Make Gradle wrapper executable
+      #   shell: pwsh
+      #   run: icacls .\gradlew.bat /grant Everyone:F
 
-      # 1️⃣1️⃣ Clean Gradle and build folders
-      - name: Clean Gradle and build folders
+      # # 1️⃣1️⃣ Clean Gradle and build folders
+      # - name: Clean Gradle and build folders
+      #   shell: pwsh
+      #   run: |
+      #     Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
+      
+      - name: Build with Gradle
+        run: ./gradlew build
         shell: pwsh
-        run: |
-          Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
+        
+  
 
       # 1️⃣2️⃣ Install npm dependencies
       - name: Install npm dependencies
