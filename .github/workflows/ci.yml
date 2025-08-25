@@ -50,6 +50,8 @@ jobs:
       # 7️⃣ Configure node-gyp to use VS2019
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
+      - name: Check Gradle wrapper
+        run: dir /s /b gradlew*
 
       # 8️⃣ Ensure Gradle wrapper is present
       - name: Check Gradle Wrapper
