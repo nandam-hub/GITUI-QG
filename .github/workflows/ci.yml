@@ -51,23 +51,33 @@ jobs:
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Check Gradle wrapper files
+      # 8️⃣ Pre-check Gradle wrapper
       - name: Verify Gradle Wrapper
         shell: pwsh
         run: |
-          Write-Host "Looking for gradlew files recursively"
-          Get-ChildItem -Path . -Recurse -Filter "gradlew*"
+          Write-Host "Checking gradlew at repo root"
           if (-not (Test-Path .\gradlew.bat)) {
-              Write-Error "gradlew.bat missing! Ensure wrapper is committed."
+              Write-Error "gradlew.bat missing at repo root! Ensure wrapper is committed."
               exit 1
           }
+          Write-Host "Checking gradle-wrapper.jar"
           if (-not (Test-Path .\gradle\wrapper\gradle-wrapper.jar)) {
-              Write-Error "gradle-wrapper.jar missing! Ensure wrapper is committed."
+              Write-Error "gradle-wrapper.jar missing! Ensure gradle wrapper is correct."
+              exit 1
+          }
+          $jarSize = (Get-Item .\gradle\wrapper\gradle-wrapper.jar).length
+          if ($jarSize -eq 0) {
+              Write-Error "gradle-wrapper.jar is empty! Commit a valid wrapper JAR."
               exit 1
           }
           Write-Host "Gradle wrapper verified successfully."
 
-      # 9️⃣ Install npm dependencies with retry
+      # 9️⃣ Make Gradle wrapper executable
+      - name: Make Gradle wrapper executable
+        shell: pwsh
+        run: icacls .\gradlew.bat /grant Everyone:F
+
+      # 🔟 Install npm dependencies with retry
       - name: Install npm dependencies
         shell: pwsh
         run: |
@@ -89,7 +99,7 @@ jobs:
               }
           }
 
-      # 🔟 Run GT UI Tests
+      # 1️⃣1️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
