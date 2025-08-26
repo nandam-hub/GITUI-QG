@@ -118,4 +118,7 @@ jobs:
         env:
           SKIP_API_BUILD: true
           GT_SKIP_GRADLE: true
-        run: npm run gt-ui-tests -- --cucumberTags=@add_activity
+          CC_URL: https://cc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/ClaimCenter.do
+          USERNAME: uw
+          PASSWORD: gw
+        run: npm run gt-ui-tests -- --cucumberTags=@add_activity --pageRequestTimeout=60000 --retryTestPages
