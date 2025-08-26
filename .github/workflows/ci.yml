@@ -63,6 +63,22 @@ jobs:
           Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
           $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
           Write-Host "Gradle $gradleVersion downloaded and PATH updated"
+      - name: Create libs folder
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "libs")) {
+              New-Item -ItemType Directory -Path "libs"
+          }
+      - name: Download guidewire-commons-grn.jar
+        shell: pwsh
+        run: |
+          $jarPath = "libs/guidewire-commons-grn.jar"
+          if (-not (Test-Path $jarPath)) {
+              Write-Host "Downloading guidewire-commons-grn.jar..."
+              Invoke-WebRequest -Uri "https://your-artifactory-url/guidewire-commons-grn.jar" -OutFile $jarPath
+          } else {
+              Write-Host "JAR already exists: $jarPath"
+          }
 
       # 9️⃣ Ensure Guidewire JARs exist
       - name: Verify Guidewire JARs
