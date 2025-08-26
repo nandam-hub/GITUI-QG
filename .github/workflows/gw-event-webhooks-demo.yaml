@@ -1,0 +1,146 @@
+name: Post Deployment Workflow
+
+on:
+  workflow_dispatch:  # This allows the workflow to be triggered manually
+    inputs:
+      build_id:
+        description: "Commit ID to send to CICD Manager"
+        required: true
+        default: "cm/10/10"
+
+jobs:
+  Post-Deployment-GitActionWorkflow:
+    runs-on: self-hosted
+    timeout-minutes: 120
+
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Install VS2019 Build Tools
+      - name: Install VS2019 Build Tools
+        run: choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041 --includeRecommended --includeOptional --quiet --norestart" --yes
+
+      # 3️⃣ Setup MSBuild
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[16.0,17.0)'
+
+      # 4️⃣ Setup JDK 17 (Amazon Corretto)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'corretto'
+
+      # 5️⃣ Setup Node.js 16.3.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.3.0'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      # 6️⃣ Setup Python 3.10
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 7️⃣ Configure node-gyp for npm builds
+      - name: Configure node-gyp
+        run: npm config set msvs_version 2019
+
+      # 8️⃣ Setup Gradle
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: wrapper
+      - name: Create libs folder
+        shell: powershell
+        run: |
+          if (-not (Test-Path "libs")) {
+              New-Item -ItemType Directory -Path "libs"
+          }
+      - name: Download guidewire-commons-grn.jar
+        shell: powershell
+        run: |
+          $jarPath = "libs/guidewire-commons-grn.jar"
+          if (-not (Test-Path $jarPath)) {
+              Write-Host "Downloading guidewire-commons-grn.jar..."
+              # Replace with actual URL or use a local copy
+              # Invoke-WebRequest -Uri "https://your-actual-artifactory-url/guidewire-commons-grn.jar" -OutFile $jarPath
+              Write-Host "Skipping download - JAR should be provided locally or via proper repository"
+          } else {
+              Write-Host "JAR already exists: $jarPath"
+          }
+
+      # 9️⃣ Ensure Guidewire JARs exist
+      - name: Verify Guidewire JARs
+        shell: powershell
+        run: |
+          $requiredJars = @(
+              "libs/guidewire-commons-grn.jar"
+              # "libs/helios-client.jar"  # Comment out if not available
+          )
+          foreach ($jar in $requiredJars) {
+              if (-not (Test-Path $jar)) {
+                  Write-Error "Required JAR missing: $jar"
+                  exit 1
+              }
+          }
+          Write-Host "All required Guidewire JARs found."
+
+      # 🔟 Clean Gradle and build folders
+      - name: Clean Gradle and build folders
+        shell: powershell
+        run: |
+          Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
+
+      # 1️⃣1️⃣ Install npm dependencies
+      - name: Install npm dependencies
+        shell: powershell
+        run: npm ci --prefer-offline
+
+      # 1️⃣2️⃣ Skip Gradle build - use npm only
+      - name: Skip API module build
+        shell: powershell
+        run: |
+          Write-Host "Skipping Gradle build - using npm scripts only"
+
+      # 1️⃣3️⃣ Test URL Access
+      - name: Test OrangeHRM URL Access
+        shell: powershell
+        run: |
+          try {
+            $response = Invoke-WebRequest -Uri "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" -TimeoutSec 30
+            Write-Host "URL accessible. Status: $($response.StatusCode)"
+          } catch {
+            Write-Host "URL access failed: $($_.Exception.Message)"
+            exit 1
+          }
+
+      # 1️⃣4️⃣ Run GT UI Tests
+      - name: Run GT UI Tests
+        shell: powershell
+        working-directory: ${{ github.workspace }}
+        env:
+          SKIP_API_BUILD: true
+          GT_SKIP_GRADLE: true
+          CC_URL: https://cc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/ClaimCenter.do
+          USERNAME: su
+          PASSWORD: gw
+        run: npm run gt-ui-tests -- --cucumberTags=@fnol_commercial --pageRequestTimeout=60000 --retryTestPages
+
+         # 1️⃣5️⃣ Run GT UI Tests
+      - name: Show Buildid input
+        run: echo "build_id input was ${{ github.event.inputs.build_id }}"
+
+       # 1️⃣6️⃣ Run GT UI Tests
+      - name: Run a script
+        run: |
+          echo "All Test Cases passed successfully."  
