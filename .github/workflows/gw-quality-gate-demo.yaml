@@ -1,0 +1,57 @@
+
+name: Quality Gate Workflow
+
+on:
+  workflow_dispatch:  # This allows the workflow to be triggered manually
+    inputs:
+      commit_id:
+        description: "Commit ID to send to CICD Manager"
+        required: true
+        default: "a69563594f226af4aa768b281fb393564704ab88"   
+
+jobs:
+  QualityGate-GitActionWorkflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display a message
+        run: echo "This workflow was triggered from GuideWire quality Gates!"
+
+      - name: Show commitId input
+        run: echo "CommitId input was ${{ github.event.inputs.commit_id }}"
+
+      - name: Run a script
+        run: |
+          echo "Running GuideWire Test cases."
+
+      - name: Wait for 90 seconds
+        run: sleep 90
+
+      - name: Run a script
+        run: |
+          echo "All Test Cases passed successfully."     
+     
+      - name: Call CICD Manager Quality Gate API
+        run: |
+          set -e
+          response=$(curl -s -o response.json -w "%{http_code}" \
+            -X POST "https://cicd-manager-service.api.omega2-andromeda.guidewire.net/api/v3/tenants/valuemom/starsystems/gwcp/applications/cm/quality-gates/usaaqualitygatedemo/verifications" \
+            -H "Authorization: Bearer ${{ secrets.CICD_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"artifact\": {
+                \"type\": \"COMMIT\",
+                \"id\": \"${{ github.event.inputs.commit_id }}\"
+              },
+              \"status\": \"SUCCESSFUL\",
+              \"url\": \"https://bitbucket.example.com/browse/GWCP-0000\",
+              \"comment\": \"Verification Passed from GitHub Actions\"
+            }")
+
+          echo "HTTP response code: $response"
+          cat response.json
+
+          if [ "$response" -lt 200 ] || [ "$response" -ge 300 ]; then
+            echo "❌ CICD Manager API call failed"
+            exit 1
+          fi
