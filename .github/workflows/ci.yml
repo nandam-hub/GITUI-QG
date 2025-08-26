@@ -54,15 +54,11 @@ jobs:
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Use Gradle Wrapper
-      - name: Make gradlew executable
-        shell: pwsh
-        run: |
-          if (Test-Path "gradlew.bat") {
-            Write-Host "Using Gradle wrapper"
-          } else {
-            Write-Host "Gradle wrapper not found"
-          }
+      # 8️⃣ Setup Gradle
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: wrapper
       - name: Create libs folder
         shell: pwsh
         run: |
