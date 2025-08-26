@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "Running GuideWire Test cases."
 
-      - name: Wait for 90 seconds
+      - name: Wait for 45 seconds
         run: sleep 45
 
       - name: Run a script
