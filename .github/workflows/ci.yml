@@ -133,4 +133,4 @@ jobs:
           CC_URL: https://cc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/ClaimCenter.do
           USERNAME: su
           PASSWORD: gw
-        run: npm run gt-ui-tests -- --cucumberTags=@add_activity --pageRequestTimeout=60000 --retryTestPages
+        run: npm run gt-ui-tests -- --cucumberTags=@fnol_commercial --pageRequestTimeout=60000 --retryTestPages
