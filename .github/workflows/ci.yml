@@ -69,10 +69,7 @@ jobs:
         shell: pwsh
         run: npm ci --prefer-offline
 
-      # 1️⃣1️⃣ Build API module using system Gradle
-      - name: Build API module
-        shell: pwsh
-        run: gradle :api:createApiJar --build-cache
+     
 
       # 1️⃣2️⃣ Run GT UI Tests
       - name: Run GT UI Tests
