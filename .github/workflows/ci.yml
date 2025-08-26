@@ -54,8 +54,9 @@ jobs:
         run: npm config set msvs_version 2019
 
       # 8️⃣ Install Gradle 6.5.1 via Chocolatey
-      - name: Install Gradle
-        run: choco install gradle --version=6.5.1 -y
+      - name: Install Gradle 6.5.1
+        run: choco install gradle --version=6.5.1 --allow-downgrade -y
+
 
       # 9️⃣ Clean Gradle and build folders
       - name: Clean Gradle and build folders
