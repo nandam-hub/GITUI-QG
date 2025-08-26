@@ -3,7 +3,7 @@ apply plugin: "java-library"
 apply plugin: "idea"
 apply plugin: "com.github.spacialcircumstances.gradle-cucumber-reporting"
 
-sourceCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
     implementation files('libs/guidewire-commons-grn.jar')
