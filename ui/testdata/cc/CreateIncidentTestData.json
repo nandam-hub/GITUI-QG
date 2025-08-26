@@ -1,0 +1,24 @@
+{
+    "defaultDataSet": {
+        "SelectVehicle": "New...",
+        "Year":"2020",
+        "Make":"Acura",
+        "Model":"Model X",
+        "LossOccurred": "At premises"
+    },
+    "vehicleIncident_01": {
+        "SelectVehicle": "New...",
+        "Year":"2020",
+        "Make":"Acura",
+        "Model":"Model X",
+        "LossOccurred": "At premises"
+    },
+    "propertyIncident_01": {
+        "SelectProperty": "New...",
+        "Address1":"123 Main st",
+        "City":"Niceville"
+    },
+    "injuryIncident_01": {
+        "LossParty": "Insured's loss"
+    }
+}

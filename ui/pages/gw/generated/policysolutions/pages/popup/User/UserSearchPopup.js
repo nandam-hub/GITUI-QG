@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class UserSearchPopup {
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetFirstName = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-FirstName');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetFirstNameKanji = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-FirstNameKanji');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetLastName = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-LastName');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetLastNameKanji = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-LastNameKanji');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetNameSummary = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-NameSummary');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetMiddleName = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-MiddleName');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetParticle = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-Particle');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetPrefix = PcfSelectInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-Prefix');
+	userSearchPopupUserSearchPopupScreenUserSearchDVContactInputSetGlobalPersonNameInputSetSuffix = PcfSelectInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ContactInputSet-GlobalPersonNameInputSet-Suffix');
+	userSearchPopupUserSearchPopupScreenUserSearchDVGroupNameInputSetGlobalContactNameInputSetName = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-GroupNameInputSet-GlobalContactNameInputSet-Name');
+	userSearchPopupUserSearchPopupScreenUserSearchDVGroupNameInputSetGlobalContactNameInputSetNameKanji = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-GroupNameInputSet-GlobalContactNameInputSet-NameKanji');
+	userSearchPopupUserSearchPopupScreenUserSearchDVGroupNameInputSetGlobalContactNameInputSetNameSummary = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-GroupNameInputSet-GlobalContactNameInputSet-NameSummary');
+	userSearchPopupUserSearchPopupScreenUserSearchDVNotInAnyGroup = PcfCheckBox('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-NotInAnyGroup');
+	userSearchPopupUserSearchPopupScreenUserSearchDVOrganizationSelectOrganization = PcfButton('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-Organization-SelectOrganization');
+	userSearchPopupUserSearchPopupScreenUserSearchDVProducerCode = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-ProducerCode');
+	userSearchPopupUserSearchPopupScreenUserSearchDVRole = PcfSelectInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-Role');
+	userSearchPopupUserSearchPopupScreenUserSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	userSearchPopupUserSearchPopupScreenUserSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	userSearchPopupUserSearchPopupScreenUserSearchDVUserType = PcfSelectInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-UserType');
+	userSearchPopupUserSearchPopupScreenUserSearchDVUsername = PcfTextInput('#UserSearchPopup-UserSearchPopupScreen-UserSearchDV-Username');
+	userSearchPopupScreenUserSearchResultsLV = PcfListView('#UserSearchPopup-UserSearchPopupScreen-UserSearchResultsLV');
+	userSearchPopupScreen_msgs = PcfButton('#UserSearchPopup-UserSearchPopupScreen-_msgs');
+	userSearchPopupUserSearchPopup_UpLink = PcfButton('#UserSearchPopup-UserSearchPopup_UpLink');
+	userSearchPopup_Paging = PcfButton('#UserSearchPopup-_Paging');
+	userSearchPopup__crumb__ = PcfComponent('#UserSearchPopup-__crumb__');
+}

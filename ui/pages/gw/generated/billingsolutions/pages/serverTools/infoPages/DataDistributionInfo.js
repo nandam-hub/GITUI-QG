@@ -1,0 +1,44 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class DataDistributionInfo {
+	dataDistributionInfoScreenABDDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-ABDDists');
+	dataDistributionInfoScreenAFKDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-AFKDists');
+	dataDistributionInfoScreenArrDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-ArrDists');
+	dataDistributionInfoScreenBeanVerDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-BeanVerDists');
+	dataDistributionInfoScreenBlobColDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-BlobColDists');
+	dataDistributionInfoScreenBooleanDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-BooleanDists');
+	dataDistributionInfoScreenClobColDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-ClobColDists');
+	dataDistSubmitDVASDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-DataDistSubmitDV-ASDists');
+	dataDistSubmitDVAdHocDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-DataDistSubmitDV-AdHocDists');
+	dataDistSubmitDVAnalyzeAllTables = PcfComponent('#DataDistributionInfo-DataDistributionInfoScreen-DataDistSubmitDV-AnalyzeAllTables');
+	dataDistSubmitDVNumThreads = PcfTextInput('#DataDistributionInfo-DataDistributionInfoScreen-DataDistSubmitDV-NumThreads');
+	dataDistSubmitDVTLDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-DataDistSubmitDV-TLDists');
+	dataDistributionInfoScreenDataDistsLV = PcfListView('#DataDistributionInfo-DataDistributionInfoScreen-DataDistsLV');
+	dataDistsLV_tbLVDelete = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-DataDistsLV_tb-LVDelete');
+	dataDistsLV_tbLVGetCombinedZip = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-DataDistsLV_tb-LVGetCombinedZip');
+	dataDistsLV_tbLVGetSummaryZip = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-DataDistsLV_tb-LVGetSummaryZip');
+	dataDistsLV_tbRefreshButton = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-DataDistsLV_tb-RefreshButton');
+	dataDistributionInfoScreenDateAnalysisDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-DateAnalysisDists');
+	dataDistributionInfoScreenFKDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-FKDists');
+	dataDistributionInfoScreenGenericGroupDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-GenericGroupDists');
+	dataDistributionInfoScreenMinAndMaxDateDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-MinAndMaxDateDists');
+	dataDistributionInfoScreenNullableColumnDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-NullableColumnDists');
+	dataDistributionInfoScreenSTDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-STDists');
+	dataDistributionInfoScreenSubmitBatch = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-SubmitBatch');
+	dataDistributionInfoScreenTKDists = PcfCheckBox('#DataDistributionInfo-DataDistributionInfoScreen-TKDists');
+	dataDistributionInfoScreen_msgs = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-_msgs');
+	dataDistributionInfoScreenbatchProgress = PcfTextInput('#DataDistributionInfo-DataDistributionInfoScreen-batchProgress');
+	dataDistributionInfoScreendescription = PcfTextInput('#DataDistributionInfo-DataDistributionInfoScreen-description');
+	dataDistributionInfoScreentableAllLV = PcfListView('#DataDistributionInfo-DataDistributionInfoScreen-tableAllLV');
+	tableAllLV_tbsearchStringTextBox = PcfTextInput('#DataDistributionInfo-DataDistributionInfoScreen-tableAllLV_tb-searchStringTextBox');
+	dataDistributionInfoDataDistributionInfoScreentableAllLV_tbuseButton = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-tableAllLV_tb-useButton');
+	dataDistributionInfoScreentableSelectionLV = PcfListView('#DataDistributionInfo-DataDistributionInfoScreen-tableSelectionLV');
+	tableSelectionLV_tbuseButton = PcfButton('#DataDistributionInfo-DataDistributionInfoScreen-tableSelectionLV_tb-useButton');
+	dataDistributionInfoDataDistributionInfo_UpLink = PcfButton('#DataDistributionInfo-DataDistributionInfo_UpLink');
+	dataDistributionInfo_Paging = PcfButton('#DataDistributionInfo-_Paging');
+	dataDistributionInfo__crumb__ = PcfComponent('#DataDistributionInfo-__crumb__');
+}

@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class SimpleClaimSearch {
+	simpleClaimSearchDVClaimNumber = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-ClaimNumber');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVClaimSearchAndResetInputSetReset = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-ClaimSearchAndResetInputSet-Reset');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVClaimSearchAndResetInputSetSearch = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-ClaimSearchAndResetInputSet-Search');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalContactNameInputSetName = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalContactNameInputSet-Name');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalContactNameInputSetNameKanji = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalContactNameInputSet-NameKanji');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalContactNameInputSetNameSummary = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalContactNameInputSet-NameSummary');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetFirstName = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-FirstName');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetFirstNameKanji = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-FirstNameKanji');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetLastName = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-LastName');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetLastNameKanji = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-LastNameKanji');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetNameSummary = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-NameSummary');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetMiddleName = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-MiddleName');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetParticle = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-Particle');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetPrefix = PcfSelectInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-Prefix');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchDVGlobalPersonNameInputSetSuffix = PcfSelectInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-GlobalPersonNameInputSet-Suffix');
+	simpleClaimSearchDVPolicyNumber = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-PolicyNumber');
+	simpleClaimSearchDVSearchFor = PcfSelectInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-SearchFor');
+	simpleClaimSearchDVTaxID = PcfTextInput('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchDV-TaxID');
+	simpleClaimSearchScreenSimpleClaimSearchResultsLV = PcfListView('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchResultsLV');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchResultsLV_tbClaimSearchScreen_AssignButton = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchResultsLV_tb-ClaimSearchScreen_AssignButton');
+	simpleClaimSearchSimpleClaimSearchScreenSimpleClaimSearchResultsLV_tbSimpleClaimSearchScreen_PrintButton = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchResultsLV_tb-SimpleClaimSearchScreen_PrintButton');
+	simpleClaimSearchResultsLV_tbarchiveSearchLink = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-SimpleClaimSearchResultsLV_tb-archiveSearchLink');
+	simpleClaimSearchScreen_msgs = PcfButton('#SimpleClaimSearch-SimpleClaimSearchScreen-_msgs');
+	simpleClaimSearchSimpleClaimSearch_UpLink = PcfButton('#SimpleClaimSearch-SimpleClaimSearch_UpLink');
+	simpleClaimSearch_Paging = PcfButton('#SimpleClaimSearch-_Paging');
+	simpleClaimSearch__crumb__ = PcfComponent('#SimpleClaimSearch-__crumb__');
+}

@@ -1,0 +1,16 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class RateRoutineCollectionFieldOnCollectionVariablePopup {
+	rateRoutineCollectionFieldOnCollectionVariablePopupDataTypeFilterToolbarRateRoutineInstructionTextFilter = PcfTextInput('#RateRoutineCollectionFieldOnCollectionVariablePopup-DataTypeFilterToolbar-RateRoutineInstructionTextFilter');
+	rateRoutineCollectionFieldOnCollectionVariablePopupRateRoutineCollectionFieldOnCollectionVariablePopup_UpLink = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineCollectionFieldOnCollectionVariablePopup_UpLink');
+	rateRoutineFieldOnIteratorLVFieldNameHeader = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineFieldOnIteratorLV-FieldNameHeader');
+	rateRoutineFieldOnIteratorLVSelectRadioHeader = PcfTextInput('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineFieldOnIteratorLV-SelectRadioHeader');
+	rateRoutineFieldOnIteratorLV_ListPaging = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineFieldOnIteratorLV-_ListPaging');
+	rateRoutineCollectionFieldOnCollectionVariablePopupRateRoutineFunctionEditCancel = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineFunctionEditCancel');
+	rateRoutineCollectionFieldOnCollectionVariablePopupRateRoutineLoopVariableEditUpdate = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-RateRoutineLoopVariableEditUpdate');
+	rateRoutineCollectionFieldOnCollectionVariablePopup_Paging = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-_Paging');
+	rateRoutineCollectionFieldOnCollectionVariablePopup__crumb__ = PcfComponent('#RateRoutineCollectionFieldOnCollectionVariablePopup-__crumb__');
+	rateRoutineCollectionFieldOnCollectionVariablePopup_msgs = PcfButton('#RateRoutineCollectionFieldOnCollectionVariablePopup-_msgs');
+}

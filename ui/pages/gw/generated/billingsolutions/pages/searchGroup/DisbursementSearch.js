@@ -1,0 +1,40 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class DisbursementSearch {
+	disbursementSearchDisbursementSearchScreenDisbursementSearchDVAccountNumberCriterionSelectAccountNumberCriterion = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-AccountNumberCriterion-SelectAccountNumberCriterion');
+	disbursementSearchCriteriaInputSetCheckNumberCriterion = PcfTextInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-CheckNumberCriterion');
+	disbursementSearchCriteriaInputSetCurrencyCriterion = PcfSelectInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-CurrencyCriterion');
+	disbursementSearchCriteriaInputSetEarliestIssueDateCriterion = PcfDateValueInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-EarliestIssueDateCriterion');
+	disbursementSearchCriteriaInputSetLatestIssueDateCriterion = PcfDateValueInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-LatestIssueDateCriterion');
+	disbursementSearchCriteriaInputSetMaxAmountCriterion = PcfTextInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-MaxAmountCriterion');
+	disbursementSearchCriteriaInputSetMethodCriterion = PcfSelectInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-MethodCriterion');
+	disbursementSearchCriteriaInputSetMinAmountCriterion = PcfTextInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-MinAmountCriterion');
+	disbursementSearchCriteriaInputSetPayeeCriterion = PcfTextInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-PayeeCriterion');
+	disbursementSearchCriteriaInputSetReasonCriterion = PcfSelectInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-ReasonCriterion');
+	disbursementSearchCriteriaInputSetStatusCriterion = PcfSelectInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-StatusCriterion');
+	disbursementSearchCriteriaInputSetTokenCriterion = PcfTextInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-TokenCriterion');
+	disbursementSearchCriteriaInputSetdisbursementSubtype = PcfSelectInput('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-DisbursementSearchCriteriaInputSet-disbursementSubtype');
+	disbursementSearchDisbursementSearchScreenDisbursementSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	disbursementSearchDisbursementSearchScreenDisbursementSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	disbursementSearchScreenDisbursementSearchResultsLV = PcfListView('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV');
+	disbursementSearchScreen_msgs = PcfButton('#DisbursementSearch-DisbursementSearchScreen-_msgs');
+	disbursementSearchResultsLVAmountHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-AmountHeader');
+	disbursementSearchResultsLVCheckNumberHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-CheckNumberHeader');
+	disbursementSearchResultsLVCloseDateHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-CloseDateHeader');
+	disbursementSearchResultsLVCollateralHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-CollateralHeader');
+	disbursementSearchResultsLVPayeeHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-PayeeHeader');
+	disbursementSearchResultsLVPaymentMethodHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-PaymentMethodHeader');
+	disbursementSearchResultsLVProducerHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-ProducerHeader');
+	disbursementSearchResultsLVReasonHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-ReasonHeader');
+	disbursementSearchResultsLVStatusHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-StatusHeader');
+	disbursementSearchResultsLVSuspenseHeader = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-SuspenseHeader');
+	disbursementSearchResultsLV_ListPaging = PcfButton('#DisbursementSearch-DisbursementSearchScreen-DisbursementSearchResultsLV-_ListPaging');
+	disbursementSearchDisbursementSearch_UpLink = PcfButton('#DisbursementSearch-DisbursementSearch_UpLink');
+	disbursementSearch_Paging = PcfButton('#DisbursementSearch-_Paging');
+	disbursementSearch__crumb__ = PcfComponent('#DisbursementSearch-__crumb__');
+}

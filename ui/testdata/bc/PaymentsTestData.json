@@ -1,0 +1,20 @@
+{
+    "defaultDataSet": {
+        "Amount": "135",
+        "ExpectedAmount": "$135.00",
+        "Reason": "Payment Modification",
+        "PaymentMethod": "Credit Card",
+        "Token": "ABC",
+        "PaymentInstrument": "Credit Card (ABC)"
+    },
+    "payments_01": {
+        "Amount": "135",
+        "ExpectedAmount": "$135.00",
+        "Reason": "Payment Modification"
+    },
+    "paymentInstrument_01": {
+        "PaymentMethod": "Credit Card",
+        "Token": "ABC",
+        "PaymentInstrument": "Credit Card (ABC)"
+    }
+}

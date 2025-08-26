@@ -1,0 +1,44 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimEvaluations {
+	claimEvaluationsScreenAdd = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-Add');
+	claimEvaluationsScreenCE_Add = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-CE_Add');
+	claimEvaluationDetailDVEconomicDamages_ClmtOutOfPocket = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_ClmtOutOfPocket');
+	claimEvaluationDetailDVEconomicDamages_Diagnostic = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_Diagnostic');
+	claimEvaluationDetailDVEconomicDamages_FutureMedical = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_FutureMedical');
+	claimEvaluationDetailDVEconomicDamages_HospitalER = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_HospitalER');
+	claimEvaluationDetailDVEconomicDamages_MedicalEquipment = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_MedicalEquipment');
+	claimEvaluationDetailDVEconomicDamages_Other = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_Other');
+	claimEvaluationDetailDVEconomicDamages_PhysicalTherapy = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_PhysicalTherapy');
+	claimEvaluationDetailDVEconomicDamages_Total = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_Total');
+	claimEvaluationDetailDVEconomicDamages_TreatingPhysician = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-EconomicDamages_TreatingPhysician');
+	claimEvaluationDetailDVLiabilityDistribution_ClaimantLiability = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-LiabilityDistribution_ClaimantLiability');
+	claimEvaluationDetailDVLiabilityDistribution_InsuredLiability = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-LiabilityDistribution_InsuredLiability');
+	claimEvaluationDetailDVLiabilityDistribution_OtherLiability = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-LiabilityDistribution_OtherLiability');
+	claimEvaluationDetailDVName = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-Name');
+	claimEvaluationDetailDVNonEconomicDamages_High = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-NonEconomicDamages_High');
+	claimEvaluationDetailDVNonEconomicDamages_Likely = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-NonEconomicDamages_Likely');
+	claimEvaluationDetailDVNonEconomicDamages_Low = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-NonEconomicDamages_Low');
+	claimEvaluationDetailDVNote_RelatedTo = PcfSelectInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-Note_RelatedTo');
+	claimEvaluationDetailDVTotalValue_Amount = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_Amount');
+	claimEvaluationDetailDVTotalValue_AvailableReserves = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_AvailableReserves');
+	claimEvaluationDetailDVTotalValue_High = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_High');
+	claimEvaluationDetailDVTotalValue_Likely = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_Likely');
+	claimEvaluationDetailDVTotalValue_Low = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_Low');
+	claimEvaluationDetailDVTotalValue_TotalIncurredNet = PcfTextInput('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailDV-TotalValue_TotalIncurredNet');
+	claimEvaluationDetailsDVClaimEvaluationDetailsCardTab = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV-ClaimEvaluationDetailsCardTab');
+	claimEvaluationDetailsDV_tbCancel = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV_tb-Cancel');
+	claimEvaluationDetailsDV_tbEdit = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV_tb-Edit');
+	claimEvaluationDetailsDV_tbUpdate = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-ClaimEvaluationDetailsDV_tb-Update');
+	claimEvaluationsScreenDetailViewTitleCardTab = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-DetailViewTitleCardTab');
+	claimEvaluationsScreenEditableEvaluationsLV = PcfListView('#ClaimEvaluations-ClaimEvaluationsScreen-EditableEvaluationsLV');
+	claimEvaluationsScreenRemove = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-Remove');
+	claimEvaluationsScreen_msgs = PcfButton('#ClaimEvaluations-ClaimEvaluationsScreen-_msgs');
+	claimEvaluationsClaimEvaluations_UpLink = PcfButton('#ClaimEvaluations-ClaimEvaluations_UpLink');
+	claimEvaluations_Paging = PcfButton('#ClaimEvaluations-_Paging');
+	claimEvaluations__crumb__ = PcfComponent('#ClaimEvaluations-__crumb__');
+}

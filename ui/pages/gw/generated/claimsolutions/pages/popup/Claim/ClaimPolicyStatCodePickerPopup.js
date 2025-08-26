@@ -1,0 +1,22 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimPolicyStatCodePickerPopup {
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodePickerPopup_UpLink = PcfButton('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodePickerPopup_UpLink');
+	claimPolicyStatCodesScreenClaimPolicyStatCodePickerPopup_CancelButton = PcfButton('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-ClaimPolicyStatCodePickerPopup_CancelButton');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVBuildingNumber = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-BuildingNumber');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVClassCode = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-ClassCode');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVInsuranceLine = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-InsuranceLine');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVInsuranceSubLine = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-InsuranceSubLine');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVLineNumber = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-LineNumber');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVLocationNumber = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-LocationNumber');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVSearchOnlyInputSetSearchLinksInputSetReset = PcfButton('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-SearchOnlyInputSet-SearchLinksInputSet-Reset');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVSearchOnlyInputSetSearchLinksInputSetSearch = PcfButton('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-SearchOnlyInputSet-SearchLinksInputSet-Search');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreenStatCodeFilterDVVehicleNumber = PcfSelectInput('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodeFilterDV-VehicleNumber');
+	claimPolicyStatCodesScreenStatCodePickerLV = PcfListView('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-StatCodePickerLV');
+	claimPolicyStatCodePickerPopupClaimPolicyStatCodesScreen_msgs = PcfButton('#ClaimPolicyStatCodePickerPopup-ClaimPolicyStatCodesScreen-_msgs');
+	claimPolicyStatCodePickerPopup_Paging = PcfButton('#ClaimPolicyStatCodePickerPopup-_Paging');
+	claimPolicyStatCodePickerPopup__crumb__ = PcfComponent('#ClaimPolicyStatCodePickerPopup-__crumb__');
+}

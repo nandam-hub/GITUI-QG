@@ -1,0 +1,28 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class PickExistingDocumentPopup {
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVAuthorCriterion = PcfTextInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-AuthorCriterion');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaChosenOption = PcfSelectInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaChosenOption');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaDirectChoice_Choice = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaDirectChoice_Choice');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaEndDate = PcfDateValueInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaEndDate');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaRangeChoice_Choice = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaRangeChoice_Choice');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaRangeValue = PcfSelectInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaRangeValue');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVDateSearchCriteriaDateSearchCriteriaStartDate = PcfDateValueInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-DateSearchCriteria-DateSearchCriteriaStartDate');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVIncludeObsoletes = PcfComponent('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-IncludeObsoletes');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVLanguage = PcfSelectInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-Language');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVStatusCriterion = PcfSelectInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-StatusCriterion');
+	pickExistingDocumentPopupDocumentsScreenDocumentSearchDVTypeCriterion = PcfSelectInput('#PickExistingDocumentPopup-DocumentsScreen-DocumentSearchDV-TypeCriterion');
+	documentsScreenPickExistingDocumentPopup_CancelButton = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-PickExistingDocumentPopup_CancelButton');
+	documentsScreenPickExistingDocumentsLV = PcfListView('#PickExistingDocumentPopup-DocumentsScreen-PickExistingDocumentsLV');
+	documentsScreen_msgs = PcfButton('#PickExistingDocumentPopup-DocumentsScreen-_msgs');
+	pickExistingDocumentPopupPickExistingDocumentPopup_UpLink = PcfButton('#PickExistingDocumentPopup-PickExistingDocumentPopup_UpLink');
+	pickExistingDocumentPopup_Paging = PcfButton('#PickExistingDocumentPopup-_Paging');
+	pickExistingDocumentPopup__crumb__ = PcfComponent('#PickExistingDocumentPopup-__crumb__');
+}

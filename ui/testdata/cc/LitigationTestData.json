@@ -1,0 +1,30 @@
+{
+    "defaultDataSet": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "ClaimNo": "000-00-003419",
+        "CaseNumber": "12345"
+    },
+    "addLitigation_01": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "ClaimNo": "000-00-003419",
+        "CaseNumber": "12345"
+    }
+}

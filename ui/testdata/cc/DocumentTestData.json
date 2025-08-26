@@ -1,0 +1,13 @@
+{
+    "defaultDataSet": {
+        
+    },
+    "documentUpload_01": {
+        "filePath": "../ui/testdata/cc/DocumentUploadTest.txt"
+    },
+    "documentAddTemplate_02": {
+        "LineOfBusiness": "Personal Auto Line",
+        "Jurisdiction": "<none>",
+        "TemplateName": "Acrobat Sample"
+    }
+}

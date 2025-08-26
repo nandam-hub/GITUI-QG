@@ -1,0 +1,24 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class NewClaimWizard_NewStatCodePopup {
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodePopup_UpLink = PcfButton('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodePopup_UpLink');
+	newClaimWizard_NewStatCodeScreenCancel = PcfButton('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-Cancel');
+	newClaimWizard_NewStatCodeScreenEdit = PcfButton('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-Edit');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVBuildingNumber = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-BuildingNumber');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVClassCode = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-ClassCode');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVInsuranceLine = PcfSelectInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-InsuranceLine');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVInsuranceSubLine = PcfSelectInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-InsuranceSubLine');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVLineNumber = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-LineNumber');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVLocationNumber = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-LocationNumber');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVMajorPeril = PcfSelectInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-MajorPeril');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVNotes = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-Notes');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVState = PcfSelectInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-State');
+	newClaimWizard_NewStatCodePopupNewClaimWizard_NewStatCodeScreenStatCodeDetailDVVehicleNumber = PcfTextInput('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-StatCodeDetailDV-VehicleNumber');
+	newClaimWizard_NewStatCodeScreenUpdate = PcfButton('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-Update');
+	newClaimWizard_NewStatCodeScreen_msgs = PcfButton('#NewClaimWizard_NewStatCodePopup-NewClaimWizard_NewStatCodeScreen-_msgs');
+	newClaimWizard_NewStatCodePopup_Paging = PcfButton('#NewClaimWizard_NewStatCodePopup-_Paging');
+	newClaimWizard_NewStatCodePopup__crumb__ = PcfComponent('#NewClaimWizard_NewStatCodePopup-__crumb__');
+}

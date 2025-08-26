@@ -1,0 +1,71 @@
+apply plugin: "java"
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+sourceSets.main.java.srcDirs = ['actions', 'datacreation', 'simulation', 'tests', 'util']
+sourceSets.main.resources.srcDirs = ['actions', 'datacreation/resources', 'simulation/resources', 'tests/resources']
+sourceSets.main.scala.srcDirs = ['simulation']
+sourceSets.test.java.srcDirs = ['test/actions', 'test/datacreation', 'test/simulation', 'test/tests', 'test/util']
+sourceSets.test.resources.srcDirs = ['test/actions', 'test/datacreation/resources', 'test/simulation/resources', 'test/tests/resources']
+sourceSets.test.scala.srcDirs = ['test/simulation']
+
+// Gradle task local overrides for running Junit/Java functional tests
+test {
+    testLogging {
+        exceptionFormat 'full'
+        events 'started', 'skipped', 'passed', 'failed'
+        showStandardStreams true
+    }
+    outputs.upToDateWhen {false}
+}
+
+// Gradle task to run custom test suite via test suite name as a System Property
+// Ex: gradle runTestSuite -DtestSuite=CucumberTestsRunner
+task runTestSuite(type: Test) {
+    //Print gt versions only if relevant task exists
+    def myTask = rootProject.tasks.findByName('DISPLAY_GT_VERSIONS')
+
+    if (myTask != null) {
+        dependsOn(':DISPLAY_GT_VERSIONS')
+    } else {
+        println "Task 'DISPLAY_GT_VERSIONS' not found. Not printing GT Versions."
+    }
+
+    def testSuiteToRun = System.getProperty("testSuite")
+    include "${testSuiteToRun}.class"
+}
+runTestSuite.onlyIf { System.getProperty("testSuite") != null}
+
+// Gradle task to run Gatling Load Tests
+task gatlingRun(dependsOn: jar) {
+    dependsOn(':DISPLAY_GT_VERSIONS')
+
+    group = 'Gatling Simulation'
+    description = 'Run a gatling simulation'
+
+    doLast {
+        javaexec {
+            classpath = sourceSets.main.runtimeClasspath
+            main = "io.gatling.app.Gatling"
+
+            def reportDirPath = "../reports/loadgatling"
+            def gatlingReportDir = mkdir reportDirPath
+            def scalaSimulationClassPath = System.getenv('GTLOAD_SCALA_SIMULATION_CLASS_PATH')
+
+            args = [
+                    '-s', scalaSimulationClassPath,
+                    '-rf', gatlingReportDir.canonicalPath,
+                    '-rd', 'Gatling Simulation'
+            ]
+        }
+    }
+}
+

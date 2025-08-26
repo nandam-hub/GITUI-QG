@@ -1,0 +1,73 @@
+apply plugin: "java"
+apply plugin: "java-library"
+apply plugin: "idea"
+apply plugin: "com.github.spacialcircumstances.gradle-cucumber-reporting"
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+test {
+    testLogging {
+        exceptionFormat 'full'
+        events 'started', 'skipped', 'passed', 'failed'
+        showStandardStreams true
+    }
+    outputs.upToDateWhen {false}
+}
+
+sourceSets.main.java.srcDirs = ['features', 'steps', 'suites']
+sourceSets.main.resources.srcDirs = ['features', 'steps', 'suites']
+sourceSets.test.java.srcDirs = ['features', 'steps', 'suites']
+sourceSets.test.resources.srcDirs = ['features', 'steps', 'suites']
+
+task runSmokeTests(description: 'Smoke Test - healthcheck before running whole functional test suite.') {
+    subprojects.each {
+        dependsOn it.tasks.getByName('test')
+    }
+}
+
+// Gradle task to run custom test suite via test suite name as a System Property
+// Ex: gradle runTestSuite -DtestSuite=CucumberTestsRunner
+task runTestSuite(type: Test) {
+    //Print gt versions only if relevant task exists
+    def myTask = rootProject.tasks.findByName('DISPLAY_GT_VERSIONS')
+
+    if (myTask != null) {
+        dependsOn(':DISPLAY_GT_VERSIONS')
+    } else {
+        println "Task 'DISPLAY_GT_VERSIONS' not found. Not printing GT Versions."
+    }
+
+    def testSuiteToRun = System.getProperty("testSuite")
+    include "${testSuiteToRun}.class"
+}
+runTestSuite.onlyIf { System.getProperty("testSuite") != null}
+
+cucumberReports {
+    outputDir = file('../reports/apibehaviortests')
+    buildId = '0'
+    reports = files("../reports/apibehaviortests/Cucumber.json")
+}
+
+/* Gradle task to modify Junit XML report with SUT log correlation info. */
+task (updateReportWithDDTag, type: JavaExec) {
+    dependsOn 'classes'
+    dependsOn 'runTestSuite'
+    main = 'gw.gtapi.util.report.ISLogCorrelationReportUtil'
+    String userDir = System.getProperty("user.dir")
+    String cucumberReportLoc = '/reports/apibehaviortests/'
+    String karateLogLoc = '/behavior/target/'
+
+    args = [userDir, cucumberReportLoc, karateLogLoc]
+    classpath = sourceSets.main.runtimeClasspath
+    description = "Run the LogCorrelationReportUtil"
+}

@@ -1,0 +1,20 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class PolicyDetailCharges {
+	policyDetailChargesListDetailPanelChargeBreakdownCardTab = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargeBreakdownCardTab');
+	policyDetailChargesListDetailPanelChargeBreakdownItemsDisplayLV = PcfListView('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargeBreakdownItemsDisplayLV');
+	policyDetailChargesListDetailPanelChargesLV = PcfListView('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargesLV');
+	policyDetailChargesPolicyDetailChargesScreenPolicyDetailChargesListDetailPanelChargesLV_tbEditCommissionRates = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargesLV_tb-EditCommissionRates');
+	policyDetailChargesPolicyDetailChargesScreenPolicyDetailChargesListDetailPanelChargesLV_tbEditHolds = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargesLV_tb-EditHolds');
+	policyDetailChargesPolicyDetailChargesScreenPolicyDetailChargesListDetailPanelChargesLV_tbReverseButton = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-ChargesLV_tb-ReverseButton');
+	policyDetailChargesListDetailPanelInvoiceItemsLV = PcfListView('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-InvoiceItemsLV');
+	policyDetailChargesPolicyDetailChargesScreenPolicyDetailChargesListDetailPanelInvoiceItemsLV_tbEditInvoiceItems = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-InvoiceItemsLV_tb-EditInvoiceItems');
+	policyDetailChargesPolicyDetailChargesScreenPolicyDetailChargesListDetailPanelInvoiceItemsLV_tbMoveInvoiceItems = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-InvoiceItemsLV_tb-MoveInvoiceItems');
+	policyDetailChargesListDetailPanelInvoiceItemsTab = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-PolicyDetailChargesListDetailPanel-InvoiceItemsTab');
+	policyDetailChargesScreen_msgs = PcfButton('#PolicyDetailCharges-PolicyDetailChargesScreen-_msgs');
+	policyDetailChargesPolicyDetailCharges_UpLink = PcfButton('#PolicyDetailCharges-PolicyDetailCharges_UpLink');
+	policyDetailCharges_Paging = PcfButton('#PolicyDetailCharges-_Paging');
+	policyDetailCharges__crumb__ = PcfComponent('#PolicyDetailCharges-__crumb__');
+}

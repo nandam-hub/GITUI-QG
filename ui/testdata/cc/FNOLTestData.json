@@ -1,0 +1,111 @@
+{
+    "defaultDataSet": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin"
+    },
+    "createActivity_01": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "Description": "New claim saved",
+        "Assigned": "Assigned to user"
+    },
+    "createActivity_02": {
+        "PolicyNumber": "2416558655",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Personal Auto",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin"
+    },
+    "createActivity_03": {
+        "PolicyNumber": "2416558655",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Personal Auto",
+        "LossDate": "09/08/2003",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Los Angeles",
+        "State": "California",
+        "Catastrophe": "163 - LA earthquake - 09/06/2003 - 09/11/2003"
+    },
+    "createActivity_04": {
+        "PolicyNumber": "2416558655",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Personal Auto",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "Vehicles": {
+            "Vehicle1": {
+                "ClaimVehicleMake": "Kia",
+                "ClaimVehicleModel": "Daz",
+                "VehicleCoverage1": "Rental Reimbursement",
+                "VehicleExposureLimit1": "2000",
+                "VehicleIncidentLimit1": "100",
+                "VehicleCoverage2": "Towing and Labor",
+                "VehicleExposureLimit2": "2000",
+                "VehicleIncidentLimit2": "200"
+            },
+            "Vehicle2": {
+                "ClaimVehicleMake": "Honda",
+                "ClaimVehicleModel": "Accord"
+            }
+        },
+        "IncludedVehicle1": "Kia",
+        "RentalDailyRate": "25",
+        "PickUpLocation": "Pewaukee, WI",
+        "VendorTaxId": "569-89-",
+        "RentalText": "Other - Car rental"
+    },
+    "createActivity_05": {
+        "ExposureCoverage1": "Building Coverage",
+        "ExposureCloseText": "Close exposure",
+        "ExposureOutcome": "Completed",
+        "CloseClaimText": "Closing claim",
+        "CloseClaimOutcome": "Completed",
+        "ClaimStatus": "Closed",
+        "Litigation1": "12345",
+        "CloseLitigationText": "Closing Litigation",
+        "CloseLitigationResolution": "Dismissed"
+    },
+    "FNOL_01": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "+110",
+        "EffectiveDate": "0",
+        "ExpirationDate": "+100",
+        "Name": "New Person",
+        "Validation": "Loss Date : Date must be in the past."
+    },
+    "assignClaim_01": {
+        "LossCause":"Animal",
+        "Description": "Assigned to user Claims Autopilot"
+    }
+}

@@ -1,0 +1,43 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class AgencyBillExecutedPayments {
+	agencyBillExecutedPaymentsAgencyBillDistArchiveWarningPanelSetAgencyBillPaymentArchiveWarningDVArchiveAlertBar = PcfTextInput('#AgencyBillExecutedPayments-AgencyBillDistArchiveWarningPanelSet-AgencyBillPaymentArchiveWarningDV-ArchiveAlertBar');
+	agencyBillExecutedPaymentsAgencyBillDistArchiveWarningPanelSetspaceInput = PcfTextInput('#AgencyBillExecutedPayments-AgencyBillDistArchiveWarningPanelSet-spaceInput');
+	agencyBillExecutedPaymentsAgencyBillExecutedPayments_UpLink = PcfButton('#AgencyBillExecutedPayments-AgencyBillExecutedPayments_UpLink');
+	agencyBillExecutedPaymentsAgencyDistItemsReadOnlyCVDetailCardTab = PcfButton('#AgencyBillExecutedPayments-AgencyDistItemsReadOnlyCV-DetailCardTab');
+	agencyBillExecutedPaymentsAgencyDistItemsReadOnlyCVDetailsLV = PcfListView('#AgencyBillExecutedPayments-AgencyDistItemsReadOnlyCV-DetailsLV');
+	agencyBillExecutedPaymentsAgencyDistItemsReadOnlyCVSummaryCardTab = PcfButton('#AgencyBillExecutedPayments-AgencyDistItemsReadOnlyCV-SummaryCardTab');
+	agencyBillExecutedPaymentsAgencyDistItemsReadOnlyCVSummaryLV = PcfListView('#AgencyBillExecutedPayments-AgencyDistItemsReadOnlyCV-SummaryLV');
+	agencyBillExecutedPaymentsDistributed = PcfTextInput('#AgencyBillExecutedPayments-Distributed');
+	agencyBillExecutedPaymentsDistributedDate = PcfDateValueInput('#AgencyBillExecutedPayments-DistributedDate');
+	agencyBillExecutedPaymentsItemWriteOff = PcfTextInput('#AgencyBillExecutedPayments-ItemWriteOff');
+	agencyBillExecutedPaymentsName = PcfTextInput('#AgencyBillExecutedPayments-Name');
+	agencyBillExecutedPaymentsOriginalPayment = PcfButton('#AgencyBillExecutedPayments-OriginalPayment');
+	agencyBillExecutedPaymentsPaymentDescription = PcfTextInput('#AgencyBillExecutedPayments-PaymentDescription');
+	agencyBillExecutedPaymentsPaymentDetailCardTab = PcfButton('#AgencyBillExecutedPayments-PaymentDetailCardTab');
+	agencyBillExecutedPaymentsPaymentInstrument = PcfTextInput('#AgencyBillExecutedPayments-PaymentInstrument');
+	agencyBillExecutedPaymentsPaymentInstrumentToken = PcfTextInput('#AgencyBillExecutedPayments-PaymentInstrumentToken');
+	agencyBillExecutedPaymentsPaymentsLV = PcfListView('#AgencyBillExecutedPayments-PaymentsLV');
+	paymentsLV_tbEdit = PcfButton('#AgencyBillExecutedPayments-PaymentsLV_tb-Edit');
+	paymentsLV_tbMoveToDifferentProducer = PcfButton('#AgencyBillExecutedPayments-PaymentsLV_tb-MoveToDifferentProducer');
+	paymentsLV_tbPaymentsReceivedFilter = PcfSelectInput('#AgencyBillExecutedPayments-PaymentsLV_tb-PaymentsReceivedFilter');
+	paymentsLV_tbReverse = PcfButton('#AgencyBillExecutedPayments-PaymentsLV_tb-Reverse');
+	paymentsLV_tbSplit = PcfButton('#AgencyBillExecutedPayments-PaymentsLV_tb-Split');
+	paymentsLV_tbViewSuspenseItems = PcfButton('#AgencyBillExecutedPayments-PaymentsLV_tb-ViewSuspenseItems');
+	agencyBillExecutedPaymentsProducerWriteOff = PcfTextInput('#AgencyBillExecutedPayments-ProducerWriteOff');
+	agencyBillExecutedPaymentsReceivedAmount = PcfTextInput('#AgencyBillExecutedPayments-ReceivedAmount');
+	agencyBillExecutedPaymentsReceivedDate = PcfDateValueInput('#AgencyBillExecutedPayments-ReceivedDate');
+	agencyBillExecutedPaymentsRefNumber = PcfTextInput('#AgencyBillExecutedPayments-RefNumber');
+	agencyBillExecutedPaymentsRemainingAmount = PcfTextInput('#AgencyBillExecutedPayments-RemainingAmount');
+	agencyBillExecutedPaymentsReversed = PcfSelectInput('#AgencyBillExecutedPayments-Reversed');
+	agencyBillExecutedPaymentsSuspense = PcfTextInput('#AgencyBillExecutedPayments-Suspense');
+	agencyBillExecutedPaymentsTransactionNumber = PcfButton('#AgencyBillExecutedPayments-TransactionNumber');
+	agencyBillExecutedPayments_Paging = PcfButton('#AgencyBillExecutedPayments-_Paging');
+	agencyBillExecutedPayments__crumb__ = PcfComponent('#AgencyBillExecutedPayments-__crumb__');
+	agencyBillExecutedPayments_msgs = PcfButton('#AgencyBillExecutedPayments-_msgs');
+}

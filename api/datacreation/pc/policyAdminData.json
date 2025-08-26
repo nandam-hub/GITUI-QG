@@ -1,0 +1,23 @@
+{
+  "data": {
+    "attributes": {
+      "users": [{
+        "userName": "<userName>",
+        "roles": ["<roles>"],
+        "groups": ["<groups>"],
+        "useProducerCodeSecurity": false
+      }],
+      "groups": [{
+        "groupIdentifier": "<groupIdentifier>",
+        "producerCodeIdentifier" : "<producerCodeIdentifier>"
+      }],
+      "producerCodes": [{
+        "producerCodeIdentifier": "<producerCodeIdentifier>",
+        "organization": "<organization>"
+      }],
+      "organizations": [{
+        "organizationIdentifier": "organizationIdentifier"
+      }]
+    }
+  }
+}

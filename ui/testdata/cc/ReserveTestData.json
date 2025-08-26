@@ -1,0 +1,74 @@
+{
+   "defaultDataSet": {
+      "CostType": "Unspecified Cost Type",
+      "CostCategory": "Unspecified Cost Category",
+      "RecoveryCategory": "Credit to expense",
+      "NewOpenRecoveryReserves": "10"
+   },
+   "recoveryReserve_01": {
+      "CostType": "Unspecified Cost Type",
+      "CostCategory": "Unspecified Cost Category",
+      "RecoveryCategory": "Credit to expense",
+      "NewOpenRecoveryReserves": "10"
+   },
+   "createReserve_01": {
+      "Exposure1": "Party Property",
+      "CostType1": "Claim Cost",
+      "CostCategory1": "Property Repair",
+      "NewAvailableReserves1": "10"
+   },
+   "createMultipleReserve_02": {
+      "Exposure1": "(1) 1st Party Bodily Injury",
+      "CostType1": "Claim Cost",
+      "CostCategory1": "Unspecified Cost Category",
+      "NewAvailableReserves1": "10",
+      "Exposure2": "(1) 1st Party Bodily Injury",
+      "CostType2": "Claim Cost",
+      "CostCategory2": "Burial expenses",
+      "NewAvailableReserves2": "10",
+      "Exposure3": "(2) 1st Party Bodily Injury",
+      "CostType3": "Claim Cost",
+      "CostCategory3": "Death benefits",
+      "NewAvailableReserves3": "10",
+      "Exposure4": "(2) 1st Party Bodily Injury",
+      "CostType4": "Claim Cost",
+      "CostCategory4": "Emergency Services",
+      "NewAvailableReserves4": "10",
+      "Exposure5": "(3) 3rd Party Med Pay",
+      "CostType5": "Claim Cost",
+      "CostCategory5": "Lifetime benefits",
+      "NewAvailableReserves5": "10",
+      "Exposure6": "(3) 3rd Party Med Pay",
+      "CostType6": "Claim Cost",
+      "CostCategory6": "Medical",
+      "NewAvailableReserves6": "10"
+   },
+   "createReserve_02": {
+      "PolicyNumber": "7407354463",
+      "SearchCreatePolicy": "Create Unverified Policy",
+      "Type": "Commercial Property",
+      "LossDate": "-1",
+      "EffectiveDate": "-2",
+      "ExpirationDate": "+366",
+      "Name": "New Person",
+      "LossCause": "Fire",
+      "City": "Pewaukee",
+      "State": "Wisconsin",
+      "Description": "New claim saved",
+      "Assigned": "Assigned to user",
+      "ContactRole": "Insured, Main Contact, Reporter",
+      "AddressLine1": "123 Main St",
+      "Claimant": 1,
+      "PropertyName": 1,
+      "Status": "Open",
+      "Exposure1": "Party Property",
+      "CostType1": "Claim Cost",
+      "CostCategory1": "Property Repair",
+      "NewAvailableReserves1": "10"
+   },
+   "automaticReserve_01": {
+      "Type": "Insured",
+      "Exposure": "(1) 3rd Party Vehicle",
+      "CostCategory": "Vehicle inspection"
+   }
+}

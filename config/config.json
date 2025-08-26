@@ -1,0 +1,10 @@
+{
+  "PC_URL": "https://pc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/PolicyCenter.do",
+  "CC_URL": "https://cc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/ClaimCenter.do",
+  "BC_URL": "https://bc-dev-gwcpdev.valuemom.zeta1-andromeda.guidewire.net/BillingCenter.do",
+  "CM_URL": "",
+  "Jutro_SSO_URL": "",
+  "dev-test-location-pattern": "ui/tests/**/**/*.js",
+  "feature_location_pattern": "behavior/features/**/**/*.feature",
+  "glue_location_pattern": "behavior/steps/**/**/*.js"
+}

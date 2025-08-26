@@ -1,0 +1,66 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class AccountSearch {
+	accountSearchDVAccountNumber = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AccountNumber');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressLine1 = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine1');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressLine1Kanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine1Kanji');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressLine2 = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine2');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressLine2Kanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine2Kanji');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressSummary = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressSummary');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCity = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-City');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCityKanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CityKanji');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCountry = PcfSelectInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-Country');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetPostalCode = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-PostalCode');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetPostalCodeAutoFillIcon = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-PostalCode-AutoFillIcon');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetState = PcfSelectInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-State');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetAddressLine3 = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine3');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCEDEX = PcfCheckBox('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CEDEX');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCEDEXBureau = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CEDEXBureau');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCityAutoFillIcon = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-City-AutoFillIcon');
+	accountSearchAccountSearchScreenAccountSearchDVAddressOwnerAddressInputSetglobalAddressContainerGlobalAddressInputSetCounty = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-County');
+	accountSearchDVCompanyNameExact = PcfCheckBox('#AccountSearch-AccountSearchScreen-AccountSearchDV-CompanyNameExact');
+	accountSearchDVFirstNameExact = PcfCheckBox('#AccountSearch-AccountSearchScreen-AccountSearchDV-FirstNameExact');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalContactNameInputSetName = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalContactNameInputSet-Name');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalContactNameInputSetNameKanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalContactNameInputSet-NameKanji');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalContactNameInputSetNameSummary = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalContactNameInputSet-NameSummary');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetFirstName = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-FirstName');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetFirstNameKanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-FirstNameKanji');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetLastName = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-LastName');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetLastNameKanji = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-LastNameKanji');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetNameSummary = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-NameSummary');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetMiddleName = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-MiddleName');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetParticle = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-Particle');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetPrefix = PcfSelectInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-Prefix');
+	accountSearchAccountSearchScreenAccountSearchDVGlobalPersonNameInputSetSuffix = PcfSelectInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-GlobalPersonNameInputSet-Suffix');
+	industryCodeSelectIndustryCode = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-IndustryCode-SelectIndustryCode');
+	accountSearchDVLastNameExact = PcfCheckBox('#AccountSearch-AccountSearchScreen-AccountSearchDV-LastNameExact');
+	accountSearchDVPhone = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-Phone');
+	producerCodeSelectProducerCode = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-ProducerCode-SelectProducerCode');
+	producerOrganizationSelectOrganization = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-ProducerOrganization-SelectOrganization');
+	accountSearchAccountSearchScreenAccountSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	accountSearchAccountSearchScreenAccountSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	accountSearchDVSearchRelatedAccountsOnly = PcfCheckBox('#AccountSearch-AccountSearchScreen-AccountSearchDV-SearchRelatedAccountsOnly');
+	accountSearchDVSecure = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-Secure');
+	accountSearchDVTaxID = PcfTextInput('#AccountSearch-AccountSearchScreen-AccountSearchDV-TaxID');
+	accountSearchScreenAccountSearchResultsLV = PcfListView('#AccountSearch-AccountSearchScreen-AccountSearchResultsLV');
+	accountSearchResultsLV_tbPrintMe = PcfButton('#AccountSearch-AccountSearchScreen-AccountSearchResultsLV_tb-PrintMe');
+	accountSearchScreen_msgs = PcfButton('#AccountSearch-AccountSearchScreen-_msgs');
+	accountSearchAccountSearch_UpLink = PcfButton('#AccountSearch-AccountSearch_UpLink');
+	accountSearch_Paging = PcfButton('#AccountSearch-_Paging');
+	accountSearch__crumb__ = PcfComponent('#AccountSearch-__crumb__');
+	accountNumber = PcfTextInput('#TabBar-AccountTab-AccountTab_AccountNumberSearchItem > div');
+    accountNumberSearch = PcfButton('#TabBar-AccountTab-AccountTab_AccountNumberSearchItem_Button > span');
+    accountTab = PcfButton("#TabBar-AccountTab > div.gw-action--expand-button > div");
+    accountNumberElement = PcfComponent('#AccountFile_Summary-AccountSummaryDashboard-AccountDetailsDetailViewTile-AccountDetailsDetailViewTile_DV-AccountNumber > div > div');
+ 
+    async accounNumberValidation()
+    {
+        const accountNumber = await this.accountNumberElement.component.innerText;
+        console.log('Account Number:', accountNumber);
+    }
+}

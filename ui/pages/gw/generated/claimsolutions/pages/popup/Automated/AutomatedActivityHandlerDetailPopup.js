@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class AutomatedActivityHandlerDetailPopup {
+	automatedActivityHandlerDetailPopupAutomatedActivityHandlerDetailPopup_UpLink = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedActivityHandlerDetailPopup_UpLink');
+	automatedHandlerActionInputSetAutomatedHandlerActivityPattern = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-AutomatedHandlerActivityPattern');
+	automatedHandlerActionInputSetAutomatedHandlerDefaultEmailTemplate = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-AutomatedHandlerDefaultEmailTemplate');
+	automatedHandlerEmailTemplateOverrideSelectAutomatedHandlerEmailTemplateOverride = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-AutomatedHandlerEmailTemplateOverride-SelectAutomatedHandlerEmailTemplateOverride');
+	automatedHandlerActionInputSetAdd = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-Add');
+	automatedHandlerActionInputSetAutomatedHandlerEmailAddress = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-AutomatedHandlerEmailAddress');
+	automatedHandlerEmailTemplateSelectAutomatedHandlerEmailTemplate = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-AutomatedHandlerEmailTemplate-SelectAutomatedHandlerEmailTemplate');
+	automatedHandlerActionInputSetContactRole = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-ContactRole');
+	automatedHandlerActionInputSetEmailAddressHeader = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-EmailAddressHeader');
+	automatedHandlerActionInputSetNotificationType = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-NotificationType');
+	automatedHandlerActionInputSetRemove = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-Remove');
+	automatedHandlerActionInputSet_ListPaging = PcfButton('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerActionInputSet-_ListPaging');
+	automatedHandlerBaseInputSetAutomatedHandlerPolicyType = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerBaseInputSet-AutomatedHandlerPolicyType');
+	automatedHandlerBaseInputSetAutomatedHandlerPolicyTypeReadOnly = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerBaseInputSet-AutomatedHandlerPolicyTypeReadOnly');
+	automatedHandlerBaseInputSetAutomatedHandlerType = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerBaseInputSet-AutomatedHandlerType');
+	automatedHandlerTriggerInputSetAutomatedHandlerClaimIndicator = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-AutomatedHandlerClaimIndicator');
+	automatedHandlerTriggerInputSetAutomatedHandlerClaimIndicatorTriggeringValue = PcfComponent('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-AutomatedHandlerClaimIndicatorTriggeringValue');
+	automatedHandlerTriggerInputSetAmount = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-Amount');
+	automatedHandlerTriggerInputSetAutomatedHandlerFinancialThreshold = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-AutomatedHandlerFinancialThreshold');
+	automatedHandlerTriggerInputSetCause = PcfTextInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-Cause');
+	automatedHandlerTriggerInputSetCurrency = PcfSelectInput('#AutomatedActivityHandlerDetailPopup-AutomatedHandlerTriggerInputSet-Currency');
+	automatedActivityHandlerDetailPopupCancel = PcfButton('#AutomatedActivityHandlerDetailPopup-Cancel');
+	automatedActivityHandlerDetailPopupEdit = PcfButton('#AutomatedActivityHandlerDetailPopup-Edit');
+	automatedActivityHandlerDetailPopupUpdate = PcfButton('#AutomatedActivityHandlerDetailPopup-Update');
+	automatedActivityHandlerDetailPopup_Paging = PcfButton('#AutomatedActivityHandlerDetailPopup-_Paging');
+	automatedActivityHandlerDetailPopup__crumb__ = PcfComponent('#AutomatedActivityHandlerDetailPopup-__crumb__');
+	automatedActivityHandlerDetailPopup_msgs = PcfButton('#AutomatedActivityHandlerDetailPopup-_msgs');
+}

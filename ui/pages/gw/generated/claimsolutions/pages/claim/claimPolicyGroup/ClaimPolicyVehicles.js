@@ -1,0 +1,46 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimPolicyVehicles {
+	claimPolicyVehiclesScreenAdd = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-Add');
+	claimPolicyVehiclesScreenClaimPolicyVehicles_AddMoreVehiclesButton = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-ClaimPolicyVehicles_AddMoreVehiclesButton');
+	claimPolicyVehiclesScreenClaimPolicyVehicles_PartialListAlertBar = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-ClaimPolicyVehicles_PartialListAlertBar');
+	claimPolicyVehicles_PartialListAlertBarCloseBtn = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-ClaimPolicyVehicles_PartialListAlertBar-CloseBtn');
+	claimPolicyVehiclesClaimPolicyVehiclesScreenPolicyVehicleDetailPanelSetPolicyVehicleCoverageListDetailClaimPolicyCovTermsCVClaimPolicyCovTermsLV = PcfListView('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV');
+	claimPolicyVehiclesClaimPolicyVehiclesScreenPolicyVehicleDetailPanelSetPolicyVehicleCoverageListDetailClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbAdd = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-Add');
+	claimPolicyVehiclesClaimPolicyVehiclesScreenPolicyVehicleDetailPanelSetPolicyVehicleCoverageListDetailClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbAddCovTerm = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-AddCovTerm');
+	claimPolicyVehiclesClaimPolicyVehiclesScreenPolicyVehicleDetailPanelSetPolicyVehicleCoverageListDetailClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbRemove = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-Remove');
+	claimPolicyVehiclesClaimPolicyVehiclesScreenPolicyVehicleDetailPanelSetPolicyVehicleCoverageListDetailClaimPolicyCovTermsCVCovTermsTab = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-ClaimPolicyCovTermsCV-CovTermsTab');
+	policyVehicleCoverageListDetailEditableVehicleCoveragesLV = PcfListView('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-EditableVehicleCoveragesLV');
+	editableVehicleCoveragesLV_tbAdd = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-EditableVehicleCoveragesLV_tb-Add');
+	editableVehicleCoveragesLV_tbRemove = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleCoverageListDetail-EditableVehicleCoveragesLV_tb-Remove');
+	policyVehicleDetailDVBoatType = PcfSelectInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-BoatType');
+	policyVehicleDetailDVColor = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Color');
+	policyVehicleDetailDVEditableVehicleLienholdersLV = PcfListView('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-EditableVehicleLienholdersLV');
+	editableVehicleLienholdersLV_tbAdd = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-EditableVehicleLienholdersLV_tb-Add');
+	editableVehicleLienholdersLV_tbRemove = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-EditableVehicleLienholdersLV_tb-Remove');
+	policyVehicleDetailDVLicensePlate = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-LicensePlate');
+	policyVehicleDetailDVMake = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Make');
+	policyVehicleDetailDVModel = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Model');
+	policyVehicleDetailDVNumber = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Number');
+	policyVehicleDetailDVOffRoadStyle = PcfSelectInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-OffRoadStyle');
+	policyVehicleDetailDVSerialNumber = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-SerialNumber');
+	policyVehicleDetailDVState = PcfSelectInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-State');
+	policyVehicleDetailDVStyle = PcfSelectInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Style');
+	policyVehicleDetailDVVIN = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-VIN');
+	policyVehicleDetailDVYear = PcfTextInput('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet-PolicyVehicleDetailDV-Year');
+	policyVehicleDetailPanelSet_tbCancel = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet_tb-Cancel');
+	policyVehicleDetailPanelSet_tbClaimPolicyVehicles_EditButton = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet_tb-ClaimPolicyVehicles_EditButton');
+	policyVehicleDetailPanelSet_tbEdit = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet_tb-Edit');
+	policyVehicleDetailPanelSet_tbUpdate = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-PolicyVehicleDetailPanelSet_tb-Update');
+	claimPolicyVehiclesScreenRemove = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-Remove');
+	claimPolicyVehiclesScreenVehicleDetailCardTab = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-VehicleDetailCardTab');
+	claimPolicyVehiclesScreenVehiclesLV = PcfListView('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-VehiclesLV');
+	claimPolicyVehiclesScreen_msgs = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehiclesScreen-_msgs');
+	claimPolicyVehiclesClaimPolicyVehicles_UpLink = PcfButton('#ClaimPolicyVehicles-ClaimPolicyVehicles_UpLink');
+	claimPolicyVehicles_Paging = PcfButton('#ClaimPolicyVehicles-_Paging');
+	claimPolicyVehicles__crumb__ = PcfComponent('#ClaimPolicyVehicles-__crumb__');
+}

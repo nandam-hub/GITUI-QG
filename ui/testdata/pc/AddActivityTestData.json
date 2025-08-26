@@ -1,0 +1,26 @@
+{
+    "defaultDataSet": {
+        "Mandatory": "Yes",
+        "Recurring": "Yes",
+        "SecurityLevel": "Internal Only",
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode":"QA1PRODUCER01 QA1PRODUCER01"
+    },
+    "addActivity_01": {
+        "SecurityLevel": "Internal Only",
+        "Priority": "Normal",
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode":"QA1PRODUCER01 QA1PRODUCER01",
+        "ActivityAdded":"Meet with Insured"
+    }
+}

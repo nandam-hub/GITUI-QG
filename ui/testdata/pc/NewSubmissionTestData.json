@@ -1,0 +1,275 @@
+{
+    "defaultDataSet": {
+        "ProductName": "USA Personal Auto",
+        "OrganizationType": "Individual",
+        "AutoLiabilityPackage": "25/50/10",
+        "BodyType": "ATV",
+        "LicenseState": "Idaho",
+        "VinNumber": "JH4KA2630HC019837",
+        "Year": "1987",
+        "Make": "Acura",
+        "Model": "Legend",
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "Screenname": "Policy Review"
+    },
+    "newSubmission_01": {
+        "ProductName": "USA Personal Auto",
+        "OrganizationType": "Individual",
+        "AutoLiabilityPackage": "25/50/10",
+        "Vehicles": {
+            "Vehicle1": {
+                "BodyType": "ATV",
+                "LicenseState": "Idaho",
+                "VinNumber": "JH4KA2630HC019837",
+                "Year": "1987",
+                "Make": "Acura",
+                "Model": "Legend",
+                "AnnualMileage": "14000",
+                "PersonalUse": "Pleasure"
+            }
+        },
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "Coverage": {
+            "LiabilityBodilyInjuryAndPropertyDamage": "check",
+            "LiabilityBodilyInjuryAndPropertyDamageAutoLiabilityPackage": "25/50/10",
+            "PropertyProtectionInsurance": "check",
+            "PropertyProtectionInsurancePropertyProtectionLimits": "1,000,000",
+            "medicalPayments": "check",
+            "MedicalLimit": "5,000"
+        }
+    },
+    "newSubmission_02": {
+        "ProductName": "Homeowners Product",
+        "OrganizationType": "Individual",
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "RefusalType": "Cancelled",
+        "Coverage": {
+            "CoverageEPersonalLiability": "check",
+            "CoverageEPersonalLiabilityLimit": "500,000",
+            "CoverageFMedicalPayments": "check",
+            "CoverageFMedicalPaymentsLimit": "10,000",
+            "IdentityTheftProtection": "check",
+            "IdentityTheftProtectionLimit": "15,000",
+            "IdentityTheftProtectionDeductible": "500"
+        },
+        "RefusalTypeErrorMessage": "Refusal Type : Missing required field",
+        "CoverageErrorMessage": "Cannot quote a(n) GW Homeowners Line policy with no coverages.",
+        "Form1Description": "Homeowners Declarations",
+        "Form2Description": "Florida Amendatory Endorsement"
+    },
+    "newSubmission_03": {
+        "ProductName": "Commercial Umbrella and Excess Liability",
+        "OrganizationType": "Individual",
+        "Address1": "4700 S MOLSTEADS LN",
+        "State": "Idaho",
+        "ZIPCode": "83814-5113",
+        "AddressType": "Billing",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "UmbrellaLiabilityorExcessLiability": "Umbrella Liability",
+        "Coverage": {
+            "UmbrellaLiability": "update",
+            "UmbrellaLiabilityOccurrenceLimit": "1,000,000",
+            "UmbrellaLiabilityAggregateLimit": "1,000,000",
+            "UmbrellaLiabilityProductandCompletedOperationsAggregateLImit": "1,000,000",
+            "UmbrellaLiabilityUmbrellaCoverageForm": "Occurrence",
+            "UmbrellaLiabilitySelfInsuredRetention": "10,000"
+        }
+    },
+    "newSubmission_04": {
+        "ProductName": "Go Commercial Property",
+        "Address1": "4700 S MOLSTEADS LN",
+        "State": "Idaho",
+        "ZIPCode": "83814-5113",
+        "AddressType": "Billing",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "OrganizationType": "Common ownership",
+        "Coverage": {
+            "EachLossCausedByWind": "check",
+            "EachLossCausedByWindLimit": "1000",
+            "EachLossCausedByWindDeductible": "200",
+            "ContentsOfOtherStructures": "check",
+            "ContentsOfOtherStructuresLimit": "1%",
+            "ContentsOfOtherStructuresDeductible": "150",
+            "OutsideObjectsAndStructures": "check",
+            "OutsideObjectsAndStructuresLimit": "1000",
+            "OutsideObjectsAndStructuresDeductible": "250"
+        }
+    },
+    "newSubmission_05": {
+        "ProductName": "Small Business",
+        "Address1": "4700 S MOLSTEADS LN",
+        "State": "Idaho",
+        "ZIPCode": "83814-5113",
+        "AddressType": "Billing",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "OrganizationType": "Common ownership",
+        "BusinessType": "Apartment",
+        "Coverage": {
+            "GeneralLiability": "check",
+            "GeneralLiabilityOccurrenceLImit": "300,000",
+            "GeneralLiabilityAggregateLimit": "500,000"
+        }
+    },
+    "newSubmission_06": {
+        "ProductName": "USA Personal Auto",
+        "OrganizationType": "Individual",
+        "AutoLiabilityPackage": "25/50/10",
+        "Vehicles": {
+            "Vehicle1": {
+                "BodyType": "ATV",
+                "LicenseState": "Idaho",
+                "VinNumber": "JH4KA2630HC019837",
+                "Year": "1987",
+                "Make": "Acura",
+                "Model": "Legend",
+                "AnnualMileage": "14000",
+                "PersonalUse": "Pleasure"
+            },
+            "Vehicle2": {
+                "BodyType": "Snowmobile",
+                "VinNumber": "3G5DB03E42S524192",
+                "AnnualMileage": "6000",
+                "PersonalUse": "Pleasure",
+                "Year": "1992"
+            },
+            "Vehicle3": {
+                "BodyType": "Trailer",
+                "VinNumber": "7678476FCV7876352",
+                "Year": "2020",
+                "Make": "HOMEMADE",
+                "Model": "TRAILER",
+                "AnnualMileage": "8000",
+                "PersonalUse": "Pleasure"
+            }
+        },
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "Coverage": {
+            "LiabilityBodilyInjuryAndPropertyDamage": "check",
+            "LiabilityBodilyInjuryAndPropertyDamageAutoLiabilityPackage": "25/50/10",
+            "medicalPayments": "check",
+            "MedicalLimit": "5,000"
+        }
+    },
+    "newSubmission_07": {
+        "ProductName": "Go Commercial Property",
+        "Address1": "4700 S MOLSTEADS LN",
+        "State": "Idaho",
+        "ZIPCode": "83814-5113",
+        "AddressType": "Billing",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "OrganizationType": "Common ownership",
+        "LocationAdded": "3: 789 Main st, Pewaukee, ID",
+        "Coverage": {
+            "EachLossCausedByWind": "check",
+            "EachLossCausedByWindLimit": "1000",
+            "EachLossCausedByWindDeductible": "200"
+        },
+        "Buildings": {
+            "Building1": {
+                "BuildingDescription": "Building1",
+                "YearBuilt": "1985"
+            },
+            "Building2": {
+                "BuildingDescription": "Building2",
+                "YearBuilt": "1987"
+            },
+            "Building3": {
+                "BuildingDescription": "Building3",
+                "YearBuilt": "2000"
+            }
+        },
+        "Locations": {
+            "Location1": {
+                "CllLocationPopupAddress1": "345 Main st",
+                "CllLocationPopupCity": "Pewaukee",
+                "CllLocationPopupZipCode": "53075-0000"
+            },
+            "Location2": {
+                "CllLocationPopupAddress1": "789 Main st",
+                "CllLocationPopupCity": "Pewaukee",
+                "CllLocationPopupZipCode": "53077-0000"
+            }
+        }
+    },
+    "newSubmission_08": {
+        "ProductName": "USA Personal Auto",
+        "OrganizationType": "Individual",
+        "AutoLiabilityPackage": "25/50/10",
+        "Vehicles": {
+            "Vehicle1": {
+                "BodyType": "ATV",
+                "LicenseState": "Idaho",
+                "VinNumber": "JH4KA2630HC019837",
+                "Year": "1987",
+                "Make": "Acura",
+                "Model": "Legend",
+                "AnnualMileage": "14000",
+                "PersonalUse": "Pleasure"
+            }
+        },
+        "Address1": "1737 HURLEY",
+        "City": "Pewaukee",
+        "State": "Florida",
+        "ZIPCode": "53072-0000",
+        "AddressType": "Home",
+        "Organization": "e",
+        "ProducerCode": "QA1PRODUCER01 QA1PRODUCER01",
+        "Coverage": {
+            "LiabilityBodilyInjuryAndPropertyDamage": "check",
+            "LiabilityBodilyInjuryAndPropertyDamageAutoLiabilityPackage": "25/50/10",
+            "medicalPayments": "check",
+            "MedicalLimit": "5,000"
+        },
+        "Drivers": {
+            "Driver1": {
+                "FirstName": "Anthony",
+                "LastName": "last",
+                "DriverAddress1": "456 Main St",
+                "DriverCity": "Pewaukee",
+                "DriverState": "Wisconsin",
+                "DriverZipCode": "53077-0000",
+                "DriverAddressType": "Home"
+            },
+            "Driver2": {
+                "FirstName": "Bethany",
+                "LastName": "last",
+                "DriverAddress1": "530 Main St",
+                "DriverCity": "Pewaukee",
+                "DriverState": "Wisconsin",
+                "DriverZipCode": "53075-0000",
+                "DriverAddressType": "Home"
+            }
+        },
+        "Driver1": "Anthony last",
+        "Driver2": "Bethany last",
+        "ColumnIdentifier": "Internal Request ID"
+    }
+}

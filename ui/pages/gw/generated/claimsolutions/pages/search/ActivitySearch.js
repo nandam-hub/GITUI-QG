@@ -1,0 +1,45 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ActivitySearch {
+	activitySearchOptionalInputSetCompletedLate = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-CompletedLate');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchChosenOption = PcfSelectInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchChosenOption');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchDirectChoice_Choice = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchDirectChoice_Choice');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchEndDate = PcfDateValueInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchEndDate');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchRangeChoice_Choice = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchRangeChoice_Choice');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchRangeValue = PcfSelectInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchRangeValue');
+	activitySearchActivitySearchScreenActivitySearchDVActivitySearchOptionalInputSetDateSearchDateSearchStartDate = PcfDateValueInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-DateSearch-DateSearchStartDate');
+	activitySearchOptionalInputSetDescription = PcfTextInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-Description');
+	activitySearchOptionalInputSetOverdueNow = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-OverdueNow');
+	activitySearchOptionalInputSetPendingAssignment = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-PendingAssignment');
+	activitySearchOptionalInputSetPriority = PcfSelectInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-Priority');
+	activitySearchOptionalInputSetStatus = PcfSelectInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-Status');
+	activitySearchOptionalInputSetSubjectPatternChoiceRadioButton_Choice = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-SubjectPatternChoiceRadioButton_Choice');
+	activitySearchOptionalInputSetSubjectPatternValueWidget = PcfSelectInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-SubjectPatternValueWidget');
+	activitySearchOptionalInputSetSubjectSubjectChoiceWidget_Choice = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-SubjectSubjectChoiceWidget_Choice');
+	activitySearchOptionalInputSetSubjectSubjectWidget = PcfTextInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchOptionalInputSet-SubjectSubjectWidget');
+	assignedToGroupGroupPickerMenuIcon = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-AssignedToGroup-GroupPickerMenuIcon');
+	assignedToGroupGroupSearchMenuIcon = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-AssignedToGroup-GroupSearchMenuIcon');
+	assignedToUserAssignedToUserUserSearchMenuItem = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-AssignedToUser-AssignedToUserUserSearchMenuItem');
+	assignedToUserAssignedToUserUserSelectMenuItem = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-AssignedToUser-AssignedToUserUserSelectMenuItem');
+	activitySearchRequiredInputSetClaims_ClaimNumber = PcfTextInput('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-Claims_ClaimNumber');
+	createdByCreatedByUserSearchMenuItem = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-CreatedBy-CreatedByUserSearchMenuItem');
+	createdByCreatedByUserSelectMenuItem = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-CreatedBy-CreatedByUserSelectMenuItem');
+	activitySearchRequiredInputSetExternalOwner = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-ExternalOwner');
+	externalOwnerMenuItem_NoneSelected = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-ExternalOwner-MenuItem_NoneSelected');
+	externalOwnerMenuItem_Search = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-ExternalOwner-MenuItem_Search');
+	activitySearchRequiredInputSetIncludeSubGroups = PcfComponent('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-ActivitySearchRequiredInputSet-IncludeSubGroups');
+	activitySearchActivitySearchScreenActivitySearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	activitySearchActivitySearchScreenActivitySearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	activitySearchScreenActivitySearchResultsLV = PcfListView('#ActivitySearch-ActivitySearchScreen-ActivitySearchResultsLV');
+	activitySearchResultsLV_tbActivitySearch_AssignButton = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchResultsLV_tb-ActivitySearch_AssignButton');
+	activitySearchResultsLV_tbActivitySearch_PrintButton = PcfButton('#ActivitySearch-ActivitySearchScreen-ActivitySearchResultsLV_tb-ActivitySearch_PrintButton');
+	activitySearchScreen_msgs = PcfButton('#ActivitySearch-ActivitySearchScreen-_msgs');
+	activitySearchActivitySearch_UpLink = PcfButton('#ActivitySearch-ActivitySearch_UpLink');
+	activitySearch_Paging = PcfButton('#ActivitySearch-_Paging');
+	activitySearch__crumb__ = PcfComponent('#ActivitySearch-__crumb__');
+}

@@ -1,0 +1,40 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class OracleAWRInfo {
+	oracleAWRInfoScreenCapturePeakedBindVariables = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-CapturePeakedBindVariables');
+	oracleAWRInfoScreenCapturePeakedBindVariablesFromAWR = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-CapturePeakedBindVariablesFromAWR');
+	oracleAWRInfoScreenConcurrentBatchProcessAndWorkerAnalysis = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ConcurrentBatchProcessAndWorkerAnalysis');
+	oracleAWRInfoScreenConcurrentHistoryAnalysis = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ConcurrentHistoryAnalysis');
+	oracleAWRInfoScreenConcurrentMessagingAnalysis = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ConcurrentMessagingAnalysis');
+	oracleAWRInfoScreenGenerateCallsToASHScripts = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-GenerateCallsToASHScripts');
+	oracleAWRInfoScreenInMemorySQLMonitorIncludeAllExecutions = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-InMemorySQLMonitorIncludeAllExecutions');
+	oracleAWRInfoScreenIncludeDatabaseStatistics = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-IncludeDatabaseStatistics');
+	oracleAWRInfoScreenIncludeMetadataForInstrumentationTables = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-IncludeMetadataForInstrumentationTables');
+	oracleAWRInfoScreenIncludeNativeOracleAWRReport = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-IncludeNativeOracleAWRReport');
+	oracleAWRInfoScreenOnDiskSQLMonitorIncludeAllExecutions = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-OnDiskSQLMonitorIncludeAllExecutions');
+	oracleAWRInfoScreenOraAWRMessageBar = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-OraAWRMessageBar');
+	oracleAWRInfoScreenPerfDownloadLV = PcfListView('#OracleAWRInfo-OracleAWRInfoScreen-PerfDownloadLV');
+	oracleAWRInfoScreenProbeInMemorySQLMonitor = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ProbeInMemorySQLMonitor');
+	oracleAWRInfoScreenProbeOnDiskSQLMonitor = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ProbeOnDiskSQLMonitor');
+	oracleAWRInfoScreenProbeVDollarTablesFlag = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-ProbeVDollarTablesFlag');
+	oracleAWRInfoScreenSearchForQueriesOnlyInFirstSnapshotFlag = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-SearchForQueriesOnlyInFirstSnapshotFlag');
+	oracleAWRInfoScreenSearchForQueriesOnlyInLastSnapshotFlag = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-SearchForQueriesOnlyInLastSnapshotFlag');
+	oracleAWRInfoScreenSearchForQueriesWithMultiplePlansFlag = PcfCheckBox('#OracleAWRInfo-OracleAWRInfoScreen-SearchForQueriesWithMultiplePlansFlag');
+	oracleAWRInfoScreenbatchProgress = PcfTextInput('#OracleAWRInfo-OracleAWRInfoScreen-batchProgress');
+	oracleAWRLVDescriptionHeader = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-DescriptionHeader');
+	oracleAWRLVSnapshotIDHeader = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-SnapshotIDHeader');
+	oracleAWRLVselectorHeader = PcfTextInput('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-selectorHeader');
+	oracleAWRLVstartuptimeHeader = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-startuptimeHeader');
+	oracleAWRLVtimeHeader = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-timeHeader');
+	oracleAWRLV_ListPaging = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-OracleAWRLV-_ListPaging');
+	orasptbRefreshAWRs = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-orasptb-RefreshAWRs');
+	orasptbTogglePaging = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-snapshotsPanel-orasptb-TogglePaging');
+	oracleAWRInfoScreensubmitBatch = PcfButton('#OracleAWRInfo-OracleAWRInfoScreen-submitBatch');
+	oracleAWRInfoOracleAWRInfo_UpLink = PcfButton('#OracleAWRInfo-OracleAWRInfo_UpLink');
+	oracleAWRInfo_Paging = PcfButton('#OracleAWRInfo-_Paging');
+	oracleAWRInfo__crumb__ = PcfComponent('#OracleAWRInfo-__crumb__');
+}

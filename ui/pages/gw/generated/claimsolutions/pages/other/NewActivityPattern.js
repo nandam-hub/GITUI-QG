@@ -1,0 +1,44 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class NewActivityPattern {
+	activityPatternDetailScreenActivityPatternDetailScreen_DeleteButton = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-ActivityPatternDetailScreen_DeleteButton');
+	adminActivityPatternDVActivityClass = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-ActivityClass');
+	adminActivityPatternDVAutomatedOnly = PcfComponent('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-AutomatedOnly');
+	adminActivityPatternDVAvailableForClosedClaim = PcfComponent('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-AvailableForClosedClaim');
+	adminActivityPatternDVCategory = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Category');
+	adminActivityPatternDVClaimLossType = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-ClaimLossType');
+	adminActivityPatternDVCode = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Code');
+	createDocumentSelectCreateDocument = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-CreateDocument-SelectCreateDocument');
+	adminActivityPatternDVDescription = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Description');
+	newActivityPatternActivityPatternDetailScreenAdminActivityPatternDVEmailTemplateSelectEmailTemplate = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EmailTemplate-SelectEmailTemplate');
+	adminActivityPatternDVEscalationBusCalType = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EscalationBusCalType');
+	adminActivityPatternDVEscalationDays = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EscalationDays');
+	adminActivityPatternDVEscalationHours = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EscalationHours');
+	adminActivityPatternDVEscalationIncludeDays = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EscalationIncludeDays');
+	adminActivityPatternDVEscalationStartPoint = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-EscalationStartPoint');
+	adminActivityPatternDVExternallyOwned = PcfComponent('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-ExternallyOwned');
+	adminActivityPatternDVImportance = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Importance');
+	adminActivityPatternDVMandatory = PcfComponent('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Mandatory');
+	adminActivityPatternDVPriority = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Priority');
+	adminActivityPatternDVRecurring = PcfComponent('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Recurring');
+	adminActivityPatternDVShortSubject = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-ShortSubject');
+	adminActivityPatternDVSubject = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Subject');
+	adminActivityPatternDVTargetBusCalType = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-TargetBusCalType');
+	adminActivityPatternDVTargetDays = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-TargetDays');
+	adminActivityPatternDVTargetHours = PcfTextInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-TargetHours');
+	adminActivityPatternDVTargetIncludeDays = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-TargetIncludeDays');
+	adminActivityPatternDVTargetStartPoint = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-TargetStartPoint');
+	adminActivityPatternDVType = PcfSelectInput('#NewActivityPattern-ActivityPatternDetailScreen-AdminActivityPatternDV-Type');
+	activityPatternDetailScreenCancel = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-Cancel');
+	activityPatternDetailScreenEdit = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-Edit');
+	newActivityPatternActivityPatternDetailScreenLocalizedValuesLocalizedValuesDVLocalizedValuesLV = PcfListView('#NewActivityPattern-ActivityPatternDetailScreen-LocalizedValues-LocalizedValuesDV-LocalizedValuesLV');
+	activityPatternDetailScreenUpdate = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-Update');
+	activityPatternDetailScreen_msgs = PcfButton('#NewActivityPattern-ActivityPatternDetailScreen-_msgs');
+	newActivityPatternNewActivityPattern_UpLink = PcfButton('#NewActivityPattern-NewActivityPattern_UpLink');
+	newActivityPattern_Paging = PcfButton('#NewActivityPattern-_Paging');
+	newActivityPattern__crumb__ = PcfComponent('#NewActivityPattern-__crumb__');
+}

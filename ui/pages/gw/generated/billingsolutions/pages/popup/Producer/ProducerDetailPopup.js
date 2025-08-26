@@ -1,0 +1,46 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ProducerDetailPopup {
+	producerDetailPopupProducerDetailPopup_UpLink = PcfButton('#ProducerDetailPopup-ProducerDetailPopup_UpLink');
+	producerDetailPopupProducerDetailScreenCancel = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-Cancel');
+	producerDetailPopupProducerDetailScreenEdit = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-Edit');
+	producerDetailPopupProducerDetailScreenProducerCodesLV = PcfListView('#ProducerDetailPopup-ProducerDetailScreen-ProducerCodesLV');
+	producerDetailPopupProducerDetailScreenProducerCodesLV_tbAdd = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerCodesLV_tb-Add');
+	producerDetailPopupProducerDetailScreenProducerCodesLV_tbRemove = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerCodesLV_tb-Remove');
+	producerDetailPopupProducerDetailScreenProducerDetailDVAccountRepSelectAccountRep = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-AccountRep-SelectAccountRep');
+	producerDetailPopupProducerDetailScreenProducerDetailDVAddress = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Address');
+	producerDetailPopupProducerDetailScreenProducerDetailDVAdvanceBalance = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-AdvanceBalance');
+	producerDetailPopupProducerDetailScreenProducerDetailDVAgencyBillPlan = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-AgencyBillPlan');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCommissionDayOfMonth = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-CommissionDayOfMonth');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCommissionExpense = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-CommissionExpense');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCommissionPaidYearToDate = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-CommissionPaidYearToDate');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCommissionPayable = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-CommissionPayable');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCommissionReserve = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-CommissionReserve');
+	producerDetailPopupProducerDetailScreenProducerDetailDVCurrency = PcfSelectInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Currency');
+	producerDetailPopupProducerDetailScreenProducerDetailDVDefaultPaymentInstrumentCreateNewPaymentInstrument = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-DefaultPaymentInstrument-CreateNewPaymentInstrument');
+	producerDetailPopupProducerDetailScreenProducerDetailDVEmail = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Email');
+	producerDetailPopupProducerDetailScreenProducerDetailDVHoldStatementInputSetProducerHoldStatementInputSetHoldStatement = PcfComponent('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-HoldStatementInputSet-ProducerHoldStatementInputSet-HoldStatement');
+	producerDetailPopupProducerDetailScreenProducerDetailDVHoldStatementInputSetProducerHoldStatementInputSetStatementHoldNegativeLimit = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-HoldStatementInputSet-ProducerHoldStatementInputSet-StatementHoldNegativeLimit');
+	producerDetailPopupProducerDetailScreenProducerDetailDVHoldStatementInputSetProducerHoldStatementInputSetStatementHoldPositiveLimit = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-HoldStatementInputSet-ProducerHoldStatementInputSet-StatementHoldPositiveLimit');
+	producerDetailPopupProducerDetailScreenProducerDetailDVName = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Name');
+	producerDetailPopupProducerDetailScreenProducerDetailDVPeriodicity = PcfSelectInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Periodicity');
+	producerDetailPopupProducerDetailScreenProducerDetailDVPhone = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Phone');
+	producerDetailPopupProducerDetailScreenProducerDetailDVPrimaryContact = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-PrimaryContact');
+	producerDetailPopupProducerDetailScreenProducerDetailDVSecurityZone = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-SecurityZone');
+	producerDetailPopupProducerDetailScreenProducerDetailDVSuspenseAmount = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-SuspenseAmount');
+	producerDetailPopupProducerDetailScreenProducerDetailDVTier = PcfSelectInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-Tier');
+	producerDetailPopupProducerDetailScreenProducerDetailDVUnappliedAmount = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-UnappliedAmount');
+	producerDetailPopupProducerDetailScreenProducerDetailDVWriteoffExpense = PcfTextInput('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetailDV-WriteoffExpense');
+	producerDetailPopupProducerDetailScreenProducerDetail_ArchiveWarningAlertBar = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetail_ArchiveWarningAlertBar');
+	producerDetailPopupProducerDetailScreenProducerDetail_ArchiveWarningAlertBarCloseBtn = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetail_ArchiveWarningAlertBar-CloseBtn');
+	producerDetailPopupProducerDetailScreenProducerDetail_TroubleTicketAlertAlertBar = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetail_TroubleTicketAlertAlertBar');
+	producerDetailPopupProducerDetailScreenProducerDetail_TroubleTicketAlertAlertBarCloseBtn = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-ProducerDetail_TroubleTicketAlertAlertBar-CloseBtn');
+	producerDetailPopupProducerDetailScreenUpdate = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-Update');
+	producerDetailPopupProducerDetailScreen_msgs = PcfButton('#ProducerDetailPopup-ProducerDetailScreen-_msgs');
+	producerDetailPopup_Paging = PcfButton('#ProducerDetailPopup-_Paging');
+	producerDetailPopup__crumb__ = PcfComponent('#ProducerDetailPopup-__crumb__');
+}

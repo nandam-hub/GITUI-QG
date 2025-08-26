@@ -1,0 +1,34 @@
+name: GT-UIAlpha
+group: com.guidewire.gtui
+version: 2021.11.0-Patch3
+summary: Guidewire UI Testing Framework
+homepage: https://stash.guidewire.com/projects/PO/repos/gt-ui-skeleton/browse
+maintainer:
+  name: Guidewire UI Testing Framework
+  email: portfolio-ohio@guidewire.com
+compatible_products:
+  cc:
+    from: 50.2.1
+    to: 50.4.0
+  pc:
+    from: 50.2.1
+    to: 50.4.0
+  bc:
+    from: 50.2.1
+    to: 50.4.0
+  ab:
+    from: 50.2.1
+    to: 50.4.0
+vars:
+  destination_root_dir: gt-ui
+
+
+install:
+  - name: Copy all files to be packaged
+    copy:
+      src: .
+      dest: ${destination_root_dir}
+      # ToDo: Not sure we need this (gpm_config is excluded in packageFilesForGpm)
+      # filter:
+      #   exclude:
+      #   - @deploymentDir@

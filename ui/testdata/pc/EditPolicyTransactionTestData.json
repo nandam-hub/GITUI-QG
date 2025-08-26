@@ -1,0 +1,11 @@
+{
+    "defaultDataSet": {
+        "GoCommercialPropertyLine": "For any one tree, shrub, or plant"
+    },
+    "editPolicy_01": {
+        "Coverage": {
+            "ForAnyOneTreeShrubOrPlant": "check"
+        },
+        "UpdatedCoverage": "For any one tree, shrub, or plant"
+    }
+}

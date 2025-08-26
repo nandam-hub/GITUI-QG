@@ -1,0 +1,7 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+gradlew text eol=crlf
+gradlew.bat text eol=crlf
+gradle/wrapper/gradle-wrapper.jar binary
+gradle/wrapper/gradle-wrapper.properties text eol=lf

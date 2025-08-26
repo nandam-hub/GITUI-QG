@@ -1,0 +1,26 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class APDManageClauseCategoriesPopup {
+	aPDManageClauseCategoriesPopupAPDManageClauseCategoriesPopup_UpLink = PcfButton('#APDManageClauseCategoriesPopup-APDManageClauseCategoriesPopup_UpLink');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetCodeIdentifier = PcfTextInput('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-CodeIdentifier');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetDescription = PcfTextInput('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-Description');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetItemised = PcfComponent('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-Itemised');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetName = PcfTextInput('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-Name');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetSectionType = PcfSelectInput('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-SectionType');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenAPDClauseCategoryInputSetUsedOnClauses = PcfTextInput('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-APDClauseCategoryInputSet-UsedOnClauses');
+	clauseCategoriesAPDClauseCategoryLV = PcfListView('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV');
+	aPDClauseCategoryLV_tbAdd = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV_tb-Add');
+	aPDClauseCategoryLV_tbCancel = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV_tb-Cancel');
+	aPDClauseCategoryLV_tbEdit = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV_tb-Edit');
+	aPDClauseCategoryLV_tbRemove = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV_tb-Remove');
+	aPDClauseCategoryLV_tbUpdate = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategories-APDClauseCategoryLV_tb-Update');
+	listAndDetailClausecategoriesScreenClauseCategoryDetailsTab = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-ClauseCategoryDetailsTab');
+	aPDManageClauseCategoriesPopupListAndDetailClausecategoriesScreenLocalizedFieldsLocalizedValuesDVLocalizedValuesLV = PcfListView('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-LocalizedFields-LocalizedValuesDV-LocalizedValuesLV');
+	listAndDetailClausecategoriesScreen_msgs = PcfButton('#APDManageClauseCategoriesPopup-ListAndDetailClausecategoriesScreen-_msgs');
+	aPDManageClauseCategoriesPopup_Paging = PcfButton('#APDManageClauseCategoriesPopup-_Paging');
+	aPDManageClauseCategoriesPopup__crumb__ = PcfComponent('#APDManageClauseCategoriesPopup-__crumb__');
+}

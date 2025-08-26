@@ -1,0 +1,19 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class AgencyBillSuspenseItems {
+	agencyBillSuspenseItemsScreenAgencyBillSuspensePaymentItemsCardTab = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-AgencyBillSuspensePaymentItemsCardTab');
+	agencyBillSuspenseItemsScreenAgencyBillSuspensePromiseItemsCardTab = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-AgencyBillSuspensePromiseItemsCardTab');
+	releaseToolbarReleaseItems = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PaymentItemsPanel-AgencyBillSuspenseItemPanelSet-ReleaseToolbar-ReleaseItems');
+	releaseToolbarStatusFilter = PcfSelectInput('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PaymentItemsPanel-AgencyBillSuspenseItemPanelSet-ReleaseToolbar-StatusFilter');
+	agencyBillSuspenseItemPanelSetSuspenseItemsLV = PcfListView('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PaymentItemsPanel-AgencyBillSuspenseItemPanelSet-SuspenseItemsLV');
+	agencyBillSuspenseItemsAgencyBillSuspenseItemsScreenPromiseItemsPanelAgencyBillSuspenseItemPanelSetReleaseToolbarReleaseItems = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PromiseItemsPanel-AgencyBillSuspenseItemPanelSet-ReleaseToolbar-ReleaseItems');
+	agencyBillSuspenseItemsAgencyBillSuspenseItemsScreenPromiseItemsPanelAgencyBillSuspenseItemPanelSetReleaseToolbarStatusFilter = PcfSelectInput('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PromiseItemsPanel-AgencyBillSuspenseItemPanelSet-ReleaseToolbar-StatusFilter');
+	agencyBillSuspenseItemsAgencyBillSuspenseItemsScreenPromiseItemsPanelAgencyBillSuspenseItemPanelSetSuspenseItemsLV = PcfListView('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-PromiseItemsPanel-AgencyBillSuspenseItemPanelSet-SuspenseItemsLV');
+	agencyBillSuspenseItemsScreen_msgs = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItemsScreen-_msgs');
+	agencyBillSuspenseItemsAgencyBillSuspenseItems_UpLink = PcfButton('#AgencyBillSuspenseItems-AgencyBillSuspenseItems_UpLink');
+	agencyBillSuspenseItems_Paging = PcfButton('#AgencyBillSuspenseItems-_Paging');
+	agencyBillSuspenseItems__crumb__ = PcfComponent('#AgencyBillSuspenseItems-__crumb__');
+}

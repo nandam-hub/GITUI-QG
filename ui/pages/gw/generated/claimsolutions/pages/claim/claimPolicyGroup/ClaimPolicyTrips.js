@@ -1,0 +1,27 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimPolicyTrips {
+	claimPolicyTripsSegmentsScreenAdd = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-Add');
+	claimPolicyTripsSegmentsScreenCancel = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-Cancel');
+	claimPolicyTripsSegmentsScreenClaimPolicyTrip_DeverifyPolicy = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-ClaimPolicyTrip_DeverifyPolicy');
+	claimPolicyTripsSegmentsScreenClaimPolicyTrip_EditButton = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-ClaimPolicyTrip_EditButton');
+	claimPolicyTripsSegmentsScreenEdit = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-Edit');
+	claimPolicyTripsSegmentsScreenRemove = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-Remove');
+	claimPolicyTripsClaimPolicyTripsSegmentsScreenTripLDVPolicyTripCoverageLDVPolicyTripCoverageLDVClaimPolicyCovTermsCVClaimPolicyCovTermsLV = PcfListView('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV');
+	claimPolicyTripsClaimPolicyTripsSegmentsScreenTripLDVPolicyTripCoverageLDVPolicyTripCoverageLDVClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbAdd = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-Add');
+	claimPolicyTripsClaimPolicyTripsSegmentsScreenTripLDVPolicyTripCoverageLDVPolicyTripCoverageLDVClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbAddCovTerm = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-AddCovTerm');
+	claimPolicyTripsClaimPolicyTripsSegmentsScreenTripLDVPolicyTripCoverageLDVPolicyTripCoverageLDVClaimPolicyCovTermsCVClaimPolicyCovTermsLV_tbRemove = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-ClaimPolicyCovTermsCV-ClaimPolicyCovTermsLV_tb-Remove');
+	claimPolicyTripsClaimPolicyTripsSegmentsScreenTripLDVPolicyTripCoverageLDVPolicyTripCoverageLDVClaimPolicyCovTermsCVCovTermsTab = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-ClaimPolicyCovTermsCV-CovTermsTab');
+	policyTripCoverageLDVEditableTripCoveragesLV = PcfListView('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-EditableTripCoveragesLV');
+	editableTripCoveragesLV_tbAdd = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-EditableTripCoveragesLV_tb-Add');
+	editableTripCoveragesLV_tbRemove = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-PolicyTripCoverageLDV-PolicyTripCoverageLDV-EditableTripCoveragesLV_tb-Remove');
+	tripLDVTripRULV = PcfListView('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-TripRULV');
+	tripLDVtrip_coveragesTab = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-TripLDV-trip_coveragesTab');
+	claimPolicyTripsSegmentsScreenUpdate = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-Update');
+	claimPolicyTripsSegmentsScreen_msgs = PcfButton('#ClaimPolicyTrips-ClaimPolicyTripsSegmentsScreen-_msgs');
+	claimPolicyTripsClaimPolicyTrips_UpLink = PcfButton('#ClaimPolicyTrips-ClaimPolicyTrips_UpLink');
+	claimPolicyTrips_Paging = PcfButton('#ClaimPolicyTrips-_Paging');
+	claimPolicyTrips__crumb__ = PcfComponent('#ClaimPolicyTrips-__crumb__');
+}

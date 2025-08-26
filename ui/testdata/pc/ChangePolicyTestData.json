@@ -1,0 +1,15 @@
+{
+    "defaultDataSet": {
+        "Address1": "200,STATUE ROAD",
+        "City":"BOM",
+        "State": "Texas",
+        "ZIPCode": "12345-6789",
+        "AddressType": "Business"
+    },
+    "changePolicy_01": {
+        "Address1": "200,STATUE ROAD",
+        "City":"BOM",
+        "State": "Texas",
+        "ZIPCode":"12345-6789",
+        "AddressType":"Business"
+        }}

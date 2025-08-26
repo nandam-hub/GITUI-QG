@@ -1,0 +1,15 @@
+{
+    "defaultDataSet": {},
+    "evaluatioData_01": {
+        "Name": "Abraham",
+        "RelatedTo": "Claim",
+        "Hospital_Value": "20",
+        "TreatingPhysician": "50",
+        "MedicalEquipment": "150",
+        "Diagnostic": "200",
+        "Total": "1000",
+        "ClmtOutOfPocket": "150",
+        "Other": "100",
+        "TotalValue": "$1,000"
+    }
+}

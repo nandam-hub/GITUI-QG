@@ -1,0 +1,4 @@
+{
+  "requiredTemplateParameters": ["userName", "roles", "groups", "useProducerCodeSecurity"],
+  "data": "enter policy user payload details."
+}

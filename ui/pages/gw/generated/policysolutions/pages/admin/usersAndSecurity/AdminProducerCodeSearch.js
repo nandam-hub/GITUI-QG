@@ -1,0 +1,42 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class AdminProducerCodeSearch {
+	adminProducerCodeSearchScreenAdminProducerCodeSearchLV = PcfListView('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-AdminProducerCodeSearchLV');
+	globalAddressInputSetAddressLine1 = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine1');
+	globalAddressInputSetAddressLine1Kanji = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine1Kanji');
+	globalAddressInputSetAddressLine2 = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine2');
+	globalAddressInputSetAddressLine2Kanji = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine2Kanji');
+	globalAddressInputSetAddressSummary = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressSummary');
+	globalAddressInputSetCity = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-City');
+	globalAddressInputSetCityKanji = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CityKanji');
+	globalAddressInputSetCountry = PcfSelectInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-Country');
+	globalAddressInputSetPostalCode = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-PostalCode');
+	postalCodeAutoFillIcon = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-PostalCode-AutoFillIcon');
+	globalAddressInputSetState = PcfSelectInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-State');
+	globalAddressInputSetAddressLine3 = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-AddressLine3');
+	globalAddressInputSetCEDEX = PcfCheckBox('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CEDEX');
+	globalAddressInputSetCEDEXBureau = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-CEDEXBureau');
+	cityAutoFillIcon = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-City-AutoFillIcon');
+	globalAddressInputSetCounty = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-AddressOwnerAddressInputSet-globalAddressContainer-GlobalAddressInputSet-County');
+	producerCodeSearchDVBranchCode = PcfSelectInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-BranchCode');
+	producerCodeSearchDVCode = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-Code');
+	producerCodeSearchDVCurrency = PcfSelectInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-Currency');
+	producerCodeSearchDVDescription = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-Description');
+	producerCodeSearchDVMissingPrefUW = PcfCheckBox('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-MissingPrefUW');
+	adminProducerCodeSearchAdminProducerCodeSearchScreenProducerCodeSearchDVOrganizationSelectOrganization = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-Organization-SelectOrganization');
+	producerCodeSearchDVParentCode = PcfTextInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-ParentCode');
+	prefUWUserBrowseMenuItem = PcfComponent('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-PrefUW-UserBrowseMenuItem');
+	adminProducerCodeSearchAdminProducerCodeSearchScreenProducerCodeSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	adminProducerCodeSearchAdminProducerCodeSearchScreenProducerCodeSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	producerCodeSearchDVStatus = PcfSelectInput('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-Status');
+	userUserBrowseMenuItem = PcfComponent('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-ProducerCodeSearchDV-User-UserBrowseMenuItem');
+	adminProducerCodeSearchScreen_msgs = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearchScreen-_msgs');
+	adminProducerCodeSearchAdminProducerCodeSearch_UpLink = PcfButton('#AdminProducerCodeSearch-AdminProducerCodeSearch_UpLink');
+	adminProducerCodeSearch_Paging = PcfButton('#AdminProducerCodeSearch-_Paging');
+	adminProducerCodeSearch__crumb__ = PcfComponent('#AdminProducerCodeSearch-__crumb__');
+}

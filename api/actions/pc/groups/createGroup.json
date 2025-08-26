@@ -1,0 +1,4 @@
+{
+  "requiredTemplateParameters": ["groupName","organization","producerCodes"],
+  "data": "enter groups payload details."
+}

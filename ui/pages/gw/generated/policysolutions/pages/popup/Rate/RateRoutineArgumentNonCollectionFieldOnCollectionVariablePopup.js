@@ -1,0 +1,15 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup {
+	dataTypeFilterToolbarRateRoutineInstructionTextFilter = PcfTextInput('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-DataTypeFilterToolbar-RateRoutineInstructionTextFilter');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopupRateRoutineArgumentFieldOnIteratorLV = PcfListView('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-RateRoutineArgumentFieldOnIteratorLV');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopupRateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup_UpLink = PcfButton('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup_UpLink');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopupRateRoutineFunctionEditCancel = PcfButton('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-RateRoutineFunctionEditCancel');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopupRateRoutineLoopVariableEditUpdate = PcfButton('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-RateRoutineLoopVariableEditUpdate');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup_Paging = PcfButton('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-_Paging');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup__crumb__ = PcfComponent('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-__crumb__');
+	rateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup_msgs = PcfButton('#RateRoutineArgumentNonCollectionFieldOnCollectionVariablePopup-_msgs');
+}

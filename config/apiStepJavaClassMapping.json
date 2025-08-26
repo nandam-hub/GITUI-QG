@@ -1,0 +1,8 @@
+[
+  {
+    "application": "policycenter",
+    "moduleName": "policysolutions",
+    "className": "pc.PolicyAdminData",
+    "methodName": "loadAdminData"
+  }
+]

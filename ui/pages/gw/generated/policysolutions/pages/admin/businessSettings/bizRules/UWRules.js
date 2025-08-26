@@ -1,0 +1,47 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class UWRules {
+	createRuleToolbarButtonSetAdd = PcfButton('#UWRules-CreateRuleToolbarButtonSet-Add');
+	createRuleToolbarButtonSetClone = PcfButton('#UWRules-CreateRuleToolbarButtonSet-Clone');
+	deployRulesToolbarButtonSetDeployButton = PcfButton('#UWRules-DeployRulesToolbarButtonSet-DeployButton');
+	deployButtonDeployAll = PcfButton('#UWRules-DeployRulesToolbarButtonSet-DeployButton-DeployAll');
+	deployButtonDeploySelected = PcfButton('#UWRules-DeployRulesToolbarButtonSet-DeployButton-DeploySelected');
+	emptyDV_tbClear = PcfButton('#UWRules-EmptyDV_tb-Clear');
+	emptyDV_tbFilter = PcfButton('#UWRules-EmptyDV_tb-Filter');
+	uWRulesFilteredInput = PcfTextInput('#UWRules-FilteredInput');
+	uWRulesMoreButton = PcfButton('#UWRules-MoreButton');
+	moreButtonRuleListMoreButtonMenuItemSet = PcfComponent('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet');
+	ruleListMoreButtonMenuItemSetDisableSelectedRules = PcfButton('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet-DisableSelectedRules');
+	ruleListMoreButtonMenuItemSetEnableSelectedRules = PcfButton('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet-EnableSelectedRules');
+	ruleListMoreButtonMenuItemSetExportAll = PcfButton('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet-ExportAll');
+	ruleListMoreButtonMenuItemSetExportSelected = PcfButton('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet-ExportSelected');
+	ruleListMoreButtonMenuItemSetImport = PcfButton('#UWRules-MoreButton-RuleListMoreButtonMenuItemSet-Import');
+	uWRulesPCSelectedRulesAlertBar = PcfButton('#UWRules-PCSelectedRulesAlertBar');
+	pCSelectedRulesAlertBarCloseBtn = PcfButton('#UWRules-PCSelectedRulesAlertBar-CloseBtn');
+	uWRulesPendingImportAlert = PcfButton('#UWRules-PendingImportAlert');
+	pendingImportAlertCloseBtn = PcfButton('#UWRules-PendingImportAlert-CloseBtn');
+	uWRulesRollingUpgradeAlert = PcfButton('#UWRules-RollingUpgradeAlert');
+	rollingUpgradeAlertCloseBtn = PcfButton('#UWRules-RollingUpgradeAlert-CloseBtn');
+	uWRulesRulesLV = PcfListView('#UWRules-RulesLV');
+	uWRuleFilterCriteriaDVAvailability = PcfSelectInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-Availability');
+	uWRuleFilterCriteriaDVJurisdiction = PcfSelectInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-Jurisdiction');
+	uWRuleFilterCriteriaDVPolicyLine = PcfSelectInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-PolicyLine');
+	uWRuleFilterCriteriaDVPolicyTransaction = PcfSelectInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-PolicyTransaction');
+	uWRuleFilterCriteriaDVStatus = PcfSelectInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-Status');
+	uWRuleFilterCriteriaDVTextFilter = PcfTextInput('#UWRules-SearchCriteriaPanelRef-UWRuleFilterCriteriaDV-TextFilter');
+	uWRulesShowHideFilter = PcfButton('#UWRules-ShowHideFilter');
+	uWRulesSyncUwIssueTypesFromCloud = PcfButton('#UWRules-SyncUwIssueTypesFromCloud');
+	uWRulesUWRules_UpLink = PcfButton('#UWRules-UWRules_UpLink');
+	uWRulesValidationProcessFailedAlert = PcfButton('#UWRules-ValidationProcessFailedAlert');
+	validationProcessFailedAlertCloseBtn = PcfButton('#UWRules-ValidationProcessFailedAlert-CloseBtn');
+	uWRulesValidationProgressAlert = PcfButton('#UWRules-ValidationProgressAlert');
+	validationProgressAlertCloseBtn = PcfButton('#UWRules-ValidationProgressAlert-CloseBtn');
+	uWRulesValidationStatusToolbarInput = PcfTextInput('#UWRules-ValidationStatusToolbarInput');
+	uWRules_Paging = PcfButton('#UWRules-_Paging');
+	uWRules__crumb__ = PcfComponent('#UWRules-__crumb__');
+	uWRules_msgs = PcfButton('#UWRules-_msgs');
+}

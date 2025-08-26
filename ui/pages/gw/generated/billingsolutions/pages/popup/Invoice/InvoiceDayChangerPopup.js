@@ -1,0 +1,31 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class InvoiceDayChangerPopup {
+	invoiceDayChangerPopupCancel = PcfButton('#InvoiceDayChangerPopup-Cancel');
+	invoiceDayChangerPopupEdit = PcfButton('#InvoiceDayChangerPopup-Edit');
+	invoiceDayChangerPopupInvoiceDayChangerPopup_UpLink = PcfButton('#InvoiceDayChangerPopup-InvoiceDayChangerPopup_UpLink');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountInvoiceAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountInvoiceAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountSecondInvoiceAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountSecondInvoiceAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverrideInvoiceAnchorDate = PcfComponent('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverrideInvoiceAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingSecondAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingSecondAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountEveryOtherWeekInvoiceAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountEveryOtherWeekInvoiceAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverrideInvoiceDayOfMonth = PcfComponent('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverrideInvoiceDayOfMonth');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingEveryOtherWeekInvoiceAnchorDate = PcfDateValueInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingEveryOtherWeekInvoiceAnchorDate');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountInvoiceDayOfWeek = PcfSelectInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountInvoiceDayOfWeek');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingInvoiceDayOfWeek = PcfSelectInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingInvoiceDayOfWeek');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountInvoiceDayOfMonth = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountInvoiceDayOfMonth');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingInvoiceDayOfMonth = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingInvoiceDayOfMonth');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetAccountInvoiceDays = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-AccountInvoiceDays');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingFirstInvoiceDayOfMonth = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingFirstInvoiceDayOfMonth');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingInvoiceDays = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingInvoiceDays');
+	invoiceDayChangerPopupInvoiceStreamAnchorDateInputSetOverridingSecondInvoiceDayOfMonth = PcfTextInput('#InvoiceDayChangerPopup-InvoiceStreamAnchorDateInputSet-OverridingSecondInvoiceDayOfMonth');
+	invoiceDayChangerPopupUpdate = PcfButton('#InvoiceDayChangerPopup-Update');
+	invoiceDayChangerPopup_Paging = PcfButton('#InvoiceDayChangerPopup-_Paging');
+	invoiceDayChangerPopup__crumb__ = PcfComponent('#InvoiceDayChangerPopup-__crumb__');
+	invoiceDayChangerPopup_msgs = PcfButton('#InvoiceDayChangerPopup-_msgs');
+}

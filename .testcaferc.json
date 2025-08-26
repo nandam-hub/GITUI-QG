@@ -1,0 +1,29 @@
+{
+  "quarantineMode": false,
+  "concurrency": 1,
+  "selectorTimeout": 30000,
+  "assertionTimeout": 20000,
+  "pageLoadTimeout": 30000,
+  "disablePageCaching": true,
+  "debugOnFail": false,
+  "speed": 1,
+  "cache": false,
+  "disableMultipleWindows": false,
+  "retryTestPages": false,
+  "ajaxRequestTimeout": 120000,
+  "pageRequestTimeout": 3000,
+  "browserInitTimeout": 120000,
+  "disableScreenshots": false,
+  "debugMode": false,
+  "stopOnFirstFail": false,
+  "skipJsErrors": true,
+  "skipUncaughtErrors": true,
+  "clientScripts":[{"module":"axe-core/axe.min.js"}],
+  "browsers": "chrome",
+  "port1": 1337,
+  "port2": 1338,
+  "screenshots": {
+    "takeOnFails": true
+  },
+  "hostname": "localhost"
+}

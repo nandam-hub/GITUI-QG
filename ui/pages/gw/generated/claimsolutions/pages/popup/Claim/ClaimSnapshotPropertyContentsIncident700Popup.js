@@ -1,0 +1,18 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimSnapshotPropertyContentsIncident700Popup {
+	claimSnapshotPropertyContentsIncident700PopupClaimSnapshotIncidentRelatedExposuresPanelSetClaimOrderHeader = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-ClaimSnapshotIncidentRelatedExposuresPanelSet-ClaimOrderHeader');
+	claimSnapshotPropertyContentsIncident700PopupClaimSnapshotIncidentRelatedExposuresPanelSetFinancialsHeader = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-ClaimSnapshotIncidentRelatedExposuresPanelSet-FinancialsHeader');
+	claimSnapshotPropertyContentsIncident700PopupClaimSnapshotIncidentRelatedExposuresPanelSetOverviewHeader = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-ClaimSnapshotIncidentRelatedExposuresPanelSet-OverviewHeader');
+	claimSnapshotPropertyContentsIncident700PopupClaimSnapshotIncidentRelatedExposuresPanelSet_ListPaging = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-ClaimSnapshotIncidentRelatedExposuresPanelSet-_ListPaging');
+	claimSnapshotPropertyContentsIncident700PopupClaimSnapshotPropertyContentsIncident700Popup_UpLink = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-ClaimSnapshotPropertyContentsIncident700Popup_UpLink');
+	claimSnapshotPropertyContentsIncident700PopupDescription = PcfTextInput('#ClaimSnapshotPropertyContentsIncident700Popup-Description');
+	claimSnapshotPropertyContentsIncident700PopupPropertyContentsLineItemsLV = PcfListView('#ClaimSnapshotPropertyContentsIncident700Popup-PropertyContentsLineItemsLV');
+	claimSnapshotPropertyContentsIncident700PopupPropertyContentsScheduledItemsLV = PcfListView('#ClaimSnapshotPropertyContentsIncident700Popup-PropertyContentsScheduledItemsLV');
+	claimSnapshotPropertyContentsIncident700Popup_Paging = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-_Paging');
+	claimSnapshotPropertyContentsIncident700Popup__crumb__ = PcfComponent('#ClaimSnapshotPropertyContentsIncident700Popup-__crumb__');
+	claimSnapshotPropertyContentsIncident700Popup_msgs = PcfButton('#ClaimSnapshotPropertyContentsIncident700Popup-_msgs');
+}

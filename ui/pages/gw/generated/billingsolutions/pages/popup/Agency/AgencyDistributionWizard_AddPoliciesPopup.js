@@ -1,0 +1,33 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class AgencyDistributionWizard_AddPoliciesPopup {
+	agencyDistributionWizard_AddPoliciesPopupAgencyDistributionWizard_AddPoliciesPopup_UpLink = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-AgencyDistributionWizard_AddPoliciesPopup_UpLink');
+	specificPoliciesPanelSetAccountNumberHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-AccountNumberHeader');
+	specificPoliciesPanelSetAddPoliciesWithBilledAndDueItems = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-AddPoliciesWithBilledAndDueItems');
+	specificPoliciesPanelSetAllPoliciesWithAllItems = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-AllPoliciesWithAllItems');
+	specificPoliciesPanelSetEffectiveDateHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-EffectiveDateHeader');
+	specificPoliciesPanelSetExpirationDateHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-ExpirationDateHeader');
+	agencyDistributionWizard_AddPoliciesPopupSpecificPoliciesPanelSetOwnerAccountSelectOwnerAccount = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-OwnerAccount-SelectOwnerAccount');
+	agencyDistributionWizard_AddPoliciesPopupSpecificPoliciesPanelSetPayerInputSetPayerAccountSelectPayerAccount = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PayerInputSet-PayerAccount-SelectPayerAccount');
+	payerInputSetPayerProducer = PcfTextInput('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PayerInputSet-PayerProducer');
+	specificPoliciesPanelSetPayerType = PcfSelectInput('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PayerType');
+	specificPoliciesPanelSetPaymentStatusHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PaymentStatusHeader');
+	specificPoliciesPanelSetPolicyNumber = PcfTextInput('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PolicyNumber');
+	specificPoliciesPanelSetPolicyNumberHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-PolicyNumberHeader');
+	specificPoliciesPanelSetPrefill = PcfSelectInput('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-Prefill');
+	specificPoliciesPanelSetProducerCodeHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-ProducerCodeHeader');
+	specificPoliciesPanelSetProducerHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-ProducerHeader');
+	specificPoliciesPanelSetProduct = PcfSelectInput('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-Product');
+	specificPoliciesPanelSetProductHeader = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-ProductHeader');
+	agencyDistributionWizard_AddPoliciesPopupSpecificPoliciesPanelSetSearchLinksInputSetReset = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-SearchLinksInputSet-Reset');
+	agencyDistributionWizard_AddPoliciesPopupSpecificPoliciesPanelSetSearchLinksInputSetSearch = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-SearchLinksInputSet-Search');
+	specificPoliciesPanelSetSelectPolicies = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-SelectPolicies');
+	specificPoliciesPanelSet_ListPaging = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-_ListPaging');
+	specificPoliciesPanelSetcancel = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-SpecificPoliciesPanelSet-cancel');
+	agencyDistributionWizard_AddPoliciesPopup_Paging = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-_Paging');
+	agencyDistributionWizard_AddPoliciesPopup__crumb__ = PcfComponent('#AgencyDistributionWizard_AddPoliciesPopup-__crumb__');
+	agencyDistributionWizard_AddPoliciesPopup_msgs = PcfButton('#AgencyDistributionWizard_AddPoliciesPopup-_msgs');
+}

@@ -1,0 +1,6 @@
+rootProject.name = 'gt-framework'
+
+include 'behavior'
+include 'api'
+include 'ui'
+include 'load'

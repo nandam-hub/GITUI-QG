@@ -1,0 +1,26 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class OutgoingProducerPaymentSearch {
+	outgoingProducerPaymentSearchDVCheckNumberCriterion = PcfTextInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-CheckNumberCriterion');
+	outgoingProducerPaymentSearchDVCurrencyCriterion = PcfSelectInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-CurrencyCriterion');
+	outgoingProducerPaymentSearchDVEarliestIssueDateCriterion = PcfDateValueInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-EarliestIssueDateCriterion');
+	outgoingProducerPaymentSearchDVLatestIssueDateCriterion = PcfDateValueInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-LatestIssueDateCriterion');
+	outgoingProducerPaymentSearchDVMaxAmountCriterion = PcfTextInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-MaxAmountCriterion');
+	outgoingProducerPaymentSearchDVMethodCriterion = PcfSelectInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-MethodCriterion');
+	outgoingProducerPaymentSearchDVMinAmountCriterion = PcfTextInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-MinAmountCriterion');
+	payeeCriterionSelectPayeeCriterion = PcfButton('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-PayeeCriterion-SelectPayeeCriterion');
+	outgoingProducerPaymentSearchOutgoingProducerPaymentSearchScreenOutgoingProducerPaymentSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	outgoingProducerPaymentSearchOutgoingProducerPaymentSearchScreenOutgoingProducerPaymentSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	outgoingProducerPaymentSearchDVStatusCriterion = PcfSelectInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-StatusCriterion');
+	outgoingProducerPaymentSearchDVTokenCriterion = PcfTextInput('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchDV-TokenCriterion');
+	outgoingProducerPaymentSearchScreenOutgoingProducerPaymentSearchResultsLV = PcfListView('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-OutgoingProducerPaymentSearchResultsLV');
+	outgoingProducerPaymentSearchScreen_msgs = PcfButton('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearchScreen-_msgs');
+	outgoingProducerPaymentSearchOutgoingProducerPaymentSearch_UpLink = PcfButton('#OutgoingProducerPaymentSearch-OutgoingProducerPaymentSearch_UpLink');
+	outgoingProducerPaymentSearch_Paging = PcfButton('#OutgoingProducerPaymentSearch-_Paging');
+	outgoingProducerPaymentSearch__crumb__ = PcfComponent('#OutgoingProducerPaymentSearch-__crumb__');
+}

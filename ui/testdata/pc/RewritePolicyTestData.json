@@ -1,0 +1,10 @@
+{
+    "defaultDataSet": {
+        "Source": "Insured",
+        "Reason": "Insured's request - (finance co. nonpay)"
+    },
+    "rewritePolicy_01": {
+        "Source": "Insured",
+        "Reason": "Insured's request - (finance co. nonpay)"
+    }
+}

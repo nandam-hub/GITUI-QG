@@ -1,0 +1,41 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class NewProgramPage {
+	newProgramPageNewProgramPage_UpLink = PcfButton('#NewProgramPage-NewProgramPage_UpLink');
+	aggregateTreatiesLV = PcfListView('#NewProgramPage-ProgramScreen-Aggregate-TreatiesLV');
+	treatiesLV_tbAdd = PcfButton('#NewProgramPage-ProgramScreen-Aggregate-TreatiesLV_tb-Add');
+	treatiesLV_tbRemove = PcfButton('#NewProgramPage-ProgramScreen-Aggregate-TreatiesLV_tb-Remove');
+	programScreenAppliesToTab = PcfButton('#NewProgramPage-ProgramScreen-AppliesToTab');
+	programScreenCancel = PcfButton('#NewProgramPage-ProgramScreen-Cancel');
+	programScreenDeleteButton = PcfButton('#NewProgramPage-ProgramScreen-DeleteButton');
+	programScreenEdit = PcfButton('#NewProgramPage-ProgramScreen-Edit');
+	newProgramPageProgramScreenLocalizedValuesDVLocalizedValuesLV = PcfListView('#NewProgramPage-ProgramScreen-LocalizedValuesDV-LocalizedValuesLV');
+	programScreenMakeActiveButton = PcfButton('#NewProgramPage-ProgramScreen-MakeActiveButton');
+	perRiskTreatiesLV = PcfListView('#NewProgramPage-ProgramScreen-PerRisk-TreatiesLV');
+	newProgramPageProgramScreenPerRiskTreatiesLV_tbAdd = PcfButton('#NewProgramPage-ProgramScreen-PerRisk-TreatiesLV_tb-Add');
+	newProgramPageProgramScreenPerRiskTreatiesLV_tbRemove = PcfButton('#NewProgramPage-ProgramScreen-PerRisk-TreatiesLV_tb-Remove');
+	programDVCurrency = PcfSelectInput('#NewProgramPage-ProgramScreen-ProgramDV-Currency');
+	programDVEffectiveDate = PcfDateValueInput('#NewProgramPage-ProgramScreen-ProgramDV-EffectiveDate');
+	programDVExpirationDate = PcfDateValueInput('#NewProgramPage-ProgramScreen-ProgramDV-ExpirationDate');
+	programDVImpliedRetention = PcfTextInput('#NewProgramPage-ProgramScreen-ProgramDV-ImpliedRetention');
+	programDVName = PcfTextInput('#NewProgramPage-ProgramScreen-ProgramDV-Name');
+	programDVRecalcImpliedNetRetention = PcfButton('#NewProgramPage-ProgramScreen-ProgramDV-RecalcImpliedNetRetention');
+	programDVSingleRiskMaximum = PcfTextInput('#NewProgramPage-ProgramScreen-ProgramDV-SingleRiskMaximum');
+	programDVStatus = PcfSelectInput('#NewProgramPage-ProgramScreen-ProgramDV-Status');
+	programDVTargetNetRetention = PcfTextInput('#NewProgramPage-ProgramScreen-ProgramDV-TargetNetRetention');
+	newProgramPageProgramScreenRICoverageGroupsPanelSetTEMP_0_LV = PcfListView('#NewProgramPage-ProgramScreen-RICoverageGroupsPanelSet-TEMP_0_LV');
+	newProgramPageProgramScreenRICoverageGroupsPanelSetTEMP_0_LV_tbAdd = PcfButton('#NewProgramPage-ProgramScreen-RICoverageGroupsPanelSet-TEMP_0_LV_tb-Add');
+	newProgramPageProgramScreenRICoverageGroupsPanelSetTEMP_0_LV_tbRemove = PcfButton('#NewProgramPage-ProgramScreen-RICoverageGroupsPanelSet-TEMP_0_LV_tb-Remove');
+	programScreenTreatiesTab = PcfButton('#NewProgramPage-ProgramScreen-TreatiesTab');
+	programScreenUpdate = PcfButton('#NewProgramPage-ProgramScreen-Update');
+	programScreenUpdateActive = PcfButton('#NewProgramPage-ProgramScreen-UpdateActive');
+	programScreenVerifyButton = PcfButton('#NewProgramPage-ProgramScreen-VerifyButton');
+	programScreen_msgs = PcfButton('#NewProgramPage-ProgramScreen-_msgs');
+	newProgramPage_Paging = PcfButton('#NewProgramPage-_Paging');
+	newProgramPage__crumb__ = PcfComponent('#NewProgramPage-__crumb__');
+}

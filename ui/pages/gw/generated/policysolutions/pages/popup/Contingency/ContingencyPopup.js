@@ -1,0 +1,45 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ContingencyPopup {
+	baseContingencyInfoDVClosedDate = PcfDateValueInput('#ContingencyPopup-BaseContingencyInfoDV-ClosedDate');
+	baseContingencyInfoDVClosedUser = PcfTextInput('#ContingencyPopup-BaseContingencyInfoDV-ClosedUser');
+	baseContingencyInfoDVContingencyAction = PcfSelectInput('#ContingencyPopup-BaseContingencyInfoDV-ContingencyAction');
+	baseContingencyInfoDVContingencyDescription = PcfTextInput('#ContingencyPopup-BaseContingencyInfoDV-ContingencyDescription');
+	baseContingencyInfoDVContingencyDueDate = PcfDateValueInput('#ContingencyPopup-BaseContingencyInfoDV-ContingencyDueDate');
+	baseContingencyInfoDVContingencyStatus = PcfSelectInput('#ContingencyPopup-BaseContingencyInfoDV-ContingencyStatus');
+	baseContingencyInfoDVContingencyTitle = PcfTextInput('#ContingencyPopup-BaseContingencyInfoDV-ContingencyTitle');
+	baseContingencyInfoDVCreatedDate = PcfDateValueInput('#ContingencyPopup-BaseContingencyInfoDV-CreatedDate');
+	baseContingencyInfoDVCreatedUser = PcfTextInput('#ContingencyPopup-BaseContingencyInfoDV-CreatedUser');
+	baseContingencyInfoDVResolve = PcfButton('#ContingencyPopup-BaseContingencyInfoDV-Resolve');
+	baseContingencyInfoDVWaive = PcfButton('#ContingencyPopup-BaseContingencyInfoDV-Waive');
+	closedActivityRefContingencyActivitiesLV = PcfListView('#ContingencyPopup-ClosedActivityRef-ContingencyActivitiesLV');
+	contingencyPopupContingencyNotesLV = PcfListView('#ContingencyPopup-ContingencyNotesLV');
+	contingencyNotesLV_tbAddNoteButton = PcfButton('#ContingencyPopup-ContingencyNotesLV_tb-AddNoteButton');
+	contingencyPopupContingencyPopup_DocumentStoreSuspendedWarning = PcfButton('#ContingencyPopup-ContingencyPopup_DocumentStoreSuspendedWarning');
+	contingencyPopup_DocumentStoreSuspendedWarningCloseBtn = PcfButton('#ContingencyPopup-ContingencyPopup_DocumentStoreSuspendedWarning-CloseBtn');
+	contingencyPopupContingencyPopup_IDCSDownAlertBar = PcfButton('#ContingencyPopup-ContingencyPopup_IDCSDownAlertBar');
+	contingencyPopup_IDCSDownAlertBarCloseBtn = PcfButton('#ContingencyPopup-ContingencyPopup_IDCSDownAlertBar-CloseBtn');
+	contingencyPopupContingencyPopup_IDCSNotEnabledAlertBar = PcfButton('#ContingencyPopup-ContingencyPopup_IDCSNotEnabledAlertBar');
+	contingencyPopup_IDCSNotEnabledAlertBarCloseBtn = PcfButton('#ContingencyPopup-ContingencyPopup_IDCSNotEnabledAlertBar-CloseBtn');
+	contingencyPopupContingencyPopup_IDMSDownAlertBar = PcfButton('#ContingencyPopup-ContingencyPopup_IDMSDownAlertBar');
+	contingencyPopup_IDMSDownAlertBarCloseBtn = PcfButton('#ContingencyPopup-ContingencyPopup_IDMSDownAlertBar-CloseBtn');
+	contingencyPopupContingencyPopup_UpLink = PcfButton('#ContingencyPopup-ContingencyPopup_UpLink');
+	contingencyPopupDocumentsLV = PcfListView('#ContingencyPopup-DocumentsLV');
+	documentsLV_tbContigencyPopup_DeleteSelectedDocumentButton = PcfButton('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_DeleteSelectedDocumentButton');
+	documentsLV_tbContigencyPopup_HideHidden = PcfButton('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_HideHidden');
+	documentsLV_tbContigencyPopup_NewDocumentButton = PcfButton('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_NewDocumentButton');
+	contigencyPopup_NewDocumentButtonContingencyNewDocumentMenuItemSet_Linked = PcfComponent('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_NewDocumentButton-ContingencyNewDocumentMenuItemSet_Linked');
+	contigencyPopup_NewDocumentButtonContingencyNewDocumentMenuItemSet_Template = PcfComponent('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_NewDocumentButton-ContingencyNewDocumentMenuItemSet_Template');
+	documentsLV_tbContigencyPopup_RefreshAsyncContent = PcfButton('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_RefreshAsyncContent');
+	documentsLV_tbContigencyPopup_ShowHidden = PcfButton('#ContingencyPopup-DocumentsLV_tb-ContigencyPopup_ShowHidden');
+	activityToolBarAddActivityButton = PcfButton('#ContingencyPopup-OpenActivityRef-ActivityToolBar-AddActivityButton');
+	openActivityRefContingencyActivitiesLV = PcfListView('#ContingencyPopup-OpenActivityRef-ContingencyActivitiesLV');
+	contingencyPopup_Paging = PcfButton('#ContingencyPopup-_Paging');
+	contingencyPopup__crumb__ = PcfComponent('#ContingencyPopup-__crumb__');
+	contingencyPopup_msgs = PcfButton('#ContingencyPopup-_msgs');
+}

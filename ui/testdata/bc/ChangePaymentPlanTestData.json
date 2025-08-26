@@ -1,0 +1,8 @@
+{
+    "defaultDataSet": {
+        "PaymentPlan": "QA1PAYMENTPLAN04"
+    },
+    "changePaymentPlan_01": {
+        "PaymentPlan": "QA1PAYMENTPLAN04"
+    }
+}

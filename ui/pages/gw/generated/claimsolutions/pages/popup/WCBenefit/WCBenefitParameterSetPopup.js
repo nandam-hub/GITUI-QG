@@ -1,0 +1,44 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class WCBenefitParameterSetPopup {
+	wCBenefitParameterSetDVEndDate = PcfDateValueInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-EndDate');
+	factorsWCBenefitFactorsLV = PcfListView('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-Factors-WCBenefitFactorsLV');
+	wCBenefitFactorsLV_tbAdd = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-Factors-WCBenefitFactorsLV_tb-Add');
+	wCBenefitFactorsLV_tbRemove = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-Factors-WCBenefitFactorsLV_tb-Remove');
+	wCBenefitParameterSetDVJurisdiction = PcfSelectInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-Jurisdiction');
+	wCBenefitParameterSetDVPPDMax = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PPDMax');
+	wCBenefitParameterSetDVPPDMin = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PPDMin');
+	wCBenefitParameterSetDVPPDMinAdjToAWW = PcfComponent('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PPDMinAdjToAWW');
+	wCBenefitParameterSetDVPPDPercentOfWages = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PPDPercentOfWages');
+	wCBenefitParameterSetDVPTDMin = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PTDMin');
+	wCBenefitParameterSetDVPTDMinAdjToAWW = PcfComponent('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PTDMinAdjToAWW');
+	wCBenefitParameterSetDVPTDPercentOfWages = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-PTDPercentOfWages');
+	wCBenefitParameterSetDVRateCommentsw = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-RateCommentsw');
+	wCBenefitParameterSetDVRetroactivePeriod = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-RetroactivePeriod');
+	wCBenefitParameterSetDVStartDate = PcfDateValueInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-StartDate');
+	wCBenefitParameterSetDVTPDMax = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TPDMax');
+	wCBenefitParameterSetDVTPDMin = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TPDMin');
+	wCBenefitParameterSetDVTPDMinAdjToAWW = PcfComponent('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TPDMinAdjToAWW');
+	wCBenefitParameterSetDVTPDPercentOfWages = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TPDPercentOfWages');
+	wCBenefitParameterSetDVTPTDMax = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TPTDMax');
+	wCBenefitParameterSetDVTTDMax = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TTDMax');
+	wCBenefitParameterSetDVTTDMin = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TTDMin');
+	wCBenefitParameterSetDVTTDMinAdjToAWW = PcfComponent('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TTDMinAdjToAWW');
+	wCBenefitParameterSetDVTTDPercentOfWages = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-TTDPercentOfWages');
+	wCBenefitParameterSetDVWPNotAppliedToPPD = PcfCheckBox('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-WPNotAppliedToPPD');
+	wCBenefitParameterSetDVWPNotAppliedToPTD = PcfCheckBox('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-WPNotAppliedToPTD');
+	wCBenefitParameterSetDVWaitingPeriodDays = PcfTextInput('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV-WaitingPeriodDays');
+	wCBenefitParameterSetDV_tbCancel = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV_tb-Cancel');
+	wCBenefitParameterSetDV_tbEdit = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV_tb-Edit');
+	wCBenefitParameterSetDV_tbUpdate = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetDV_tb-Update');
+	wCBenefitParameterSetPopupWCBenefitParameterSetPopup_UpLink = PcfButton('#WCBenefitParameterSetPopup-WCBenefitParameterSetPopup_UpLink');
+	wCBenefitParameterSetPopup_Paging = PcfButton('#WCBenefitParameterSetPopup-_Paging');
+	wCBenefitParameterSetPopup__crumb__ = PcfComponent('#WCBenefitParameterSetPopup-__crumb__');
+	wCBenefitParameterSetPopup_msgs = PcfButton('#WCBenefitParameterSetPopup-_msgs');
+}

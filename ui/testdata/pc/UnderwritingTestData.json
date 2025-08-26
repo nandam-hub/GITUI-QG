@@ -1,0 +1,19 @@
+{
+    "defaultDataSet": {
+        "IssueType": "Test manually triggered issue blocking quote",
+        "IssueDescription": "UW1"
+    },
+    "underwriting_01": {
+        "IssueType1": "Test manually triggered issue blocking quote",
+        "IssueDescription1": "UW1",
+        "IssueType2": "Test manually triggered issue that is informational",
+        "IssueDescription2": "UW2",
+        "ReferenceColumnHeader": "Blocking Quote",
+        "ReferenceCellString":"UW1",
+        "ExpectedCellString": "Approve",
+        "TargetColumnIndex": 4,
+        "ValidUntil": "One Year"
+
+
+    }
+}

@@ -1,0 +1,43 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class WorkQueueInfo {
+	workQueueDVWorkItemsByWriterTab = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkItemsByWriterTab');
+	workQueueExecutorLDVExecutorDetailLV = PcfListView('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsPanelSet-WorkQueueExecutorLDV-ExecutorDetailLV');
+	workersDVTasksTab = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsPanelSet-WorkQueueExecutorLDV-WorkersDV-TasksTab');
+	workersDVWorkersLV = PcfListView('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsPanelSet-WorkQueueExecutorLDV-WorkersDV-WorkersLV');
+	workersLV_tbAdd = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsPanelSet-WorkQueueExecutorLDV-WorkersDV-WorkersLV_tb-Add');
+	workersLV_tbRemove = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsPanelSet-WorkQueueExecutorLDV-WorkersDV-WorkersLV_tb-Remove');
+	workQueueDVWorkQueueExecutorsTab = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueExecutorsTab');
+	workItemExceptionCVWorkItemExceptionCardTab = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkItemExceptionCV-WorkItemExceptionCardTab');
+	workItemExceptionDVException = PcfTextInput('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkItemExceptionCV-WorkItemExceptionDV-Exception');
+	workQueueWorkItemsLVFilter = PcfSelectInput('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-Filter');
+	workQueueWorkItemsLVItemIdHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-ItemIdHeader');
+	workQueueWorkItemsLV_ListPaging = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-_ListPaging');
+	workQueueWorkItemsLVactivityIdHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-activityIdHeader');
+	workQueueWorkItemsLVactivitySubjectHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-activitySubjectHeader');
+	workQueueWorkItemsLVavailableAtHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-availableAtHeader');
+	workQueueWorkItemsLVcheckedOutByHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-checkedOutByHeader');
+	workQueueWorkItemsLVcreatedTimeHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-createdTimeHeader');
+	workQueueWorkItemsLVretriesHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-retriesHeader');
+	workQueueWorkItemsLVupdateTimeHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-updateTimeHeader');
+	workQueueWorkItemsLVwriterIdHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-writerIdHeader');
+	workQueueWorkItemsLVitemInfoHeader = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV-itemInfoHeader');
+	workQueueWorkItemsLV_tbWorkItem_Restart = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsLDV-WorkQueueWorkItemsLV_tb-WorkItem_Restart');
+	workQueueDVWorkQueueWorkItemsTab = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWorkItemsTab');
+	workQueueWritersPanelSetWorkQueueItemByWriterLV = PcfListView('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueDV-WorkQueueWritersPanelSet-WorkQueueItemByWriterLV');
+	workQueueInfoScreenWorkQueueInfoLV = PcfListView('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueInfoLV');
+	workQueueInfoLV_tbdownload = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueInfoLV_tb-download');
+	workQueueInfoLV_tbdownloadRawData = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueInfoLV_tb-downloadRawData');
+	workQueueInfoLV_tbrefresh = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-WorkQueueInfoLV_tb-refresh');
+	workQueueInfoScreen_msgs = PcfButton('#WorkQueueInfo-WorkQueueInfoScreen-_msgs');
+	workQueueInfoScreenactiveThreads = PcfTextInput('#WorkQueueInfo-WorkQueueInfoScreen-activeThreads');
+	workQueueInfoScreenmaximumPoolSize = PcfTextInput('#WorkQueueInfo-WorkQueueInfoScreen-maximumPoolSize');
+	workQueueInfoScreenpoolSize = PcfTextInput('#WorkQueueInfo-WorkQueueInfoScreen-poolSize');
+	workQueueInfoWorkQueueInfo_UpLink = PcfButton('#WorkQueueInfo-WorkQueueInfo_UpLink');
+	workQueueInfo_Paging = PcfButton('#WorkQueueInfo-_Paging');
+	workQueueInfo__crumb__ = PcfComponent('#WorkQueueInfo-__crumb__');
+}

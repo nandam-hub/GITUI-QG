@@ -1,0 +1,29 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class ClaimSnapshotLivingExpensesIncidentPopup {
+	claimSnapshotLivingExpensesIncidentPopupApprox_TotalHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-Approx_TotalHeader');
+	claimSnapshotLivingExpensesIncidentPopupClaimSnapshotIncidentRelatedExposuresPanelSetClaimOrderHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-ClaimSnapshotIncidentRelatedExposuresPanelSet-ClaimOrderHeader');
+	claimSnapshotLivingExpensesIncidentPopupClaimSnapshotIncidentRelatedExposuresPanelSetFinancialsHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-ClaimSnapshotIncidentRelatedExposuresPanelSet-FinancialsHeader');
+	claimSnapshotLivingExpensesIncidentPopupClaimSnapshotIncidentRelatedExposuresPanelSetOverviewHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-ClaimSnapshotIncidentRelatedExposuresPanelSet-OverviewHeader');
+	claimSnapshotLivingExpensesIncidentPopupClaimSnapshotIncidentRelatedExposuresPanelSet_ListPaging = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-ClaimSnapshotIncidentRelatedExposuresPanelSet-_ListPaging');
+	claimSnapshotLivingExpensesIncidentPopupClaimSnapshotLivingExpensesIncidentPopup_UpLink = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-ClaimSnapshotLivingExpensesIncidentPopup_UpLink');
+	claimSnapshotLivingExpensesIncidentPopupCommentsHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-CommentsHeader');
+	claimSnapshotLivingExpensesIncidentPopupDaysHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-DaysHeader');
+	claimSnapshotLivingExpensesIncidentPopupDescription = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-Description');
+	claimSnapshotLivingExpensesIncidentPopupEndDateHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-EndDateHeader');
+	claimSnapshotLivingExpensesIncidentPopupExpectedDuration = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-ExpectedDuration');
+	claimSnapshotLivingExpensesIncidentPopupLocationHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-LocationHeader');
+	claimSnapshotLivingExpensesIncidentPopupMealsDays = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-MealsDays');
+	claimSnapshotLivingExpensesIncidentPopupMealsPeople = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-MealsPeople');
+	claimSnapshotLivingExpensesIncidentPopupMealsRate = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-MealsRate');
+	claimSnapshotLivingExpensesIncidentPopupRateHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-RateHeader');
+	claimSnapshotLivingExpensesIncidentPopupStartDateHeader = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-StartDateHeader');
+	claimSnapshotLivingExpensesIncidentPopupTotalLodgingEstimate = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-TotalLodgingEstimate');
+	claimSnapshotLivingExpensesIncidentPopupTotalMealsEstimate = PcfTextInput('#ClaimSnapshotLivingExpensesIncidentPopup-TotalMealsEstimate');
+	claimSnapshotLivingExpensesIncidentPopup_ListPaging = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-_ListPaging');
+	claimSnapshotLivingExpensesIncidentPopup_Paging = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-_Paging');
+	claimSnapshotLivingExpensesIncidentPopup__crumb__ = PcfComponent('#ClaimSnapshotLivingExpensesIncidentPopup-__crumb__');
+	claimSnapshotLivingExpensesIncidentPopup_msgs = PcfButton('#ClaimSnapshotLivingExpensesIncidentPopup-_msgs');
+}

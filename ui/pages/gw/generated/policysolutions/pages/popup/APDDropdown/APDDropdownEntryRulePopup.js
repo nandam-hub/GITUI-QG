@@ -1,0 +1,41 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class APDDropdownEntryRulePopup {
+	aPDDropdownEntryRulePopupAPDDropdownEntryRulePopup_UpLink = PcfButton('#APDDropdownEntryRulePopup-APDDropdownEntryRulePopup_UpLink');
+	aPDDropdownEntryRulePopupAPDRuleDVAddButton = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-AddButton');
+	aPDDropdownEntryRulePopupAPDRuleDVConditionDisplayHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-ConditionDisplayHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultBitValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultBitValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultCodeValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultCodeValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultDateValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultDateValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultDecimalValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultDecimalValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultIntegerValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultIntegerValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultStringValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultStringValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVDefaultTagValueHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-DefaultTagValueHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVExistenceHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-ExistenceHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVMoveButtonHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-MoveButtonHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVPriorityHeader = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-PriorityHeader');
+	aPDDropdownEntryRulePopupAPDRuleDVRemoveElement = PcfButton('#APDDropdownEntryRulePopup-APDRuleDV-RemoveElement');
+	aPDDropdownEntryRulePopupAPDRuleDVToolbarLabel = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleDV-ToolbarLabel');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetEditionCode = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-EditionCode');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetEditionDate = PcfDateValueInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-EditionDate');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetEditionJurisdictions = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-EditionJurisdictions');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetEmpryRuleDate = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-EmpryRuleDate');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetEmptyRuleJurisdictions = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-EmptyRuleJurisdictions');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetRuleDate = PcfDateValueInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-RuleDate');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetRuleEditionName = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-RuleEditionName');
+	aPDDropdownEntryRulePopupAPDRuleEditionInputSetRuleJurisdictions = PcfTextInput('#APDDropdownEntryRulePopup-APDRuleEditionInputSet-RuleJurisdictions');
+	aPDDropdownEntryRulePopupCancel = PcfButton('#APDDropdownEntryRulePopup-Cancel');
+	aPDDropdownEntryRulePopupDefaultExistence = PcfSelectInput('#APDDropdownEntryRulePopup-DefaultExistence');
+	aPDDropdownEntryRulePopupDelete = PcfButton('#APDDropdownEntryRulePopup-Delete');
+	aPDDropdownEntryRulePopupEdit = PcfButton('#APDDropdownEntryRulePopup-Edit');
+	aPDDropdownEntryRulePopupRuleDescText = PcfTextInput('#APDDropdownEntryRulePopup-RuleDescText');
+	aPDDropdownEntryRulePopupUpdate = PcfButton('#APDDropdownEntryRulePopup-Update');
+	aPDDropdownEntryRulePopup_Paging = PcfButton('#APDDropdownEntryRulePopup-_Paging');
+	aPDDropdownEntryRulePopup__crumb__ = PcfComponent('#APDDropdownEntryRulePopup-__crumb__');
+	aPDDropdownEntryRulePopup_msgs = PcfButton('#APDDropdownEntryRulePopup-_msgs');
+	aPDDropdownEntryRulePopupdropdownEntryLabel = PcfTextInput('#APDDropdownEntryRulePopup-dropdownEntryLabel');
+}

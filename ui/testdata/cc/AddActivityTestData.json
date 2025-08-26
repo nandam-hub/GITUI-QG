@@ -1,0 +1,27 @@
+{
+    "defaultDataSet": {
+        "PolicyNumber": "0000707633",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin"
+    },
+    "addActivity_01": {
+        "PolicyNumber": "0000707633",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "Subject": "Auto Pilot Activity"
+    }
+}

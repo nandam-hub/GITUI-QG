@@ -1,0 +1,40 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class APDDropDownDefinitionPopup {
+	aPDDropDownDefinitionDVDropDownType = PcfSelectInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionDV-DropDownType');
+	aPDDropDownDefinitionDVDropdownLabel = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionDV-DropdownLabel');
+	aPDDropDownDefinitionDVOwningDropDown = PcfSelectInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionDV-OwningDropDown');
+	typelistSyncTypelist = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionDV-Typelist-SyncTypelist');
+	aPDDropDownDefinitionDVTypelistStatus = PcfComponent('#APDDropDownDefinitionPopup-APDDropDownDefinitionDV-TypelistStatus');
+	aPDDropdownEntries_ListPaging = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-APDDropdownEntries-_ListPaging');
+	aPDDropDownDefinitionListDetailAdd = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-Add');
+	aPDDropDownDefinitionListDetailAvailabilityHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-AvailabilityHeading');
+	aPDDropDownDefinitionListDetailCodeHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-CodeHeading');
+	aPDDropDownDefinitionListDetailCurrencyHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-CurrencyHeading');
+	aPDDropDownDefinitionListDetailDescriptionHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-DescriptionHeading');
+	aPDDropDownDefinitionPopupAPDDropDownDefinitionListDetailDropdownLocalizedValuesLocalizedValuesDVLocalizedValuesLV = PcfListView('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-DropdownLocalizedValues-LocalizedValuesDV-LocalizedValuesLV');
+	aPDDropDownDefinitionListDetailEmptyType1 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType1');
+	aPDDropDownDefinitionListDetailEmptyType2 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType2');
+	aPDDropDownDefinitionListDetailEmptyType3 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType3');
+	aPDDropDownDefinitionListDetailEmptyType4 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType4');
+	aPDDropDownDefinitionListDetailEmptyType5 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType5');
+	aPDDropDownDefinitionListDetailEmptyType6 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType6');
+	aPDDropDownDefinitionListDetailEmptyType7 = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-EmptyType7');
+	aPDDropDownDefinitionListDetailLocalizationDetailTab = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-LocalizationDetailTab');
+	aPDDropDownDefinitionListDetailMoveHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-MoveHeading');
+	aPDDropDownDefinitionListDetailRemove = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-Remove');
+	aPDDropDownDefinitionListDetailTagHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-TagHeading');
+	aPDDropDownDefinitionListDetail_ViewDetail = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-_ViewDetail');
+	aPDDropDownDefinitionListDetailnameHeading = PcfTextInput('#APDDropDownDefinitionPopup-APDDropDownDefinitionListDetail-nameHeading');
+	aPDDropDownDefinitionPopupAPDDropDownDefinitionPopup_UpLink = PcfButton('#APDDropDownDefinitionPopup-APDDropDownDefinitionPopup_UpLink');
+	aPDDropDownDefinitionPopupCancel = PcfButton('#APDDropDownDefinitionPopup-Cancel');
+	aPDDropDownDefinitionPopupEdit = PcfButton('#APDDropDownDefinitionPopup-Edit');
+	aPDDropDownDefinitionPopupUpdate = PcfButton('#APDDropDownDefinitionPopup-Update');
+	aPDDropDownDefinitionPopup_Paging = PcfButton('#APDDropDownDefinitionPopup-_Paging');
+	aPDDropDownDefinitionPopup__crumb__ = PcfComponent('#APDDropDownDefinitionPopup-__crumb__');
+	aPDDropDownDefinitionPopup_msgs = PcfButton('#APDDropDownDefinitionPopup-_msgs');
+}

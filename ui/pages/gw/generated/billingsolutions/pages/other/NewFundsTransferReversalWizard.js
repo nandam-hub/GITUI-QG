@@ -1,0 +1,36 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class NewFundsTransferReversalWizard {
+	newFundsTransferReversalWizardCancel = PcfButton('#NewFundsTransferReversalWizard-Cancel');
+	newFundsTransferReversalWizardFinish = PcfButton('#NewFundsTransferReversalWizard-Finish');
+	newFundsTransferReversalWizardNewFundsTransferReversalWizard_UpLink = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalWizard_UpLink');
+	newFundsTransferReversalWizardNext = PcfButton('#NewFundsTransferReversalWizard-Next');
+	newFundsTransferReversalWizardPrev = PcfButton('#NewFundsTransferReversalWizard-Prev');
+	newFundsTransferReversalWizard_Paging = PcfButton('#NewFundsTransferReversalWizard-_Paging');
+	newFundsTransferReversalWizard__crumb__ = PcfComponent('#NewFundsTransferReversalWizard-__crumb__');
+	newFundsTransferReversalWizardtransferConfirmationStep = PcfButton('#NewFundsTransferReversalWizard-transferConfirmationStep');
+	newFundsTransferReversalConfirmationScreen_msgs = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-_msgs');
+	newFundsTransferReversalConfirmationScreenamount = PcfTextInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-amount');
+	newFundsTransferReversalConfirmationScreenapprovalActivityAlertBar = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-approvalActivityAlertBar');
+	approvalActivityAlertBarCloseBtn = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-approvalActivityAlertBar-CloseBtn');
+	newFundsTransferReversalConfirmationScreendestination = PcfTextInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-destination');
+	newFundsTransferReversalConfirmationScreenreason = PcfSelectInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-reason');
+	newFundsTransferReversalConfirmationScreensource = PcfTextInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-source');
+	newFundsTransferReversalConfirmationScreentransactionDate = PcfDateValueInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-transactionDate');
+	newFundsTransferReversalConfirmationScreentransactionNumber = PcfTextInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalConfirmationScreen-transactionNumber');
+	newFundsTransferReversalWizardtransferSearchStep = PcfButton('#NewFundsTransferReversalWizard-transferSearchStep');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVEarliestDateCriterion = PcfDateValueInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-EarliestDateCriterion');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVLatestDateCriterion = PcfDateValueInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-LatestDateCriterion');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVSearchLinksInputSetReset = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-SearchLinksInputSet-Reset');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVSearchLinksInputSetSearch = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-SearchLinksInputSet-Search');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVTransactionNumberCriterion = PcfTextInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-TransactionNumberCriterion');
+	newFundsTransferReversalWizardNewFundsTransferReversalSearchScreenTransactionSearchDVTransactionTypeCriterion = PcfSelectInput('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionSearchDV-TransactionTypeCriterion');
+	newFundsTransferReversalSearchScreenTransactionsLV = PcfListView('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransactionsLV');
+	newFundsTransferReversalSearchScreenTransferFundsTab = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-TransferFundsTab');
+	newFundsTransferReversalSearchScreen_msgs = PcfButton('#NewFundsTransferReversalWizard-NewFundsTransferReversalSearchScreen-_msgs');
+}

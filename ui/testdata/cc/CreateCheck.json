@@ -1,0 +1,64 @@
+{
+    "defaultDataSet": {
+        "Type": "Vendor",
+        "ReserveLine":"New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "paymentType":"Final",
+        "Amount":"100",
+        "Status":"Awaiting submission",
+        "GrossAmount":"$100.00"
+    },
+    "createCheck_01": {
+        "Type": "Vendor",
+        "ReserveLine":"New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "paymentType":"Final",
+        "Amount":"100",
+        "Status":"Requesting",
+        "GrossAmount":"$100.00"
+    },
+    "createCheck_02": {
+        "Type": "Vendor",
+        "ReserveLine":"New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "paymentType":"Final",
+        "Amount":"100",
+        "GrossAmount":"$100.00",
+        "ReasonForVoid":"Void Check",
+        "Status":"Pending void"
+    },
+    "createCheck_03": {
+        "Type": "Vendor",
+        "ReserveLine":"New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "paymentType":"Final",
+        "Amount":"100",
+        "GrossAmount":"$100.00",
+        "ReasonForVoid":"Void Check",
+        "Status":"Pending stop"
+    },
+    "createCheck_04": {
+        "Type": "Vendor",
+        "ReserveLine":"New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "paymentType":"Final",
+        "Amount":"100",
+        "GrossAmount":"$100.00",
+        "ClaimNumber":"000-00-000840",
+        "Status":"Pending transfer"
+    },
+    "createManualCheck_01":{
+        "ReserveLine": "New...",
+        "CostType":"Unspecified Cost Type",
+        "CostCategory":"Unspecified Cost Category",
+        "PaymentType": "Final",
+        "Amount": "100",
+        "GrossAmount":"$100.00",
+        "Status": "Notifying"
+    }
+}

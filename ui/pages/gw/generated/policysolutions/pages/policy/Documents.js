@@ -1,0 +1,41 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class Documents {
+	policyFile_DocumentsPolicyFile_Documents_UpLink = PcfButton('#PolicyFile_Documents-PolicyFile_Documents_UpLink');
+	policy_DocumentsScreenDocumentsLV = PcfListView('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV');
+	policyFile_DocumentsPolicy_DocumentsScreenDocumentsLV_tbPolicyFile_Documents_DeleteSelectedDocumentButton = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_DeleteSelectedDocumentButton');
+	policyFile_DocumentsPolicy_DocumentsScreenDocumentsLV_tbPolicyFile_Documents_DeobsolesceButton = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_DeobsolesceButton');
+	policyFile_DocumentsPolicy_DocumentsScreenDocumentsLV_tbPolicyFile_Documents_NewDocumentButton = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton');
+	policyFile_Documents_NewDocumentButtonNewJobDocumentMenuItemSet = PcfComponent('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-NewJobDocumentMenuItemSet');
+	newJobDocumentMenuItemSetPolicyPeriodNewDocumentMenuItemSet_Linked = PcfComponent('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-NewJobDocumentMenuItemSet-PolicyPeriodNewDocumentMenuItemSet_Linked');
+	newJobDocumentMenuItemSetPolicyPeriodNewDocumentMenuItemSet_Template = PcfComponent('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-NewJobDocumentMenuItemSet-PolicyPeriodNewDocumentMenuItemSet_Template');
+	policyFile_DocumentsPolicy_DocumentsScreenDocumentsLV_tbPolicyFile_Documents_ObsolesceButton = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_ObsolesceButton');
+	policyFile_DocumentsPolicy_DocumentsScreenDocumentsLV_tbRefreshAsyncContent = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-RefreshAsyncContent');
+	documentsLV_tbSave = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-DocumentsLV_tb-Save');
+	policy_DocumentSearchDVAuthor = PcfTextInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-Author');
+	policy_DocumentSearchDVDateFrom = PcfDateValueInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-DateFrom');
+	policy_DocumentSearchDVDateTo = PcfDateValueInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-DateTo');
+	policy_DocumentSearchDVIncludeObsoletes = PcfComponent('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-IncludeObsoletes');
+	policy_DocumentSearchDVLanguage = PcfSelectInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-Language');
+	policy_DocumentSearchDVName = PcfTextInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-Name');
+	policy_DocumentSearchDVRelatedTo = PcfSelectInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-RelatedTo');
+	policyFile_DocumentsPolicy_DocumentsScreenPolicy_DocumentSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	policyFile_DocumentsPolicy_DocumentsScreenPolicy_DocumentSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	policy_DocumentSearchDVStatus = PcfSelectInput('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentSearchDV-Status');
+	policy_DocumentsScreenPolicy_DocumentsScreen_DocumentStoreSuspendedWarning = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_DocumentStoreSuspendedWarning');
+	policy_DocumentsScreen_DocumentStoreSuspendedWarningCloseBtn = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_DocumentStoreSuspendedWarning-CloseBtn');
+	policy_DocumentsScreenPolicy_DocumentsScreen_IDCSDownAlertBar = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDCSDownAlertBar');
+	policy_DocumentsScreen_IDCSDownAlertBarCloseBtn = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDCSDownAlertBar-CloseBtn');
+	policy_DocumentsScreenPolicy_DocumentsScreen_IDCSNotEnabledAlertBar = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDCSNotEnabledAlertBar');
+	policy_DocumentsScreen_IDCSNotEnabledAlertBarCloseBtn = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDCSNotEnabledAlertBar-CloseBtn');
+	policy_DocumentsScreenPolicy_DocumentsScreen_IDMSDownAlertBar = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDMSDownAlertBar');
+	policy_DocumentsScreen_IDMSDownAlertBarCloseBtn = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-Policy_DocumentsScreen_IDMSDownAlertBar-CloseBtn');
+	policy_DocumentsScreen_msgs = PcfButton('#PolicyFile_Documents-Policy_DocumentsScreen-_msgs');
+	policyFile_Documents_Paging = PcfButton('#PolicyFile_Documents-_Paging');
+	policyFile_Documents__crumb__ = PcfComponent('#PolicyFile_Documents-__crumb__');
+}

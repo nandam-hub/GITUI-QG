@@ -1,0 +1,14 @@
+{
+    "defaultDataSet": {
+        "Amount": "120",
+        "IncludeOnly":"Up to amount under contract",
+        "DistributionAmount":"10",
+        "Due": "$12.50"
+    },
+    "overrideDistribution_01": {
+       "Amount": "120",
+       "IncludeOnly":"Up to amount under contract",
+       "DistributionAmount":"10",
+       "Due": "$12.50"
+    }
+}

@@ -1,0 +1,41 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class TotalLossCalculatorPopup {
+	totalLossCalculatorPopupAirbagsMissing = PcfComponent('#TotalLossCalculatorPopup-AirbagsMissing');
+	totalLossCalculatorPopupCancel = PcfButton('#TotalLossCalculatorPopup-Cancel');
+	totalLossCalculatorPopupComponentsMissing = PcfComponent('#TotalLossCalculatorPopup-ComponentsMissing');
+	totalLossCalculatorPopupEdit = PcfButton('#TotalLossCalculatorPopup-Edit');
+	totalLossCalculatorPopupExtrication = PcfComponent('#TotalLossCalculatorPopup-Extrication');
+	totalLossCalculatorPopupFireBurnDash = PcfComponent('#TotalLossCalculatorPopup-FireBurnDash');
+	totalLossCalculatorPopupFireBurnEngine = PcfComponent('#TotalLossCalculatorPopup-FireBurnEngine');
+	totalLossCalculatorPopupFireBurnWindshield = PcfComponent('#TotalLossCalculatorPopup-FireBurnWindshield');
+	totalLossCalculatorPopupFloodSaltWater = PcfComponent('#TotalLossCalculatorPopup-FloodSaltWater');
+	totalLossCalculatorPopupInteriorMissing = PcfComponent('#TotalLossCalculatorPopup-InteriorMissing');
+	totalLossCalculatorPopupMileage100K = PcfComponent('#TotalLossCalculatorPopup-Mileage100K');
+	totalLossCalculatorPopupTotalLossCalculatorPopup_UpLink = PcfButton('#TotalLossCalculatorPopup-TotalLossCalculatorPopup_UpLink');
+	totalLossCalculatorPopupTotalLossPoints = PcfTextInput('#TotalLossCalculatorPopup-TotalLossPoints');
+	totalLossCalculatorPopupUpdate = PcfButton('#TotalLossCalculatorPopup-Update');
+	totalLossCalculatorPopupVehicleAge10Years = PcfComponent('#TotalLossCalculatorPopup-VehicleAge10Years');
+	totalLossCalculatorPopupVehicleAge5Years = PcfComponent('#TotalLossCalculatorPopup-VehicleAge5Years');
+	totalLossCalculatorPopupVehicleAirbagsDeployed = PcfComponent('#TotalLossCalculatorPopup-VehicleAirbagsDeployed');
+	totalLossCalculatorPopupVehicleColor = PcfTextInput('#TotalLossCalculatorPopup-VehicleColor');
+	totalLossCalculatorPopupVehicleLicensePlate = PcfTextInput('#TotalLossCalculatorPopup-VehicleLicensePlate');
+	totalLossCalculatorPopupVehicleLicensePlateState = PcfSelectInput('#TotalLossCalculatorPopup-VehicleLicensePlateState');
+	totalLossCalculatorPopupVehicleMake = PcfTextInput('#TotalLossCalculatorPopup-VehicleMake');
+	totalLossCalculatorPopupVehicleModel = PcfTextInput('#TotalLossCalculatorPopup-VehicleModel');
+	totalLossCalculatorPopupVehicleRollOver = PcfComponent('#TotalLossCalculatorPopup-VehicleRollOver');
+	totalLossCalculatorPopupVehicleStyle = PcfSelectInput('#TotalLossCalculatorPopup-VehicleStyle');
+	totalLossCalculatorPopupVehicleSubmerged = PcfComponent('#TotalLossCalculatorPopup-VehicleSubmerged');
+	totalLossCalculatorPopupVehicleTotalLoss = PcfComponent('#TotalLossCalculatorPopup-VehicleTotalLoss');
+	totalLossCalculatorPopupVehicleTowed = PcfComponent('#TotalLossCalculatorPopup-VehicleTowed');
+	totalLossCalculatorPopupVehicleVin = PcfTextInput('#TotalLossCalculatorPopup-VehicleVin');
+	totalLossCalculatorPopupVehicleYear = PcfTextInput('#TotalLossCalculatorPopup-VehicleYear');
+	totalLossCalculatorPopupWaterLevelDash = PcfComponent('#TotalLossCalculatorPopup-WaterLevelDash');
+	totalLossCalculatorPopupWaterLevelSeats = PcfComponent('#TotalLossCalculatorPopup-WaterLevelSeats');
+	totalLossCalculatorPopup_Paging = PcfButton('#TotalLossCalculatorPopup-_Paging');
+	totalLossCalculatorPopup__crumb__ = PcfComponent('#TotalLossCalculatorPopup-__crumb__');
+	totalLossCalculatorPopup_msgs = PcfButton('#TotalLossCalculatorPopup-_msgs');
+}

@@ -1,0 +1,15 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class MessagingDestinationControlList {
+	messagingDestinationControlListScreenMessagingDestinationsControlLV = PcfListView('#MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationsControlLV');
+	messagingDestinationsControlLV_tbMessagingDestinationControlList_RestartButton = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationsControlLV_tb-MessagingDestinationControlList_RestartButton');
+	messagingDestinationsControlLV_tbMessagingDestinationControlList_RestartMessagingEngineButton = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationsControlLV_tb-MessagingDestinationControlList_RestartMessagingEngineButton');
+	messagingDestinationsControlLV_tbMessagingDestinationControlList_ResumeButton = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationsControlLV_tb-MessagingDestinationControlList_ResumeButton');
+	messagingDestinationsControlLV_tbMessagingDestinationControlList_SuspendButton = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlListScreen-MessagingDestinationsControlLV_tb-MessagingDestinationControlList_SuspendButton');
+	messagingDestinationControlListScreen_msgs = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlListScreen-_msgs');
+	messagingDestinationControlListMessagingDestinationControlList_UpLink = PcfButton('#MessagingDestinationControlList-MessagingDestinationControlList_UpLink');
+	messagingDestinationControlList_Paging = PcfButton('#MessagingDestinationControlList-_Paging');
+	messagingDestinationControlList__crumb__ = PcfComponent('#MessagingDestinationControlList-__crumb__');
+}

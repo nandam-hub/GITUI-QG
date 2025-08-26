@@ -1,0 +1,11 @@
+{
+    "defaultDataSet":{
+        "ContactRole": "Insured, Main Contact, Reporter"
+    },
+    "contact_01":{
+        "ContactRole": "Insured, Main Contact, Reporter",
+        "AddressLine1":"123 Main St",
+        "City":"Pewaukee",
+        "State":"Wisconsin"
+    }
+}

@@ -1,0 +1,121 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    timeout-minutes: 120
+
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2️⃣ Install VS2019 Build Tools
+      - name: Install VS2019 Build Tools
+        run: choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041 --includeRecommended --includeOptional --quiet --norestart" --yes
+
+      # 3️⃣ Setup MSBuild
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '[16.0,17.0)'
+
+      # 4️⃣ Setup JDK 11 (Amazon Corretto)
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'corretto'
+
+      # 5️⃣ Setup Node.js 16.3.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.3.0'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      # 6️⃣ Setup Python 3.10
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 7️⃣ Configure node-gyp for npm builds
+      - name: Configure node-gyp
+        run: npm config set msvs_version 2019
+
+      # 8️⃣ Download Gradle 6.5.1 manually
+      - name: Download Gradle 6.5.1
+        shell: pwsh
+        run: |
+          $gradleVersion = "6.5.1"
+          $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
+          Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
+          Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
+          $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
+          Write-Host "Gradle $gradleVersion downloaded and PATH updated"
+      - name: Create libs folder
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "libs")) {
+              New-Item -ItemType Directory -Path "libs"
+          }
+      - name: Download guidewire-commons-grn.jar
+        shell: pwsh
+        run: |
+          $jarPath = "libs/guidewire-commons-grn.jar"
+          if (-not (Test-Path $jarPath)) {
+              Write-Host "Downloading guidewire-commons-grn.jar..."
+              Invoke-WebRequest -Uri "https://your-artifactory-url/guidewire-commons-grn.jar" -OutFile $jarPath
+          } else {
+              Write-Host "JAR already exists: $jarPath"
+          }
+
+      # 9️⃣ Ensure Guidewire JARs exist
+      - name: Verify Guidewire JARs
+        shell: pwsh
+        run: |
+          $requiredJars = @(
+              "libs/guidewire-commons-grn.jar",
+              "libs/helios-client.jar"
+          )
+          foreach ($jar in $requiredJars) {
+              if (-not (Test-Path $jar)) {
+                  Write-Error "Required JAR missing: $jar"
+                  exit 1
+              }
+          }
+          Write-Host "All required Guidewire JARs found."
+
+      # 🔟 Clean Gradle and build folders
+      - name: Clean Gradle and build folders
+        shell: pwsh
+        run: |
+          Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
+
+      # 1️⃣1️⃣ Install npm dependencies
+      - name: Install npm dependencies
+        shell: pwsh
+        run: npm ci --prefer-offline
+
+      # 1️⃣2️⃣ Build API module (Gradle)
+      - name: Build API module
+        shell: pwsh
+        run: |
+          gradle :api:createApiJar --build-cache \
+          -Dguidewire.libs.dir=libs
+
+      # 1️⃣3️⃣ Run GT UI Tests
+      - name: Run GT UI Tests
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: npm run gt-ui-tests -- --cucumberTags=@add_activity

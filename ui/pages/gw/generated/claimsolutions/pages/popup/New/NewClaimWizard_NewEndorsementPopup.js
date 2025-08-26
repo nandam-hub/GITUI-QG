@@ -1,0 +1,19 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class NewClaimWizard_NewEndorsementPopup {
+	newClaimWizard_NewEndorsementDetailScreenCancel = PcfButton('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-Cancel');
+	newClaimWizard_NewEndorsementDetailScreenEdit = PcfButton('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-Edit');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementDetailScreenEndorsementDetailDVComments = PcfTextInput('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-EndorsementDetailDV-Comments');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementDetailScreenEndorsementDetailDVDescription = PcfTextInput('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-EndorsementDetailDV-Description');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementDetailScreenEndorsementDetailDVEffectiveDate = PcfDateValueInput('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-EndorsementDetailDV-EffectiveDate');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementDetailScreenEndorsementDetailDVExpirationDate = PcfDateValueInput('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-EndorsementDetailDV-ExpirationDate');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementDetailScreenEndorsementDetailDVFormNumber = PcfTextInput('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-EndorsementDetailDV-FormNumber');
+	newClaimWizard_NewEndorsementDetailScreenUpdate = PcfButton('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-Update');
+	newClaimWizard_NewEndorsementDetailScreen_msgs = PcfButton('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementDetailScreen-_msgs');
+	newClaimWizard_NewEndorsementPopupNewClaimWizard_NewEndorsementPopup_UpLink = PcfButton('#NewClaimWizard_NewEndorsementPopup-NewClaimWizard_NewEndorsementPopup_UpLink');
+	newClaimWizard_NewEndorsementPopup_Paging = PcfButton('#NewClaimWizard_NewEndorsementPopup-_Paging');
+	newClaimWizard_NewEndorsementPopup__crumb__ = PcfComponent('#NewClaimWizard_NewEndorsementPopup-__crumb__');
+}

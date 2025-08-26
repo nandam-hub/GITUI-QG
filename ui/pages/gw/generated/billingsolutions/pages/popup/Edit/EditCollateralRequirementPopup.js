@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class EditCollateralRequirementPopup {
+	editCollateralRequirementPopupEditCollateralRequirementPopup_UpLink = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementPopup_UpLink');
+	editCollateralRequirementScreenCancel = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-Cancel');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVPolicy = PcfSelectInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-Policy');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVcreateChargeCheckbox = PcfCheckBox('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-createChargeCheckbox');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVeffectiveDate = PcfDateValueInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-effectiveDate');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVexpirationDate = PcfDateValueInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-expirationDate');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVlevelRange = PcfSelectInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-levelRange');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVname = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-name');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVpolicyPeriod = PcfSelectInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-policyPeriod');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVrequired = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-required');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVsegregate = PcfCheckBox('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-segregate');
+	editCollateralRequirementPopupEditCollateralRequirementScreenCollateralRequirementDVtype = PcfSelectInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-CollateralRequirementDV-type');
+	editCollateralRequirementScreenEdit = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-Edit');
+	editCollateralRequirementScreenUpdate = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-Update');
+	editCollateralRequirementScreen_msgs = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-_msgs');
+	editCollateralRequirementScreenamountWarning = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-amountWarning');
+	amountWarningCloseBtn = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-amountWarning-CloseBtn');
+	editCollateralRequirementScreencash = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-cash');
+	editCollateralRequirementScreendateWarning = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-dateWarning');
+	dateWarningCloseBtn = PcfButton('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-dateWarning-CloseBtn');
+	editCollateralRequirementScreenloc = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-loc');
+	editCollateralRequirementScreensurplus = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-surplus');
+	editCollateralRequirementScreentotal = PcfTextInput('#EditCollateralRequirementPopup-EditCollateralRequirementScreen-total');
+	editCollateralRequirementPopup_Paging = PcfButton('#EditCollateralRequirementPopup-_Paging');
+	editCollateralRequirementPopup__crumb__ = PcfComponent('#EditCollateralRequirementPopup-__crumb__');
+}

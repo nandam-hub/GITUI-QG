@@ -1,0 +1,14 @@
+{
+    "defaultDataSet":{
+        "Title": "EXAM1",
+        "Type": "General",
+        "Claims": "00000002818",
+        "Associations": "EXAM1"
+    },
+    "Association":{
+        "Title": "EXAM1",
+        "Type": "General",
+        "Claims": "000-00-000177",
+        "Associations":"EXAM1"
+    }
+}

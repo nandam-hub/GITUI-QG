@@ -1,0 +1,40 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ClaimPolicyStatCodes {
+	claimPolicyStatCodesScreenStatCodeDetailCardTab = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailCardTab');
+	statCodeDetailDVBuildingNumber = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-BuildingNumber');
+	statCodeDetailDVClassCode = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-ClassCode');
+	statCodeDetailDVInsuranceLine = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-InsuranceLine');
+	statCodeDetailDVInsuranceSubLine = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-InsuranceSubLine');
+	statCodeDetailDVLineNumber = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-LineNumber');
+	statCodeDetailDVLocationNumber = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-LocationNumber');
+	statCodeDetailDVMajorPeril = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-MajorPeril');
+	statCodeDetailDVNotes = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-Notes');
+	statCodeDetailDVState = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-State');
+	statCodeDetailDVVehicleNumber = PcfTextInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV-VehicleNumber');
+	statCodeDetailDV_tbCancel = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV_tb-Cancel');
+	statCodeDetailDV_tbClaimPolicyStatCodes_EditButton = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV_tb-ClaimPolicyStatCodes_EditButton');
+	statCodeDetailDV_tbEdit = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV_tb-Edit');
+	statCodeDetailDV_tbUpdate = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeDetailDV_tb-Update');
+	statCodeFilterDVBuildingNumber = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-BuildingNumber');
+	statCodeFilterDVClassCode = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-ClassCode');
+	statCodeFilterDVInsuranceLine = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-InsuranceLine');
+	statCodeFilterDVInsuranceSubLine = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-InsuranceSubLine');
+	statCodeFilterDVLineNumber = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-LineNumber');
+	statCodeFilterDVLocationNumber = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-LocationNumber');
+	claimPolicyStatCodesClaimPolicyStatCodesScreenStatCodeFilterDVSearchOnlyInputSetSearchLinksInputSetReset = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-SearchOnlyInputSet-SearchLinksInputSet-Reset');
+	claimPolicyStatCodesClaimPolicyStatCodesScreenStatCodeFilterDVSearchOnlyInputSetSearchLinksInputSetSearch = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-SearchOnlyInputSet-SearchLinksInputSet-Search');
+	statCodeFilterDVVehicleNumber = PcfSelectInput('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodeFilterDV-VehicleNumber');
+	claimPolicyStatCodesScreenStatCodesLV = PcfListView('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodesLV');
+	statCodesLV_tbAdd = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodesLV_tb-Add');
+	statCodesLV_tbClaimPolicyStatCodes_AddMoreStatCodesButton = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodesLV_tb-ClaimPolicyStatCodes_AddMoreStatCodesButton');
+	statCodesLV_tbRemove = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-StatCodesLV_tb-Remove');
+	claimPolicyStatCodesScreen_msgs = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodesScreen-_msgs');
+	claimPolicyStatCodesClaimPolicyStatCodes_UpLink = PcfButton('#ClaimPolicyStatCodes-ClaimPolicyStatCodes_UpLink');
+	claimPolicyStatCodes_Paging = PcfButton('#ClaimPolicyStatCodes-_Paging');
+	claimPolicyStatCodes__crumb__ = PcfComponent('#ClaimPolicyStatCodes-__crumb__');
+}

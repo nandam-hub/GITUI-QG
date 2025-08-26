@@ -1,0 +1,26 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class ProfilerPopup {
+	profilerPopupProfilerConfigurationScreenEnableWebProfilerPanelSetProfilerOptionsLV = PcfListView('#ProfilerPopup-ProfilerConfigurationScreen-EnableWebProfilerPanelSet-ProfilerOptionsLV');
+	profilerPopupProfilerConfigurationScreenEnableWebProfilerPanelSetTurnProfilingOff = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-EnableWebProfilerPanelSet-TurnProfilingOff');
+	profilerPopupProfilerConfigurationScreenEnableWebProfilerPanelSetTurnProfilingOn = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-EnableWebProfilerPanelSet-TurnProfilingOn');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV = PcfListView('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableBatchProcessButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableBatchProcessButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableGosuServletButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableGosuServletButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableJsonRpcButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableJsonRpcButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableMessageDestinationButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableMessageDestinationButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableRestOperationButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableRestOperationButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableStartablePluginButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableStartablePluginButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableWebServiceButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableWebServiceButton');
+	profilerPopupProfilerConfigurationScreenProfilerConfigLV_tbEnableWorkQueueButton = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ProfilerConfigLV_tb-EnableWorkQueueButton');
+	profilerPopupProfilerConfigurationScreenReadOnlyModeAlert = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ReadOnlyModeAlert');
+	profilerPopupProfilerConfigurationScreenReadOnlyModeAlertCloseBtn = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-ReadOnlyModeAlert-CloseBtn');
+	profilerPopupProfilerConfigurationScreenRestartToTakeEffectAlert = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-RestartToTakeEffectAlert');
+	profilerPopupProfilerConfigurationScreenRestartToTakeEffectAlertCloseBtn = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-RestartToTakeEffectAlert-CloseBtn');
+	profilerPopupProfilerConfigurationScreen_msgs = PcfButton('#ProfilerPopup-ProfilerConfigurationScreen-_msgs');
+	profilerPopupProfilerPopup_UpLink = PcfButton('#ProfilerPopup-ProfilerPopup_UpLink');
+	profilerPopup_Paging = PcfButton('#ProfilerPopup-_Paging');
+	profilerPopup__crumb__ = PcfComponent('#ProfilerPopup-__crumb__');
+}

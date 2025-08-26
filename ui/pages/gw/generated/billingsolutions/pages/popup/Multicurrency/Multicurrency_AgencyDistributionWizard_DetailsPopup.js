@@ -1,0 +1,22 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class Multicurrency_AgencyDistributionWizard_DetailsPopup {
+	multicurrency_AgencyDistributionWizard_DetailsPopupAvailable = PcfTextInput('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Available');
+	multicurrency_AgencyDistributionWizard_DetailsPopupCancel = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Cancel');
+	multicurrency_AgencyDistributionWizard_DetailsPopupDistItemsLV = PcfListView('#Multicurrency_AgencyDistributionWizard_DetailsPopup-DistItemsLV');
+	multicurrency_AgencyDistributionWizard_DetailsPopupDistItemsLV_tbAutodistribute = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-DistItemsLV_tb-Autodistribute');
+	multicurrency_AgencyDistributionWizard_DetailsPopupDistItemsLV_tbClearAllAmounts = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-DistItemsLV_tb-ClearAllAmounts');
+	multicurrency_AgencyDistributionWizard_DetailsPopupDistributed = PcfTextInput('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Distributed');
+	multicurrency_AgencyDistributionWizard_DetailsPopupEdit = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Edit');
+	multicurrency_AgencyDistributionWizard_DetailsPopupMulticurrency_AgencyDistributionWizard_DetailsPopup_UpLink = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Multicurrency_AgencyDistributionWizard_DetailsPopup_UpLink');
+	multicurrency_AgencyDistributionWizard_DetailsPopupOwnerAccount = PcfTextInput('#Multicurrency_AgencyDistributionWizard_DetailsPopup-OwnerAccount');
+	multicurrency_AgencyDistributionWizard_DetailsPopupPolicyNumber = PcfTextInput('#Multicurrency_AgencyDistributionWizard_DetailsPopup-PolicyNumber');
+	multicurrency_AgencyDistributionWizard_DetailsPopupRemaining = PcfTextInput('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Remaining');
+	multicurrency_AgencyDistributionWizard_DetailsPopupUpdate = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-Update');
+	multicurrency_AgencyDistributionWizard_DetailsPopup_Paging = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-_Paging');
+	multicurrency_AgencyDistributionWizard_DetailsPopup__crumb__ = PcfComponent('#Multicurrency_AgencyDistributionWizard_DetailsPopup-__crumb__');
+	multicurrency_AgencyDistributionWizard_DetailsPopup_msgs = PcfButton('#Multicurrency_AgencyDistributionWizard_DetailsPopup-_msgs');
+}

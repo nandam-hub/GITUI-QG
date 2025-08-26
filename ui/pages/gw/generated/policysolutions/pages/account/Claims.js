@@ -1,0 +1,42 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class Claims {
+	accountFile_ClaimsAccountFileInfoBarAccount = PcfButton('#AccountFile_Claims-AccountFileInfoBar-Account');
+	accountFile_ClaimsAccountFileInfoBarAccountLabel = PcfButton('#AccountFile_Claims-AccountFileInfoBar-AccountLabel');
+	accountFile_ClaimsAccountFileInfoBarAccountName = PcfButton('#AccountFile_Claims-AccountFileInfoBar-AccountName');
+	accountFile_ClaimScreenAccountClaimsLV = PcfListView('#AccountFile_Claims-AccountFile_ClaimScreen-AccountClaimsLV');
+	claimDetailsDVClaimNumber = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-ClaimNumber');
+	claimDetailsDVClaimSecurityType = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-ClaimSecurityType');
+	claimDetailsDVDescription = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-Description');
+	claimDetailsDVInjury = PcfComponent('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-Injury');
+	claimDetailsDVLitigation = PcfComponent('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-Litigation');
+	claimDetailsDVLossCause = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-LossCause');
+	claimDetailsDVLossDate = PcfDateValueInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-LossDate');
+	claimDetailsDVPaidToDate = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-PaidToDate');
+	claimDetailsDVPolicyNumber = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-PolicyNumber');
+	claimDetailsDVPolicyPeriodEnd = PcfDateValueInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-PolicyPeriodEnd');
+	claimDetailsDVPolicyPeriodStart = PcfDateValueInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-PolicyPeriodStart');
+	claimDetailsDVPolicyType = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-PolicyType');
+	claimDetailsDVReserves = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-Reserves');
+	claimDetailsDVStatus = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-Status');
+	claimDetailsDVTotalIncurred = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-TotalIncurred');
+	claimDetailsDVTotalPaidLoss = PcfTextInput('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV-TotalPaidLoss');
+	claimDetailsDV_tbviewInCC = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-ClaimDetailsDV_tb-viewInCC');
+	claimDetailsCVDetailsTitleCardTab = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-ClaimDetailsCV-DetailsTitleCardTab');
+	dateRangeForClaimSearchDateRangeForClaimSearchDirectChoice_Choice = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-DateRangeForClaimSearch-DateRangeForClaimSearchDirectChoice_Choice');
+	dateRangeForClaimSearchDateRangeForClaimSearchEndDate = PcfDateValueInput('#AccountFile_Claims-AccountFile_ClaimScreen-DateRangeForClaimSearch-DateRangeForClaimSearchEndDate');
+	dateRangeForClaimSearchDateRangeForClaimSearchRangeChoice_Choice = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-DateRangeForClaimSearch-DateRangeForClaimSearchRangeChoice_Choice');
+	dateRangeForClaimSearchDateRangeForClaimSearchRangeValue = PcfSelectInput('#AccountFile_Claims-AccountFile_ClaimScreen-DateRangeForClaimSearch-DateRangeForClaimSearchRangeValue');
+	dateRangeForClaimSearchDateRangeForClaimSearchStartDate = PcfDateValueInput('#AccountFile_Claims-AccountFile_ClaimScreen-DateRangeForClaimSearch-DateRangeForClaimSearchStartDate');
+	accountFile_ClaimsAccountFile_ClaimScreenSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	accountFile_ClaimsAccountFile_ClaimScreenSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	accountFile_ClaimScreen_msgs = PcfButton('#AccountFile_Claims-AccountFile_ClaimScreen-_msgs');
+	accountFile_ClaimsAccountFile_Claims_UpLink = PcfButton('#AccountFile_Claims-AccountFile_Claims_UpLink');
+	accountFile_Claims_Paging = PcfButton('#AccountFile_Claims-_Paging');
+	accountFile_Claims__crumb__ = PcfComponent('#AccountFile_Claims-__crumb__');
+}

@@ -1,0 +1,4 @@
+{
+  "requiredTemplateParameters": ["code", "organization", "roles"],
+  "data": "enter producer code payload details."
+}

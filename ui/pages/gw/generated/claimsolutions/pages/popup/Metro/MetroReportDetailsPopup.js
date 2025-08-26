@@ -1,0 +1,45 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class MetroReportDetailsPopup {
+	metroReportDetailsPopupMetroReportDetailsPopup_UpLink = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsPopup_UpLink');
+	metroReportDetailsScreenCancel = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-Cancel');
+	metroReportDetailsScreenEdit = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-Edit');
+	metroReportDetailsDVDeferralReasonLink = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-DeferralReasonLink');
+	metroReportDetailsDVForceDuplicate = PcfComponent('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-ForceDuplicate');
+	metroReportDetailsDVHoldReasonLink = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-HoldReasonLink');
+	metroReportDetailsDVInsuredDriverAddress = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-InsuredDriverAddress');
+	metroReportDetailsDVInsuredDriverName = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-InsuredDriverName');
+	metroReportDetailsDVInsuredVehicle = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-InsuredVehicle');
+	metroReportDetailsDVMetroDateReceived = PcfDateValueInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDateReceived');
+	metroReportDetailsDVMetroDateSent = PcfDateValueInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDateSent');
+	metroReportDetailsDVMetroDeceased = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceased');
+	metroDeceasedClaimNewPersonOnlyPickerMenuItemSet = PcfComponent('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceased-ClaimNewPersonOnlyPickerMenuItemSet');
+	metroReportDetailsPopupMetroReportDetailsScreenMetroReportDetailsDVMetroDeceasedClaimNewPersonOnlyPickerMenuItemSetClaimNewPersonOnlyPickerMenuItemSet_NewPersonMenuItem = PcfComponent('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceased-ClaimNewPersonOnlyPickerMenuItemSet-ClaimNewPersonOnlyPickerMenuItemSet_NewPersonMenuItem');
+	metroDeceasedMenuItem_Search = PcfComponent('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceased-MenuItem_Search');
+	metroDeceasedMenuItem_ViewDetails = PcfComponent('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceased-MenuItem_ViewDetails');
+	metroReportDetailsDVMetroDeceasedDOD = PcfDateValueInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroDeceasedDOD');
+	metroReportDetailsDVMetroFailedReason = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroFailedReason');
+	metroReportDetailsDVMetroInvestAgencyCity = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgencyCity');
+	metroReportDetailsDVMetroInvestAgencyState = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgencyState');
+	metroReportDetailsDVMetroInvestAgency_DateReported = PcfDateValueInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_DateReported');
+	metroReportDetailsDVMetroInvestAgency_Name = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_Name');
+	metroReportDetailsDVMetroInvestAgency_OfficerNumber = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_OfficerNumber');
+	metroReportDetailsDVMetroInvestAgency_Precinct = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_Precinct');
+	metroReportDetailsDVMetroInvestAgency_ReportNumber = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_ReportNumber');
+	metroReportDetailsDVMetroInvestAgency_Type = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroInvestAgency_Type');
+	metroReportDetailsDVMetroLossDescription = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroLossDescription');
+	metroReportDetailsDVMetroOrderBy = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroOrderBy');
+	metroReportDetailsDVMetroReportType = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroReportType');
+	metroReportDetailsDVMetroStatus = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-MetroStatus');
+	metroReportDetailsDVThirdPartyDriverAddress = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-ThirdPartyDriverAddress');
+	metroReportDetailsDVThirdPartyDriverName = PcfTextInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-ThirdPartyDriverName');
+	metroReportDetailsDVThirdPartyVehicle = PcfSelectInput('#MetroReportDetailsPopup-MetroReportDetailsScreen-MetroReportDetailsDV-ThirdPartyVehicle');
+	metroReportDetailsScreenUpdate = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-Update');
+	metroReportDetailsScreen_msgs = PcfButton('#MetroReportDetailsPopup-MetroReportDetailsScreen-_msgs');
+	metroReportDetailsPopup_Paging = PcfButton('#MetroReportDetailsPopup-_Paging');
+	metroReportDetailsPopup__crumb__ = PcfComponent('#MetroReportDetailsPopup-__crumb__');
+}

@@ -1,0 +1,176 @@
+import com.guidewire.ccs.helios.client.common.HeliosClient
+import com.guidewire.commons.grn.Grn
+
+buildscript {
+    repositories{
+        maven { url rootProject.file('repository') }
+    }
+    dependencies{
+        classpath fileTree(dir:'repository/plugins', include: ['**/*.jar'])
+    }
+}
+
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+import org.apache.tools.ant.taskdefs.condition.Os
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "java-library"
+    apply plugin: "idea"
+    apply plugin: "scala"
+
+    sourceCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        maven { url rootProject.file('repository') }
+    }
+
+    dependencies {
+        def libDir = project.rootDir.toString() + '/libs/'
+        runtime files(libDir + 'xray-' + xray_releaseVersion + '.zip')
+        implementation files(libDir + 'gt-api-framework-' + gt_api_framework_releaseVersion + '.jar')
+
+
+        implementation group: 'com.intuit.karate', name: 'karate-junit4', version: karateVersion
+        implementation group: 'com.intuit.karate', name: 'karate-core', version: karateVersion
+        implementation group: 'com.intuit.karate', name: 'karate-gatling', version: karateVersion
+
+        implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+        implementation group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.13'
+        implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+
+        implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+        implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+        implementation group: 'org.apache.commons', name: 'commons-text', version: '1.10.0'
+
+        implementation group: 'commons-io', name: 'commons-io', version: '2.8.0'
+        implementation group: 'com.google.guava', name: 'guava', version: '32.0.1-jre'
+
+        implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '5.3.1'
+        implementation group: 'io.zipkin.brave', name: 'brave', version: '5.7.0'
+        implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11'
+        implementation group: 'org.bitbucket.b_c', name: 'jose4j', version: '0.9.3'
+
+        implementation group: 'net.jcazevedo', name: 'moultingyaml_2.13', version: '0.4.2'
+        implementation group: 'org.springframework', name: 'spring-core', version: '5.3.20'
+        implementation group: 'junit', name: 'junit', version: '4.13.2'
+
+        implementation group: 'io.cucumber', name: 'cucumber-junit', version: cucumberVersion
+        implementation group: 'io.cucumber', name: 'cucumber-java', version: cucumberVersion
+        implementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: cucumberVersion
+
+        implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.2'
+        implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.2'
+        implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
+        implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.10.1'
+
+        //JavaFaker is obsolete/adandoned on github - switching to datafaker which is supported
+        implementation group: 'net.datafaker', name: 'datafaker', version: '1.8.0'
+
+        //Scala dependencies
+        zinc group: 'org.scala-sbt', name: 'zinc_2.12', version: '1.3.5'
+        implementation group: 'org.scalatest', name: 'scalatest_2.13', version: '3.2.11'
+        implementation group: 'org.scalatestplus', name: 'scalatestplus-junit_2.13', version: '1.0.0-M2'
+
+        implementation "com.guidewire.ccs.helios:helios-client-suite:3.2.7"
+    }
+
+    configurations {
+        compile.exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+        compile.exclude group: "io.netty", module: "netty-codec"
+        compile.exclude group: "io.netty", module: "netty-codec-http"
+        compile.exclude group: "io.netty", module: "netty-codec-http2"
+        compile.exclude group: "io.netty", module: "netty-codec-socks"
+        compile.exclude group: "io.netty", module: "netty-codec-dns"
+        compile.exclude group: "org.apache.velocity", module: "velocity"
+        compile.exclude group: "com.sun.activation", module: "javax.activation"
+        compile.exclude group: "javax.jms", module: "javax.jms-api"
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.squareup.okio:okio-jvm:3.5.0', 'junit:junit:4.13.2', 'com.google.guava:guava:32.0.1-jre',
+                'commons-codec:commons-codec:1.15', 'commons-io:commons-io:2.8.0',
+                'org.apache.httpcomponents:httpclient:4.5.13', 'org.apache.logging.log4j:log4j-core:2.17.1',
+                'io.pebbletemplates:pebble:3.2.1', 'org.yaml:snakeyaml:1.33', 'com.jayway.jsonpath:json-path:2.6.0',
+                'com.fasterxml.jackson.core:jackson-databind:2.13.2.2', 'commons-collections:commons-collections:3.2.2',
+                'org.jsoup:jsoup:1.15.3', 'com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20211018.2',
+                'ch.qos.logback:logback-core:1.2.11', 'com.google.protobuf:protobuf-java:3.7.0',
+                'ch.qos.logback:logback-classic:1.2.11','io.netty:netty-common:4.1.79.Final',
+                'org.apache.logging.log4j:log4j-api:2.17.1', 'net.minidev:json-smart:2.4.11',
+                'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.1',
+                'org.apache.commons:commons-lang3:3.12.0', 'org.apache.velocity:velocity-engine-core:2.3',
+                'io.netty:netty-handler:4.1.100.Final'
+    }
+}
+
+clean.doFirst {
+    delete "${buildDir}"
+    delete "**/${buildDir}"
+    delete "target"
+    delete "**/target"
+}
+
+task copyXrayModuleFromRuntimeLibraries(type: Copy) {
+
+    from(configurations.runtime) {
+        include 'xray-' + xray_releaseVersion + '.zip'
+    }
+    into file("${buildDir}")
+}
+
+task prepareXrayModule(type: Copy, dependsOn: 'copyXrayModuleFromRuntimeLibraries') {
+
+    def inputFile = file("${buildDir}" + '/xray-' + xray_releaseVersion + '.zip')
+    def outputDir = file("${buildDir}/xray")
+
+    from zipTree(inputFile)
+    into outputDir
+}
+
+task xrayCucumberSync(type: Exec) {
+    def featureDir = xray_featureDir;
+    workingDir "${buildDir}/xray/main"
+    commandLine 'node', '--no-warnings', 'mainXrayCucumberScenarioSync.js', xray_projectId, featureDir
+}
+xrayCucumberSync.onlyIf { !xray_featureDir.isEmpty() }
+
+task xrayPrepareReport(type: Exec) {
+    workingDir "${buildDir}/xray/main"
+    commandLine 'node', '--no-warnings', 'mainXrayPrepareCucumberReport.js', xray_projectId, xray_featureDir, xray_reportsDir
+}
+xrayPrepareReport.onlyIf { !xray_featureDir.isEmpty() && !xray_reportsDir.isEmpty() }
+
+task xrayImportTestExecutions(type: Exec, dependsOn: 'xrayPrepareReport') {
+    workingDir "${buildDir}/xray/main"
+    commandLine 'node', '--no-warnings', 'mainXrayImportTestExecutions.js', xray_projectId, xray_featureDir, xray_reportsDir
+}
+xrayImportTestExecutions.onlyIf { !xray_featureDir.isEmpty() && !xray_reportsDir.isEmpty() }
+
+task xrayExportTestsFromJira(type: Exec) {
+    workingDir "${buildDir}/xray/main"
+    commandLine 'node', '--no-warnings', 'mainXrayCucumberExport.js', xray_filterId
+}
+xrayExportTestsFromJira.onlyIf { !xray_filterId.isEmpty() }
+
+task DISPLAY_GT_VERSIONS {
+    //Print versions from gradle.properties
+    doLast {
+        try {
+            println("-----------------------------------------")
+            println("GT VERSIONS USED:")
+            println("-----------------------------------------")
+            println("GT-Framework=" + releaseVersion)
+            println("GT-API=" + gt_api_framework_releaseVersion)
+            println("GT-UI=" + gt_ui_framework_releaseVersion)
+            println("Ignite=" + ignite_releaseVersion)
+            println("Xray=" + xray_releaseVersion)
+            println("-----------------------------------------")
+        } catch (Exception e) {
+                println("Exception occured while running DISPLAY_GT_VERSION task. Not printing GT versions.")
+        }
+    }
+}

@@ -1,0 +1,48 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class NewGroup {
+	groupDetailScreenCancel = PcfButton('#NewGroup-GroupDetailScreen-Cancel');
+	groupDetailScreenEdit = PcfButton('#NewGroup-GroupDetailScreen-Edit');
+	newGroupGroupDetailScreenGroupDetailDVGlobalContactNameInputSetName = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GlobalContactNameInputSet-Name');
+	newGroupGroupDetailScreenGroupDetailDVGlobalContactNameInputSetNameKanji = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GlobalContactNameInputSet-NameKanji');
+	newGroupGroupDetailScreenGroupDetailDVGlobalContactNameInputSetNameSummary = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GlobalContactNameInputSet-NameSummary');
+	groupDetailInputSetBranchCode = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-BranchCode');
+	groupDetailInputSetDescription = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-Description');
+	groupDetailInputSetLoadFactor = PcfTextInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-LoadFactor');
+	groupDetailInputSetSecurityZone = PcfSelectInput('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-SecurityZone');
+	groupDetailInputSetSupervisor = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-Supervisor');
+	supervisorSelectUsers = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-Supervisor-SelectUsers');
+	supervisorUserBrowseMenuItem = PcfComponent('#NewGroup-GroupDetailScreen-GroupDetailDV-GroupDetailInputSet-Supervisor-UserBrowseMenuItem');
+	groupDetailDVOrganization = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-Organization');
+	newGroupGroupDetailScreenGroupDetailDVOrganizationSelectOrganization = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-Organization-SelectOrganization');
+	groupDetailDVParent = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-Parent');
+	parentGroupPickerMenuIcon = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-Parent-GroupPickerMenuIcon');
+	parentGroupSearchMenuIcon = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailDV-Parent-GroupSearchMenuIcon');
+	groupDetailDVType = PcfSelectInput('#NewGroup-GroupDetailScreen-GroupDetailDV-Type');
+	groupDetailScreenGroupDetailScreen_BasicCard_DeleteButton = PcfButton('#NewGroup-GroupDetailScreen-GroupDetailScreen_BasicCard_DeleteButton');
+	groupDetailScreenGroupDetail_BasicCardTab = PcfButton('#NewGroup-GroupDetailScreen-GroupDetail_BasicCardTab');
+	groupDetailScreenGroupDetail_ProducerCodesCardTab = PcfButton('#NewGroup-GroupDetailScreen-GroupDetail_ProducerCodesCardTab');
+	groupDetailScreenGroupDetail_ProducerCodesLV = PcfListView('#NewGroup-GroupDetailScreen-GroupDetail_ProducerCodesLV');
+	groupDetailScreenGroupDetail_QueuesCardTab = PcfButton('#NewGroup-GroupDetailScreen-GroupDetail_QueuesCardTab');
+	groupDetailScreenGroupDetail_RegionsCardTab = PcfButton('#NewGroup-GroupDetailScreen-GroupDetail_RegionsCardTab');
+	groupDetailScreenGroupDetail_UserCardTab = PcfButton('#NewGroup-GroupDetailScreen-GroupDetail_UserCardTab');
+	groupDetailScreenGroupQueuesLV = PcfListView('#NewGroup-GroupDetailScreen-GroupQueuesLV');
+	groupQueuesLV_tbAdd = PcfButton('#NewGroup-GroupDetailScreen-GroupQueuesLV_tb-Add');
+	groupQueuesLV_tbRemove = PcfButton('#NewGroup-GroupDetailScreen-GroupQueuesLV_tb-Remove');
+	groupDetailScreenGroupRegionLV = PcfListView('#NewGroup-GroupDetailScreen-GroupRegionLV');
+	groupRegionLV_tbAdd = PcfButton('#NewGroup-GroupDetailScreen-GroupRegionLV_tb-Add');
+	groupRegionLV_tbRemove = PcfButton('#NewGroup-GroupDetailScreen-GroupRegionLV_tb-Remove');
+	groupDetailScreenGroupUsersLV = PcfListView('#NewGroup-GroupDetailScreen-GroupUsersLV');
+	groupUsersLV_tbAdd = PcfButton('#NewGroup-GroupDetailScreen-GroupUsersLV_tb-Add');
+	groupUsersLV_tbRemove = PcfButton('#NewGroup-GroupDetailScreen-GroupUsersLV_tb-Remove');
+	newGroupGroupDetailScreenLocalizedValuesDVLocalizedValuesLV = PcfListView('#NewGroup-GroupDetailScreen-LocalizedValuesDV-LocalizedValuesLV');
+	groupDetailScreenUpdate = PcfButton('#NewGroup-GroupDetailScreen-Update');
+	groupDetailScreen_msgs = PcfButton('#NewGroup-GroupDetailScreen-_msgs');
+	newGroupNewGroup_UpLink = PcfButton('#NewGroup-NewGroup_UpLink');
+	newGroup_Paging = PcfButton('#NewGroup-_Paging');
+	newGroup__crumb__ = PcfComponent('#NewGroup-__crumb__');
+}

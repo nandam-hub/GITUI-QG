@@ -1,0 +1,8 @@
+{
+    "defaultDataSet": {
+        
+    },
+    "documentUpload_01": {
+        "filePath": "../ui/testdata/cc/DocumentUploadTest.txt"
+    }
+}

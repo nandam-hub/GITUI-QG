@@ -1,0 +1,43 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class Documents {
+	accountFile_DocumentsAccountFileInfoBarAccount = PcfButton('#AccountFile_Documents-AccountFileInfoBar-Account');
+	accountFile_DocumentsAccountFileInfoBarAccountLabel = PcfButton('#AccountFile_Documents-AccountFileInfoBar-AccountLabel');
+	accountFile_DocumentsAccountFileInfoBarAccountName = PcfButton('#AccountFile_Documents-AccountFileInfoBar-AccountName');
+	accountFile_DocumentsAccountFile_Documents_UpLink = PcfButton('#AccountFile_Documents-AccountFile_Documents_UpLink');
+	documentSearchDVAuthor = PcfTextInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-Author');
+	documentSearchDVDateFrom = PcfDateValueInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-DateFrom');
+	documentSearchDVDateTo = PcfDateValueInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-DateTo');
+	documentSearchDVIncludeObsoletes = PcfComponent('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-IncludeObsoletes');
+	documentSearchDVLanguage = PcfSelectInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-Language');
+	documentSearchDVName = PcfTextInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-Name');
+	documentSearchDVRelatedTo = PcfSelectInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-RelatedTo');
+	accountFile_DocumentsDocumentsScreenDocumentSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	accountFile_DocumentsDocumentsScreenDocumentSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	documentSearchDVStatus = PcfSelectInput('#AccountFile_Documents-DocumentsScreen-DocumentSearchDV-Status');
+	documentsScreenDocumentsLV = PcfListView('#AccountFile_Documents-DocumentsScreen-DocumentsLV');
+	documentsLV_tbPolicyFile_Documents_DeleteSelectedDocumentButton = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_DeleteSelectedDocumentButton');
+	documentsLV_tbPolicyFile_Documents_DeobsolesceButton = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_DeobsolesceButton');
+	documentsLV_tbPolicyFile_Documents_NewDocumentButton = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton');
+	policyFile_Documents_NewDocumentButtonAccountNewDocumentMenuItemSet = PcfComponent('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-AccountNewDocumentMenuItemSet');
+	accountNewDocumentMenuItemSetAccountNewDocumentMenuItemSet_Linked = PcfComponent('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-AccountNewDocumentMenuItemSet-AccountNewDocumentMenuItemSet_Linked');
+	accountNewDocumentMenuItemSetAccountNewDocumentMenuItemSet_Template = PcfComponent('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_NewDocumentButton-AccountNewDocumentMenuItemSet-AccountNewDocumentMenuItemSet_Template');
+	documentsLV_tbPolicyFile_Documents_ObsolesceButton = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-PolicyFile_Documents_ObsolesceButton');
+	documentsLV_tbRefreshAsyncContent = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsLV_tb-RefreshAsyncContent');
+	documentsScreenDocumentsScreen_DocumentStoreSuspendedWarning = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_DocumentStoreSuspendedWarning');
+	documentsScreen_DocumentStoreSuspendedWarningCloseBtn = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_DocumentStoreSuspendedWarning-CloseBtn');
+	documentsScreenDocumentsScreen_IDCSDownAlertBar = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDCSDownAlertBar');
+	documentsScreen_IDCSDownAlertBarCloseBtn = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDCSDownAlertBar-CloseBtn');
+	documentsScreenDocumentsScreen_IDCSNotEnabledAlertBar = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDCSNotEnabledAlertBar');
+	documentsScreen_IDCSNotEnabledAlertBarCloseBtn = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDCSNotEnabledAlertBar-CloseBtn');
+	documentsScreenDocumentsScreen_IDMSDownAlertBar = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDMSDownAlertBar');
+	documentsScreen_IDMSDownAlertBarCloseBtn = PcfButton('#AccountFile_Documents-DocumentsScreen-DocumentsScreen_IDMSDownAlertBar-CloseBtn');
+	documentsScreen_msgs = PcfButton('#AccountFile_Documents-DocumentsScreen-_msgs');
+	accountFile_Documents_Paging = PcfButton('#AccountFile_Documents-_Paging');
+	accountFile_Documents__crumb__ = PcfComponent('#AccountFile_Documents-__crumb__');
+}

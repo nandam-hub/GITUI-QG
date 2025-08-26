@@ -1,0 +1,43 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { Selector } from 'testcafe';
+
+export class ClaimSummary {
+	claimSummaryScreenClaimClosedText = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-ClaimClosedText');
+	claimSummaryScreenClaimSummaryActivitiesLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-ClaimSummaryActivitiesLV');
+	claimSummaryScreenClaimSummaryAssociatedClaimsLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-ClaimSummaryAssociatedClaimsLV');
+	claimSummaryScreenClaimSummaryExposuresLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-ClaimSummaryExposuresLV');
+	claimSummaryScreenClaimSummaryMattersLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-ClaimSummaryMattersLV');
+	claimSummaryScreenDaysOpenProgressBar = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-DaysOpenProgressBar');
+	claimSummaryScreenDaysOpenText = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-DaysOpenText');
+	claimSummaryScreenDescription = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-Description');
+	claimSummaryScreenEmployeeThreePointContact = PcfButton('#ClaimSummary-ClaimSummaryScreen-EmployeeThreePointContact');
+	claimSummaryScreenEmployerThreePointContact = PcfButton('#ClaimSummary-ClaimSummaryScreen-EmployerThreePointContact');
+	claimSummaryScreenLocation = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-Location');
+	claimSummaryScreenLossDate = PcfDateValueInput('#ClaimSummary-ClaimSummaryScreen-LossDate');
+	claimSummaryScreenMedicalProviderThreePointContact = PcfButton('#ClaimSummary-ClaimSummaryScreen-MedicalProviderThreePointContact');
+	claimSummaryScreenNotesLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-NotesLV');
+	claimSummaryScreenPaid = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-Paid');
+	claimSummaryScreenPeopleInvolvedLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-PeopleInvolvedLV');
+	claimSummaryScreenRecovered = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-Recovered');
+	claimSummaryScreenReportDate = PcfDateValueInput('#ClaimSummary-ClaimSummaryScreen-ReportDate');
+	claimSummaryScreenServiceRequestLV = PcfListView('#ClaimSummary-ClaimSummaryScreen-ServiceRequestLV');
+	claimSummaryScreenTotalGrossIncurred = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-TotalGrossIncurred');
+	claimSummaryScreenViewClaimOtherInstructions = PcfButton('#ClaimSummary-ClaimSummaryScreen-ViewClaimOtherInstructions');
+	claimSummaryScreenWCInjuryWorkStatus = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-WCInjuryWorkStatus');
+	returnToWorkInputSetRTModWReadOnlyMSG = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-RTModWReadOnlyMSG');
+	returnToWorkInputSetRTWReadOnlyMSG = PcfTextInput('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-RTWReadOnlyMSG');
+	returnToWorkInputSetReturnToModWorkActual = PcfComponent('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToModWorkActual');
+	returnToWorkInputSetReturnToModWorkDate = PcfDateValueInput('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToModWorkDate');
+	returnToWorkInputSetReturnToModWorkValid = PcfComponent('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToModWorkValid');
+	returnToWorkInputSetReturnToWorkActual = PcfComponent('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToWorkActual');
+	returnToWorkInputSetReturnToWorkDate = PcfDateValueInput('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToWorkDate');
+	returnToWorkInputSetReturnToWorkValid = PcfComponent('#ClaimSummary-ClaimSummaryScreen-WC_RTW-ReturnToWorkInputSet-ReturnToWorkValid');
+	claimSummaryScreen_msgs = PcfButton('#ClaimSummary-ClaimSummaryScreen-_msgs');
+	claimSummaryClaimSummary_UpLink = PcfButton('#ClaimSummary-ClaimSummary_UpLink');
+	claimSummary_Paging = PcfButton('#ClaimSummary-_Paging');
+	claimSummary__crumb__ = PcfComponent('#ClaimSummary-__crumb__');
+}

@@ -1,0 +1,26 @@
+{
+    "exposure": {
+        "PolicyNumber": "7407354463",
+        "SearchCreatePolicy": "Create Unverified Policy",
+        "Type": "Commercial Property",
+        "LossDate": "-1",
+        "EffectiveDate": "-2",
+        "ExpirationDate": "+366",
+        "Name": "New Person",
+        "LossCause": "Fire",
+        "City": "Pewaukee",
+        "State": "Wisconsin",
+        "Description": "New claim saved",
+        "Assigned": "Assigned to user",
+        "Claimant": 1,
+        "PropertyName": 1,
+        "Status": "Open",
+        "Choice": "PrintChoice",
+        "BaseFile": "Exposure_Dynamic_Base",
+        "DataFile": "ExposureDataForValidation",
+        "EndPoint": "dynamic_content_validation",
+        "StandardForm": false,
+        "PdfFileName": "Print.pdf",
+        "ActualFileName": "Print"
+    }
+}

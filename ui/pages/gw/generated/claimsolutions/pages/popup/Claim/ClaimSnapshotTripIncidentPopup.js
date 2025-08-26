@@ -1,0 +1,37 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class ClaimSnapshotTripIncidentPopup {
+	claimSnapshotTripIncidentPopupClaimSnapshotTripIncidentPopup_UpLink = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentPopup_UpLink');
+	addnlTripAccommodationIteratorAddnlTripAccommodation_DisplayNameHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripAccommodationIterator-AddnlTripAccommodation_DisplayNameHeader');
+	addnlTripAccommodationIterator_ListPaging = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripAccommodationIterator-_ListPaging');
+	addnlTripSegmentIteratorCarrierNameHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripSegmentIterator-CarrierNameHeader');
+	addnlTripSegmentIteratorCarrierNumberHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripSegmentIterator-CarrierNumberHeader');
+	addnlTripSegmentIteratorStartedOnHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripSegmentIterator-StartedOnHeader');
+	addnlTripSegmentIteratorTransportTypeHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripSegmentIterator-TransportTypeHeader');
+	addnlTripSegmentIterator_ListPaging = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AddnlTripSegmentIterator-_ListPaging');
+	claimSnapshotTripIncidentScreenAffectedTripAccommodationCardTab = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AffectedTripAccommodationCardTab');
+	claimSnapshotTripIncidentScreenAffectedTripSegmentCardTab = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-AffectedTripSegmentCardTab');
+	claimSnapshotTripIncidentScreenDescription = PcfTextInput('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-Description');
+	tripAccommodationIteratorAccommodationStatusHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripAccommodationIterator-AccommodationStatusHeader');
+	tripAccommodationIteratorAffectedAccommodationNameHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripAccommodationIterator-AffectedAccommodationNameHeader');
+	tripAccommodationIteratorReasonForCancellationHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripAccommodationIterator-ReasonForCancellationHeader');
+	tripAccommodationIterator_ListPaging = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripAccommodationIterator-_ListPaging');
+	tripIncidentDVEndDate = PcfDateValueInput('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncidentDV-EndDate');
+	tripIncidentDVGeographicalRegion = PcfTextInput('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncidentDV-GeographicalRegion');
+	tripIncidentDVStartDate = PcfDateValueInput('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncidentDV-StartDate');
+	tripIncidentDVTripRU = PcfTextInput('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncidentDV-TripRU');
+	claimSnapshotTripIncidentScreenTripIncident_AccommodationCardTab = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncident_AccommodationCardTab');
+	claimSnapshotTripIncidentScreenTripIncident_TripCardTab = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripIncident_TripCardTab');
+	tripSegmentIteratorCarrierNameHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-CarrierNameHeader');
+	tripSegmentIteratorCarrierNumberHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-CarrierNumberHeader');
+	tripSegmentIteratorSegmentStatusHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-SegmentStatusHeader');
+	tripSegmentIteratorStartedOnHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-StartedOnHeader');
+	tripSegmentIteratorTransportTypeHeader = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-TransportTypeHeader');
+	tripSegmentIterator_ListPaging = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-TripSegmentIterator-_ListPaging');
+	claimSnapshotTripIncidentScreen_msgs = PcfButton('#ClaimSnapshotTripIncidentPopup-ClaimSnapshotTripIncidentScreen-_msgs');
+	claimSnapshotTripIncidentPopup_Paging = PcfButton('#ClaimSnapshotTripIncidentPopup-_Paging');
+	claimSnapshotTripIncidentPopup__crumb__ = PcfComponent('#ClaimSnapshotTripIncidentPopup-__crumb__');
+}

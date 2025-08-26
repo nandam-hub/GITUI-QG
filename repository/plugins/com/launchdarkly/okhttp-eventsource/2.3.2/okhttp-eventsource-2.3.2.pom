@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.launchdarkly</groupId>
+  <artifactId>okhttp-eventsource</artifactId>
+  <version>2.3.2</version>
+  <name>okhttp-eventsource</name>
+  <description>EventSource Implementation built on OkHttp</description>
+  <url>https://github.com/launchdarkly/okhttp-eventsource</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>LaunchDarkly SDK Team</name>
+      <email>sdks@launchdarkly.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/launchdarkly/okhttp-eventsource.git</connection>
+    <developerConnection>scm:git:ssh:git@github.com:launchdarkly/okhttp-eventsource.git</developerConnection>
+    <url>https://github.com/launchdarkly/okhttp-eventsource</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>4.5.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.22</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

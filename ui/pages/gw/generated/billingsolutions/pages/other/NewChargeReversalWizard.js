@@ -1,0 +1,45 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class NewChargeReversalWizard {
+	newChargeReversalWizardCancel = PcfButton('#NewChargeReversalWizard-Cancel');
+	newChargeReversalWizardFinish = PcfButton('#NewChargeReversalWizard-Finish');
+	newChargeReversalWizardNewChargeReversalWizard_UpLink = PcfButton('#NewChargeReversalWizard-NewChargeReversalWizard_UpLink');
+	newChargeReversalWizardNext = PcfButton('#NewChargeReversalWizard-Next');
+	newChargeReversalWizardPrev = PcfButton('#NewChargeReversalWizard-Prev');
+	newChargeReversalWizardStep1 = PcfButton('#NewChargeReversalWizard-Step1');
+	accountCriterionAccountPicker = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-AccountCriterion-AccountPicker');
+	chargeSearchDVChargePatternCriterion = PcfSelectInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-ChargePatternCriterion');
+	chargeSearchDVCurrencyCriterion = PcfSelectInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-CurrencyCriterion');
+	chargeSearchDVEarliestDateCriterion = PcfDateValueInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-EarliestDateCriterion');
+	chargeSearchDVLatestDateCriterion = PcfDateValueInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-LatestDateCriterion');
+	chargeSearchDVMaxAmountCriterion = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-MaxAmountCriterion');
+	chargeSearchDVMinAmountCriterion = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-MinAmountCriterion');
+	policyPeriodCriterionPolicyPicker = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-PolicyPeriodCriterion-PolicyPicker');
+	newChargeReversalWizardNewChargeReversalChargeSearchScreenChargeSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	newChargeReversalWizardNewChargeReversalChargeSearchScreenChargeSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	newChargeReversalChargeSearchScreenChargeTab = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-ChargeTab');
+	newChargeReversalChargeSearchScreenNewChargeReversalChargesLV = PcfListView('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-NewChargeReversalChargesLV');
+	newChargeReversalChargeSearchScreen_msgs = PcfButton('#NewChargeReversalWizard-NewChargeReversalChargeSearchScreen-_msgs');
+	newChargeReversalWizardStep2 = PcfButton('#NewChargeReversalWizard-Step2');
+	newChargeReversalConfirmationScreenApprovalActivityAlertBar = PcfButton('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityAlertBar');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityAlertBarCloseBtn = PcfButton('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityAlertBar-CloseBtn');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVAssignedTo = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-AssignedTo');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVDescription = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-Description');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVEscalationDate = PcfDateValueInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-EscalationDate');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVPriority = PcfSelectInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-Priority');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVSubject = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-Subject');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenApprovalActivityDVTargetDate = PcfDateValueInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-ApprovalActivityDV-TargetDate');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenNewChargeReversalConfirmationDVDescription = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-NewChargeReversalConfirmationDV-Description');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenNewChargeReversalConfirmationDVNewCharge = PcfTextInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-NewChargeReversalConfirmationDV-NewCharge');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenNewChargeReversalConfirmationDVReason = PcfSelectInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-NewChargeReversalConfirmationDV-Reason');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenNewChargeReversalConfirmationDVTransactionDate = PcfDateValueInput('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-NewChargeReversalConfirmationDV-TransactionDate');
+	newChargeReversalWizardNewChargeReversalConfirmationScreenNewChargeReversalConfirmationDVTransactionLineItemsLV = PcfListView('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-NewChargeReversalConfirmationDV-TransactionLineItemsLV');
+	newChargeReversalConfirmationScreen_msgs = PcfButton('#NewChargeReversalWizard-NewChargeReversalConfirmationScreen-_msgs');
+	newChargeReversalWizard_Paging = PcfButton('#NewChargeReversalWizard-_Paging');
+	newChargeReversalWizard__crumb__ = PcfComponent('#NewChargeReversalWizard-__crumb__');
+}

@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class APDProductManagementProductionPage {
+	aPDProductManagementProductionPageAPDInstalledEditionsPanelRowActivatedEditionLV = PcfListView('#APDProductManagementProductionPage-APDInstalledEditionsPanelRow-ActivatedEditionLV');
+	aPDProductManagementProductionPageAPDInstalledEditionsPanelRowInvalidActivatedEditionsRulesLV = PcfListView('#APDProductManagementProductionPage-APDInstalledEditionsPanelRow-InvalidActivatedEditionsRulesLV');
+	aPDProductManagementProductionPageAPDInstalledEditionsPanelRowInvalidEditionsRulesLV = PcfListView('#APDProductManagementProductionPage-APDInstalledEditionsPanelRow-InvalidEditionsRulesLV');
+	aPDProductManagementProductionPageAPDInstalledEditionsPanelRowPreloadedEditionLV = PcfListView('#APDProductManagementProductionPage-APDInstalledEditionsPanelRow-PreloadedEditionLV');
+	aPDProductManagementProductionPageAPDProductManagementProductionPage_UpLink = PcfButton('#APDProductManagementProductionPage-APDProductManagementProductionPage_UpLink');
+	aPDProductManagementProductionPageActivateEditions = PcfButton('#APDProductManagementProductionPage-ActivateEditions');
+	aPDProductManagementProductionPageApdManagedProductsTab = PcfButton('#APDProductManagementProductionPage-ApdManagedProductsTab');
+	aPDProductManagementProductionPageExternalManagedGenerateTemplate = PcfButton('#APDProductManagementProductionPage-ExternalManagedGenerateTemplate');
+	aPDProductManagementProductionPageExternalManagedProductDetailsAbbreviation = PcfTextInput('#APDProductManagementProductionPage-ExternalManagedProductDetailsAbbreviation');
+	aPDProductManagementProductionPageExternalManagedProductDetailsDescription = PcfTextInput('#APDProductManagementProductionPage-ExternalManagedProductDetailsDescription');
+	aPDProductManagementProductionPageExternalManagedProductDetailsIdentifier = PcfTextInput('#APDProductManagementProductionPage-ExternalManagedProductDetailsIdentifier');
+	aPDProductManagementProductionPageExternalManagedProductDetailsName = PcfTextInput('#APDProductManagementProductionPage-ExternalManagedProductDetailsName');
+	aPDProductManagementProductionPageExternalManagedProductDetailsTab = PcfButton('#APDProductManagementProductionPage-ExternalManagedProductDetailsTab');
+	aPDProductManagementProductionPageExternalManagedProductLV = PcfListView('#APDProductManagementProductionPage-ExternalManagedProductLV');
+	aPDProductManagementProductionPageExternalManagedProductsTab = PcfButton('#APDProductManagementProductionPage-ExternalManagedProductsTab');
+	aPDProductManagementProductionPageGenerateTemplate = PcfButton('#APDProductManagementProductionPage-GenerateTemplate');
+	aPDProductManagementProductionPageInstalledProductLV = PcfListView('#APDProductManagementProductionPage-InstalledProductLV');
+	aPDProductManagementProductionPagePreloadEditions = PcfButton('#APDProductManagementProductionPage-PreloadEditions');
+	aPDProductManagementProductionPageProductDetailsAbbreviation = PcfTextInput('#APDProductManagementProductionPage-ProductDetailsAbbreviation');
+	aPDProductManagementProductionPageProductDetailsDescription = PcfTextInput('#APDProductManagementProductionPage-ProductDetailsDescription');
+	aPDProductManagementProductionPageProductDetailsIdentifier = PcfTextInput('#APDProductManagementProductionPage-ProductDetailsIdentifier');
+	aPDProductManagementProductionPageProductDetailsName = PcfTextInput('#APDProductManagementProductionPage-ProductDetailsName');
+	aPDProductManagementProductionPageProductDetailsTab = PcfButton('#APDProductManagementProductionPage-ProductDetailsTab');
+	aPDProductManagementProductionPageProductInstalledEditionsTab = PcfButton('#APDProductManagementProductionPage-ProductInstalledEditionsTab');
+	aPDProductManagementProductionPage_Paging = PcfButton('#APDProductManagementProductionPage-_Paging');
+	aPDProductManagementProductionPage__crumb__ = PcfComponent('#APDProductManagementProductionPage-__crumb__');
+	aPDProductManagementProductionPage_msgs = PcfButton('#APDProductManagementProductionPage-_msgs');
+}

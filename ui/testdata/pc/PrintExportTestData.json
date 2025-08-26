@@ -1,0 +1,17 @@
+{
+    "policyDocument": {
+        "BaseFile": "Policy_Document_Base",
+        "EndPoint": "content_validation",
+        "PdfFileName": "Policy_Document.pdf",
+        "PolicyNumber": "0935603142",
+        "ActualFile":"Policy_Document"
+    },
+    "document": {
+        "BaseFile": "Policy_Ignore_Dynamic_Base",
+        "EndPoint": "content_validation_ignore_dynamic",
+        "StandardForm": true,
+        "PdfFileName": "Policy_Document.pdf",
+        "PolicyNumber": "9662802867",
+        "ActualFile":"Policy_Document"
+    }
+}

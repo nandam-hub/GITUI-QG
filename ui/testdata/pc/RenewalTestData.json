@@ -1,0 +1,67 @@
+{
+    "defaultDataSet": {
+        "Address1": "4700 S MOLSTEADS LN",
+        "State": "Idaho",
+        "ZIPCode": "83814-5113",
+        "AddressType": "Billing",
+        "Organization": "e",
+        "ProducerCode":"QA1PRODUCER01 QA1PRODUCER01",
+        "ProductName": "Go Commercial Property",
+        "OrganizationType": "Common ownership",
+        "OutsideObjectsAndStructuresLimit": "1000",
+        "OutsideObjectsAndStructuresDeductible": "250",
+        "EachLossCausedBywindLimit": "2000",
+        "EachLossCausedBywindDeductible": "200",
+        "ContentsOfOtherStructuresLimit": "1%",
+        "ContentsOfOtherStructuresDeductible": "150",
+        "RenewalCode": "Renew - account consideration"
+    },
+    "renewal_01": {
+        "RenewalCode": "Renew - account consideration",
+        "Coverage": {
+            "OutsideObjectsAndStructures": "uncheck",
+            "EachLossCausedByWind": "update",
+            "EachLossCausedByWindLimit": "2000",
+            "Terrorism": "check"
+        }
+    },
+    "renewal_02": {
+        "RenewalCode": "Renew - account consideration",
+        "Coverage": {
+            "FirstAid": "check",
+            "LossAssessment": "check",
+            "LossAssessmentLimit": "1,000"
+        }
+    },
+    "renewal_03": {
+        "RenewalCode": "Renew - account consideration",
+        "UmbrellaLiabilityorExcessLiability": "Umbrella Liability",
+        "Coverage": {
+            "UmbrellaLiability": "update",
+            "UmbrellaLiabilityOccurrenceLimit": "2,000,000",
+            "UmbrellaLiabilityAggregateLimit": "2,000,000",
+            "UmbrellaLiabilityProductandCompletedOperationsAggregateLImit": "2,000,000",
+            "UmbrellaLiabilitySelfInsuredRetention": "20,000"
+        }
+    },
+    "renewal_04": {
+        "Coverage": {
+            "GeneralLiability": "update",
+            "GeneralLiabilityAggregateLimit": "300,000"
+        },
+        "RenewalCode": "Renew - account consideration"
+    },
+    "renewal_05": {
+        "RenewalCode": "Renew - account consideration",
+        "Coverage": {
+            "LiabilityBodilyInjuryAndPropertyDamage": "update",
+            "LiabilityBodilyInjuryAndPropertyDamageAutoLiabilityPackage": "25/50/15"
+        }
+    },
+    "renewal_06": {
+        "Direction": "assistant",
+        "AssignTo": "Underwriter",
+        "PreRenewalText": "Pre-renewal direction, referred to underwriter",
+        "PreRenwalValidationText": "Refer to Underwriter Assistant"
+    }
+}

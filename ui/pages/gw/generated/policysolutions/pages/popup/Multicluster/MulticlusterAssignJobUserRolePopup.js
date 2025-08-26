@@ -1,0 +1,35 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class MulticlusterAssignJobUserRolePopup {
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetFirstName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-FirstName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetFirstNameKanji = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-FirstNameKanji');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetLastName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-LastName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetLastNameKanji = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-LastNameKanji');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetNameSummary = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-NameSummary');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetMiddleName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-MiddleName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetParticle = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-Particle');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetPrefix = PcfSelectInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-Prefix');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGlobalPersonNameInputSetSuffix = PcfSelectInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GlobalPersonNameInputSet-Suffix');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGroupCriteriaName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GroupCriteriaName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetGroupName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-GroupName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetQueueName = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-QueueName');
+	multiclusterAssignJobUserRolePopupAssignmentSearchInputSetUsername = PcfTextInput('#MulticlusterAssignJobUserRolePopup-AssignmentSearchInputSet-Username');
+	multiclusterAssignJobUserRolePopupAssignmentUserLV = PcfListView('#MulticlusterAssignJobUserRolePopup-AssignmentUserLV');
+	multiclusterAssignJobUserRolePopupCancel = PcfButton('#MulticlusterAssignJobUserRolePopup-Cancel');
+	multiclusterAssignJobUserRolePopupEdit = PcfButton('#MulticlusterAssignJobUserRolePopup-Edit');
+	multiclusterAssignJobUserRolePopupJobUserRoleAssignedUserHeader = PcfButton('#MulticlusterAssignJobUserRolePopup-JobUserRoleAssignedUserHeader');
+	multiclusterAssignJobUserRolePopupMulticlusterAssignJobUserRolePopup_UpLink = PcfButton('#MulticlusterAssignJobUserRolePopup-MulticlusterAssignJobUserRolePopup_UpLink');
+	multiclusterAssignJobUserRolePopupNumberHeader = PcfButton('#MulticlusterAssignJobUserRolePopup-NumberHeader');
+	multiclusterAssignJobUserRolePopupSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#MulticlusterAssignJobUserRolePopup-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	multiclusterAssignJobUserRolePopupSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#MulticlusterAssignJobUserRolePopup-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	multiclusterAssignJobUserRolePopupTypeHeader = PcfButton('#MulticlusterAssignJobUserRolePopup-TypeHeader');
+	multiclusterAssignJobUserRolePopupUpdate = PcfButton('#MulticlusterAssignJobUserRolePopup-Update');
+	multiclusterAssignJobUserRolePopup_ListPaging = PcfButton('#MulticlusterAssignJobUserRolePopup-_ListPaging');
+	multiclusterAssignJobUserRolePopup_Paging = PcfButton('#MulticlusterAssignJobUserRolePopup-_Paging');
+	multiclusterAssignJobUserRolePopup__crumb__ = PcfComponent('#MulticlusterAssignJobUserRolePopup-__crumb__');
+	multiclusterAssignJobUserRolePopup_msgs = PcfButton('#MulticlusterAssignJobUserRolePopup-_msgs');
+}

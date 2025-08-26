@@ -1,0 +1,7 @@
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class ClaimNewDocumentFromTemplateWorksheet_New {
+    claimNewDocumentFromTemplateWorksheetSelectTemplatePicker = PcfButton("#ClaimNewDocumentFromTemplateWorksheet-NewDocumentFromTemplateScreen-NewTemplateDocumentDV-TemplatePicker-SelectTemplatePicker")
+    claimNewDocumentFromTemplateWorksheetSelectCreateDocument = PcfButton("#ClaimNewDocumentFromTemplateWorksheet-NewDocumentFromTemplateScreen-NewTemplateDocumentDV-DocumentCreationInputSet-CreateDocument")
+    claimNewDocumentFromTemplateWorksheetSelectCustomUpdate = PcfButton("#ClaimNewDocumentFromTemplateWorksheet-NewDocumentFromTemplateScreen-DocumentCreationToolbarButtonSet-NewDocumentFromTemplate_CustomUpdate")
+}

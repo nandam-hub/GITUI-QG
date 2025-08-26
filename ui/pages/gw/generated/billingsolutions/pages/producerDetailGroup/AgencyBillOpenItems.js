@@ -1,0 +1,45 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class AgencyBillOpenItems {
+	policyActivityLVCommentsHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommentsHeader');
+	policyActivityLVCommissionAmountFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionAmountFooter');
+	policyActivityLVCommissionAmountHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionAmountHeader');
+	policyActivityLVCommissionBasisFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionBasisFooter');
+	policyActivityLVCommissionBasisHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionBasisHeader');
+	policyActivityLVCommissionPercentHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionPercentHeader');
+	policyActivityLVExceptionFlagHeader = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-ExceptionFlagHeader');
+	policyActivityLVGrossFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-GrossFooter');
+	policyActivityLVGrossHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-GrossHeader');
+	policyActivityLVInsuredNameHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-InsuredNameHeader');
+	policyActivityLVItemContextHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-ItemContextHeader');
+	policyActivityLVItemDescriptionHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-ItemDescriptionHeader');
+	policyActivityLVLeadersFeeHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-LeadersFeeHeader');
+	policyActivityLVLineNumberHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-LineNumberHeader');
+	policyActivityLVNetAmountFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-NetAmountFooter');
+	policyActivityLVNetAmountHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-NetAmountHeader');
+	policyActivityLVPolicyNumberHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-PolicyNumberHeader');
+	policyActivityLVStatementDateFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-StatementDateFooter');
+	policyActivityLVStatementDateHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-StatementDateHeader');
+	policyActivityLVStatementNumberHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-StatementNumberHeader');
+	policyActivityLVStatusHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-StatusHeader');
+	policyActivityLV_ListPaging = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-_ListPaging');
+	policyActivityLVCommissionFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionFooter');
+	policyActivityLVCommissionHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-CommissionHeader');
+	policyActivityLVEffectiveDateFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-EffectiveDateFooter');
+	policyActivityLVEffectiveDateHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-EffectiveDateHeader');
+	policyActivityLVExpirationDateHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-ExpirationDateHeader');
+	policyActivityLVNetFooter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-NetFooter');
+	policyActivityLVNetHeader = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV-NetHeader');
+	policyActivityLV_tbByItemOrPolicy = PcfSelectInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV_tb-ByItemOrPolicy');
+	policyActivityLV_tbDisplayMode = PcfSelectInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV_tb-DisplayMode');
+	policyActivityLV_tbPolicyFilterClearButton = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV_tb-PolicyFilterClearButton');
+	policyActivityLV_tbPolicyFilterGoButton = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV_tb-PolicyFilterGoButton');
+	policyActivityLV_tbPolicyPeriodFilter = PcfTextInput('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-PolicyActivityLV_tb-PolicyPeriodFilter');
+	agencyBillOpenItemsScreen_msgs = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItemsScreen-_msgs');
+	agencyBillOpenItemsAgencyBillOpenItems_UpLink = PcfButton('#AgencyBillOpenItems-AgencyBillOpenItems_UpLink');
+	agencyBillOpenItems_Paging = PcfButton('#AgencyBillOpenItems-_Paging');
+	agencyBillOpenItems__crumb__ = PcfComponent('#AgencyBillOpenItems-__crumb__');
+}

@@ -1,0 +1,33 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class Multicurrency_AgencyBillPolicyDetailsPopup {
+	multicurrency_AgencyBillPolicyDetailsPopupMulticurrency_AgencyBillPolicyDetailsPopup_UpLink = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicyDetailsPopup_UpLink');
+	multicurrency_AgencyBillPolicySummaryDVAccountName = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-AccountName');
+	multicurrency_AgencyBillPolicySummaryDVAccountNumber = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-AccountNumber');
+	multicurrency_AgencyBillPolicySummaryDVBilled = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Billed');
+	multicurrency_AgencyBillPolicySummaryDVBillingMethod = PcfSelectInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-BillingMethod');
+	multicurrency_AgencyBillPolicySummaryDVCommissionAllocated = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-CommissionAllocated');
+	multicurrency_AgencyBillPolicySummaryDVCommissionReserved = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-CommissionReserved');
+	multicurrency_AgencyBillPolicySummaryDVPaid = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Paid');
+	multicurrency_AgencyBillPolicySummaryDVPastDue = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-PastDue');
+	multicurrency_AgencyBillPolicySummaryDVPolicyNumber = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-PolicyNumber');
+	multicurrency_AgencyBillPolicySummaryDVPolicyPerEffDate = PcfDateValueInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-PolicyPerEffDate');
+	multicurrency_AgencyBillPolicySummaryDVPolicyPerExpirDate = PcfDateValueInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-PolicyPerExpirDate');
+	multicurrency_AgencyBillPolicySummaryDVPrimaryInsured_Name = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-PrimaryInsured_Name');
+	multicurrency_AgencyBillPolicySummaryDVProducer = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Producer');
+	multicurrency_AgencyBillPolicySummaryDVProducerCode = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-ProducerCode');
+	multicurrency_AgencyBillPolicySummaryDVProduct = PcfSelectInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Product');
+	multicurrency_AgencyBillPolicySummaryDVTotalCommission = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-TotalCommission');
+	multicurrency_AgencyBillPolicySummaryDVTotalGross = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-TotalGross');
+	multicurrency_AgencyBillPolicySummaryDVUnbilled = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Unbilled');
+	multicurrency_AgencyBillPolicySummaryDVUnpaid = PcfTextInput('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicySummaryDV-Unpaid');
+	multicurrency_AgencyBillPolicyDetailsPopupMulticurrency_AgencyBillPolicyTxnsLV = PcfListView('#Multicurrency_AgencyBillPolicyDetailsPopup-Multicurrency_AgencyBillPolicyTxnsLV');
+	multicurrency_AgencyBillPolicyDetailsPopup_Paging = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-_Paging');
+	multicurrency_AgencyBillPolicyDetailsPopup__crumb__ = PcfComponent('#Multicurrency_AgencyBillPolicyDetailsPopup-__crumb__');
+	multicurrency_AgencyBillPolicyDetailsPopup_msgs = PcfButton('#Multicurrency_AgencyBillPolicyDetailsPopup-_msgs');
+}

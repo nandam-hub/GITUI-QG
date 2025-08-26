@@ -1,0 +1,46 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class AccountDetailInvoices {
+	accountDetailInvoices_billedDateUpdated = PcfComponent('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-AccountInvoiceInformationInputSet-InvoiceDate>div>div');
+	accountDetailInvoicesScreenAccountDetailInvoices_InvoiceSentAlertBar = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-AccountDetailInvoices_InvoiceSentAlertBar');
+	accountDetailInvoices_InvoiceSentAlertBarCloseBtn = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-AccountDetailInvoices_InvoiceSentAlertBar-CloseBtn');
+	accountInvoiceItemsLVInvoiceItemsLV_AmountFooter = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_AmountFooter');
+	accountInvoiceItemsLVInvoiceItemsLV_AmountHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_AmountHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_ChargeGroupHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_ChargeGroupHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_ChargeHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_ChargeHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_ContextHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_ContextHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_DescriptionHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_DescriptionHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_EventDateHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_EventDateHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_InstallmentNumberFooter = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_InstallmentNumberFooter');
+	accountInvoiceItemsLVInvoiceItemsLV_InstallmentNumberHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_InstallmentNumberHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_PaidAmountHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_PaidAmountHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_PolicyHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_PolicyHeader');
+	accountInvoiceItemsLVInvoiceItemsLV_ProductHeader = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-InvoiceItemsLV_ProductHeader');
+	accountInvoiceItemsLV_ListPaging = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV-_ListPaging');
+	accountInvoiceItemsLV_tbAggregationTypeSelector = PcfSelectInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoiceItemsLV_tb-AggregationTypeSelector');
+	detailPanelAccountInvoicesLV = PcfListView('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoicesLV');
+	accountInvoicesLV_tbAccountDetailInvoices_NewInvoiceButton = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoicesLV_tb-AccountDetailInvoices_NewInvoiceButton');
+	accountInvoicesLV_tbAccountDetailInvoices_RemoveInvoicesButton = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoicesLV_tb-AccountDetailInvoices_RemoveInvoicesButton');
+	accountInvoicesLV_tbInvoiceStreamFilter = PcfSelectInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-AccountInvoicesLV_tb-InvoiceStreamFilter');
+	detailPanelInvoiceDetailCardTab = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailCardTab');
+	accountInvoiceInformationInputSetAdHoc = PcfComponent('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-AccountInvoiceInformationInputSet-AdHoc');
+	accountInvoiceInformationInputSetInvoiceDate = PcfDateValueInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-AccountInvoiceInformationInputSet-InvoiceDate');
+	accountInvoiceInformationInputSetPaymentDueDate = PcfDateValueInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-AccountInvoiceInformationInputSet-PaymentDueDate');
+	accountInvoiceInformationInputSetStatus = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-AccountInvoiceInformationInputSet-Status');
+	invoiceDetailDVPriorAmountDue = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-PriorAmountDue');
+	invoiceDetailDVTotalAmountDue = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-TotalAmountDue');
+	invoiceDetailDVTotalCharges = PcfTextInput('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV-TotalCharges');
+	invoiceDetailDV_tbCancel = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV_tb-Cancel');
+	invoiceDetailDV_tbEdit = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV_tb-Edit');
+	invoiceDetailDV_tbInvoiceDetailDV_ResendInvoice = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV_tb-InvoiceDetailDV_ResendInvoice');
+	invoiceDetailDV_tbUpdate = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-DetailPanel-InvoiceDetailDV_tb-Update');
+	accountDetailInvoicesScreen_msgs = PcfButton('#AccountDetailInvoices-AccountDetailInvoicesScreen-_msgs');
+	accountDetailInvoicesAccountDetailInvoices_UpLink = PcfButton('#AccountDetailInvoices-AccountDetailInvoices_UpLink');
+	accountDetailInvoices_Paging = PcfButton('#AccountDetailInvoices-_Paging');
+	accountDetailInvoices__crumb__ = PcfComponent('#AccountDetailInvoices-__crumb__');
+}

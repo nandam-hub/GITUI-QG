@@ -1,0 +1,34 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+
+export class ClaimSnapshotInjuredInjuryIncident600Popup {
+	claimSnapshotInjuredInjuryIncident600PopupClaimSnapshotInjuredInjuryIncident600Popup_UpLink = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-ClaimSnapshotInjuredInjuryIncident600Popup_UpLink');
+	claimSnapshotInjuredInjuryIncident600PopupEmail2 = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-Email2');
+	claimSnapshotInjuredInjuryIncident600PopupFirstName = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-FirstName');
+	injuryIncidentInputSetCompensabilityCommentsHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-CompensabilityCommentsHeader');
+	injuryIncidentInputSetCompensabilityDecisionDateHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-CompensabilityDecisionDateHeader');
+	injuryIncidentInputSetCompensabilityDecisionHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-CompensabilityDecisionHeader');
+	injuryIncidentInputSetDetailedBodyPartHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-DetailedBodyPartHeader');
+	injuryIncidentInputSetDetailedInjuryType = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-DetailedInjuryType');
+	injuryIncidentInputSetInjuryDescription = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-InjuryDescription');
+	injuryIncidentInputSetLostWages = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-LostWages');
+	injuryIncidentInputSetOrderingHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-OrderingHeader');
+	injuryIncidentInputSetPrimaryBodyPartHeader = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-PrimaryBodyPartHeader');
+	injuryIncidentInputSetPrimaryDoctor = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-PrimaryDoctor');
+	injuryIncidentInputSetPrimaryInjuryType = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-PrimaryInjuryType');
+	injuryIncidentInputSetReceivedTreatment = PcfComponent('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-ReceivedTreatment');
+	injuryIncidentInputSetSeverity = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-Severity');
+	injuryIncidentInputSetTreatmentType = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-InjuryIncidentInputSet-TreatmentType');
+	claimSnapshotInjuredInjuryIncident600PopupLastName = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-LastName');
+	claimSnapshotInjuredInjuryIncident600PopupNotes = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-Notes');
+	claimSnapshotInjuredInjuryIncident600Popup_Paging = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-_Paging');
+	claimSnapshotInjuredInjuryIncident600Popup__crumb__ = PcfComponent('#ClaimSnapshotInjuredInjuryIncident600Popup-__crumb__');
+	claimSnapshotInjuredInjuryIncident600Popup_msgs = PcfButton('#ClaimSnapshotInjuredInjuryIncident600Popup-_msgs');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_Address = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_Address');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_businessphone = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_businessphone');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_email = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_email');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_homephone = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_homephone');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_mobile = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_mobile');
+	claimSnapshotInjuredInjuryIncident600Popupreporter_primarytype = PcfTextInput('#ClaimSnapshotInjuredInjuryIncident600Popup-reporter_primarytype');
+}

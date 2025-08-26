@@ -1,0 +1,25 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class PortalAuthUserDetailPopup {
+	portalAuthUserDetailPopupPortalAuthUserDVUserEmail = PcfTextInput('#PortalAuthUserDetailPopup-PortalAuthUserDV-UserEmail');
+	portalAuthUserDetailPopupPortalAuthUserDVUserFirstName = PcfTextInput('#PortalAuthUserDetailPopup-PortalAuthUserDV-UserFirstName');
+	portalAuthUserDetailPopupPortalAuthUserDVUserPassword = PcfTextInput('#PortalAuthUserDetailPopup-PortalAuthUserDV-UserPassword');
+	portalAuthUserDetailPopupPortalAuthUserDVUserSurname = PcfTextInput('#PortalAuthUserDetailPopup-PortalAuthUserDV-UserSurname');
+	portalAuthUserDetailPopupPortalAuthUserDV_tbCancel = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserDV_tb-Cancel');
+	portalAuthUserDetailPopupPortalAuthUserDV_tbEdit = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserDV_tb-Edit');
+	portalAuthUserDetailPopupPortalAuthUserDV_tbUpdate = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserDV_tb-Update');
+	portalAuthUserDetailPopupPortalAuthUserDetailPopup_UpLink = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserDetailPopup_UpLink');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV = PcfListView('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbAddAuthorityButton = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-AddAuthorityButton');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbAddAuthorityButtonPortalAuthUserGrantedAuthoritiesMenuItemSet = PcfComponent('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-AddAuthorityButton-PortalAuthUserGrantedAuthoritiesMenuItemSet');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbAddAuthorityButtonPortalAuthUserGrantedAuthoritiesMenuItemSetAddNewAuthorityAccountHolderOption = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-AddAuthorityButton-PortalAuthUserGrantedAuthoritiesMenuItemSet-AddNewAuthorityAccountHolderOption');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbAddAuthorityButtonPortalAuthUserGrantedAuthoritiesMenuItemSetAddNewAuthorityPolicyholderOption = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-AddAuthorityButton-PortalAuthUserGrantedAuthoritiesMenuItemSet-AddNewAuthorityPolicyholderOption');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbAddAuthorityButtonPortalAuthUserGrantedAuthoritiesMenuItemSetAddNewAuthorityProducerOption = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-AddAuthorityButton-PortalAuthUserGrantedAuthoritiesMenuItemSet-AddNewAuthorityProducerOption');
+	portalAuthUserDetailPopupPortalAuthUserGrantedAuthoritiesLV_tbdeleteAuthoritiesButton = PcfButton('#PortalAuthUserDetailPopup-PortalAuthUserGrantedAuthoritiesLV_tb-deleteAuthoritiesButton');
+	portalAuthUserDetailPopup_Paging = PcfButton('#PortalAuthUserDetailPopup-_Paging');
+	portalAuthUserDetailPopup__crumb__ = PcfComponent('#PortalAuthUserDetailPopup-__crumb__');
+	portalAuthUserDetailPopup_msgs = PcfButton('#PortalAuthUserDetailPopup-_msgs');
+}

@@ -1,0 +1,24 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class GroupUserPickerPopup {
+	groupUserPickerPopupGroupUserPickerPopup_UpLink = PcfButton('#GroupUserPickerPopup-GroupUserPickerPopup_UpLink');
+	groupUserPickerScreenGroupUserLV = PcfListView('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserLV');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetFirstName = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-FirstName');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetFirstNameKanji = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-FirstNameKanji');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetLastName = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-LastName');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetLastNameKanji = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-LastNameKanji');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetNameSummary = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-NameSummary');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetMiddleName = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-MiddleName');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetParticle = PcfTextInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-Particle');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetPrefix = PcfSelectInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-Prefix');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVNameGlobalPersonNameInputSetSuffix = PcfSelectInput('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-Name-GlobalPersonNameInputSet-Suffix');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVSearchAndResetInputSetSearchLinksInputSetReset = PcfButton('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Reset');
+	groupUserPickerPopupGroupUserPickerScreenGroupUserSearchDVSearchAndResetInputSetSearchLinksInputSetSearch = PcfButton('#GroupUserPickerPopup-GroupUserPickerScreen-GroupUserSearchDV-SearchAndResetInputSet-SearchLinksInputSet-Search');
+	groupUserPickerScreen_msgs = PcfButton('#GroupUserPickerPopup-GroupUserPickerScreen-_msgs');
+	groupUserPickerPopup_Paging = PcfButton('#GroupUserPickerPopup-_Paging');
+	groupUserPickerPopup__crumb__ = PcfComponent('#GroupUserPickerPopup-__crumb__');
+}

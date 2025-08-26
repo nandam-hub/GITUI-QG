@@ -1,0 +1,35 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class AgencyBillExceptions {
+	agencyBillExceptionsScreenLatePaymentsTab = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-LatePaymentsTab');
+	agencyBillExceptionsScreenLatePromisesTab = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-LatePromisesTab');
+	missingPaymentsPanelCycleExceptionsLV = PcfListView('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPaymentsPanel-CycleExceptionsLV');
+	cycleExceptionsLV_tbDismiss = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPaymentsPanel-CycleExceptionsLV_tb-Dismiss');
+	cycleExceptionsLV_tbEditComments = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPaymentsPanel-CycleExceptionsLV_tb-EditComments');
+	missingPromisesPanelCycleExceptionsLV = PcfListView('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPromisesPanel-CycleExceptionsLV');
+	agencyBillExceptionsAgencyBillExceptionsScreenMissingPromisesPanelCycleExceptionsLV_tbDismiss = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPromisesPanel-CycleExceptionsLV_tb-Dismiss');
+	agencyBillExceptionsAgencyBillExceptionsScreenMissingPromisesPanelCycleExceptionsLV_tbEditComments = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-MissingPromisesPanel-CycleExceptionsLV_tb-EditComments');
+	paymentExceptionsPanelAgencyBillExceptionsLV = PcfListView('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV');
+	agencyBillExceptionsLV_tbCarryForward = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-CarryForward');
+	agencyBillExceptionsLV_tbEditComments = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-EditComments');
+	agencyBillExceptionsLV_tbEditItem = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-EditItem');
+	agencyBillExceptionsLV_tbOverrideCommission = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-OverrideCommission');
+	agencyBillExceptionsLV_tbStartDelinquency = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-StartDelinquency');
+	agencyBillExceptionsLV_tbWriteoff = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-Writeoff');
+	writeoffBoth = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-Writeoff-Both');
+	writeoffCommission = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-Writeoff-Commission');
+	writeoffGross = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentExceptionsPanel-AgencyBillExceptionsLV_tb-Writeoff-Gross');
+	agencyBillExceptionsScreenPaymentMismatchExceptionsTab = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PaymentMismatchExceptionsTab');
+	promiseExceptionsPanelAgencyBillExceptionsLV = PcfListView('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseExceptionsPanel-AgencyBillExceptionsLV');
+	agencyBillExceptionsAgencyBillExceptionsScreenPromiseExceptionsPanelAgencyBillExceptionsLV_tbCarryForward = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseExceptionsPanel-AgencyBillExceptionsLV_tb-CarryForward');
+	agencyBillExceptionsAgencyBillExceptionsScreenPromiseExceptionsPanelAgencyBillExceptionsLV_tbEditComments = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseExceptionsPanel-AgencyBillExceptionsLV_tb-EditComments');
+	agencyBillExceptionsAgencyBillExceptionsScreenPromiseExceptionsPanelAgencyBillExceptionsLV_tbEditItem = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseExceptionsPanel-AgencyBillExceptionsLV_tb-EditItem');
+	agencyBillExceptionsAgencyBillExceptionsScreenPromiseExceptionsPanelAgencyBillExceptionsLV_tbOverrideCommission = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseExceptionsPanel-AgencyBillExceptionsLV_tb-OverrideCommission');
+	agencyBillExceptionsScreenPromiseMismatchExceptionsTab = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-PromiseMismatchExceptionsTab');
+	agencyBillExceptionsScreen_msgs = PcfButton('#AgencyBillExceptions-AgencyBillExceptionsScreen-_msgs');
+	agencyBillExceptionsAgencyBillExceptions_UpLink = PcfButton('#AgencyBillExceptions-AgencyBillExceptions_UpLink');
+	agencyBillExceptions_Paging = PcfButton('#AgencyBillExceptions-_Paging');
+	agencyBillExceptions__crumb__ = PcfComponent('#AgencyBillExceptions-__crumb__');
+}

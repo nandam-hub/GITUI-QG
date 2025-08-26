@@ -1,0 +1,37 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+import { PcfCheckBox } from '@gtui/gt-ui-framework';
+
+export class BulkEditDocumentDetailsPopup {
+	bulkEditDocumentDetailsPopupBulkEditDocumentDetailsPopup_UpLink = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsPopup_UpLink');
+	bulkEditDocumentDetailsScreenCancel = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-Cancel');
+	documentMetadataEditInputSetAuthor = PcfTextInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Author');
+	documentMetadataEditInputSetDescription = PcfTextInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Description');
+	documentMetadataEditInputSetDocumentName = PcfTextInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-DocumentName');
+	documentMetadataEditInputSetLanguage = PcfSelectInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Language');
+	documentMetadataEditInputSetMimeType = PcfSelectInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-MimeType');
+	documentMetadataEditInputSetNameLink = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-NameLink');
+	documentMetadataEditInputSetRecipient = PcfTextInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Recipient');
+	documentMetadataEditInputSetSecurityType = PcfSelectInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-SecurityType');
+	documentMetadataEditInputSetStatus = PcfSelectInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Status');
+	documentMetadataEditInputSetType = PcfSelectInput('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-Type');
+	documentMetadataEditInputSetallEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-allEnabled');
+	documentMetadataEditInputSetauthorEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-authorEnabled');
+	documentMetadataEditInputSetdescriptionEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-descriptionEnabled');
+	documentMetadataEditInputSetlanguageEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-languageEnabled');
+	documentMetadataEditInputSetmimeTypeEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-mimeTypeEnabled');
+	documentMetadataEditInputSetnameEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-nameEnabled');
+	documentMetadataEditInputSetrecipientEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-recipientEnabled');
+	documentMetadataEditInputSetsecurityTypeEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-securityTypeEnabled');
+	documentMetadataEditInputSetstatusEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-statusEnabled');
+	documentMetadataEditInputSettypeEnabled = PcfCheckBox('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditDVPanelSet-DocumentMetadataEditDV-DocumentMetadataEditInputSet-typeEnabled');
+	bulkEditDocumentDetailsScreenDocumentDetailsEditLV = PcfListView('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-DocumentDetailsEditLV');
+	bulkEditDocumentDetailsScreenEdit = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-Edit');
+	bulkEditDocumentDetailsScreenUpdate = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-Update');
+	bulkEditDocumentDetailsScreen_msgs = PcfButton('#BulkEditDocumentDetailsPopup-BulkEditDocumentDetailsScreen-_msgs');
+	bulkEditDocumentDetailsPopup_Paging = PcfButton('#BulkEditDocumentDetailsPopup-_Paging');
+	bulkEditDocumentDetailsPopup__crumb__ = PcfComponent('#BulkEditDocumentDetailsPopup-__crumb__');
+}

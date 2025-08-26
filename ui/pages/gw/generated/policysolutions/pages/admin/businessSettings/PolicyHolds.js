@@ -1,0 +1,43 @@
+import { PcfComponent } from '@gtui/gt-ui-framework';
+import { PcfTextInput } from '@gtui/gt-ui-framework';
+import { PcfDateValueInput } from '@gtui/gt-ui-framework';
+import { PcfSelectInput } from '@gtui/gt-ui-framework';
+import { PcfButton } from '@gtui/gt-ui-framework';
+import { PcfListView } from '@gtui/gt-ui-framework';
+
+export class PolicyHolds {
+	policyHoldsScreenCopyPolicyHold = PcfButton('#PolicyHolds-PolicyHoldsScreen-CopyPolicyHold');
+	copyPolicyHoldCopyRegions = PcfButton('#PolicyHolds-PolicyHoldsScreen-CopyPolicyHold-CopyRegions');
+	copyPolicyHoldCopyRegionsAndRules = PcfButton('#PolicyHolds-PolicyHoldsScreen-CopyPolicyHold-CopyRegionsAndRules');
+	copyPolicyHoldCopyRules = PcfButton('#PolicyHolds-PolicyHoldsScreen-CopyPolicyHold-CopyRules');
+	policyHoldDetailCVHoldDetailsCardTab = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldDetailsCardTab');
+	policyHoldDetailCVHoldRegionsCardTab = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldRegionsCardTab');
+	policyHoldDetailCVHoldRegionsLV = PcfListView('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldRegionsLV');
+	holdRegionsLV_tbAdd = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldRegionsLV_tb-Add');
+	holdRegionsLV_tbAddHoldRegion = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldRegionsLV_tb-AddHoldRegion');
+	holdRegionsLV_tbRemove = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-HoldRegionsLV_tb-Remove');
+	localizedValuesDVLocalizedValuesLV = PcfListView('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-LocalizedValuesDV-LocalizedValuesLV');
+	policyHoldDetailDVCode = PcfTextInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-Code');
+	policyHoldDetailDVCreateTime = PcfDateValueInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-CreateTime');
+	policyHoldDetailDVCreatedBy = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-CreatedBy');
+	createdByUserBrowseMenuItem = PcfComponent('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-CreatedBy-UserBrowseMenuItem');
+	policyHoldDetailDVDescription = PcfTextInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-Description');
+	policyHoldDetailDVEndDate = PcfDateValueInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-EndDate');
+	policyHoldDetailDVHoldType = PcfSelectInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-HoldType');
+	policyHoldDetailDVLastUpdateTime = PcfDateValueInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-LastUpdateTime');
+	policyHoldDetailDVLastUpdatedBy = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-LastUpdatedBy');
+	lastUpdatedByUserBrowseMenuItem = PcfComponent('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-LastUpdatedBy-UserBrowseMenuItem');
+	policyHoldDetailDVLongDesc = PcfTextInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-LongDesc');
+	policyHoldDetailDVStartDate = PcfDateValueInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-StartDate');
+	policyHoldDetailDVUWIssueType = PcfSelectInput('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldDetailDV-UWIssueType');
+	policyHoldDetailCVPolicyHoldRuleLV = PcfListView('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldRuleLV');
+	policyHoldRuleLV_tbAdd = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldRuleLV_tb-Add');
+	policyHoldRuleLV_tbRemove = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldDetailCV-PolicyHoldRuleLV_tb-Remove');
+	policyHoldsLDPPolicyHoldsLV = PcfListView('#PolicyHolds-PolicyHoldsScreen-PolicyHoldsPanelSet-PolicyHoldsLDP-PolicyHoldsLV');
+	policyHoldsScreenPolicyHolds_DeleteButton = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHolds_DeleteButton');
+	policyHoldsScreenPolicyHolds_NewPolicyHoldsButton = PcfButton('#PolicyHolds-PolicyHoldsScreen-PolicyHolds_NewPolicyHoldsButton');
+	policyHoldsScreen_msgs = PcfButton('#PolicyHolds-PolicyHoldsScreen-_msgs');
+	policyHoldsPolicyHolds_UpLink = PcfButton('#PolicyHolds-PolicyHolds_UpLink');
+	policyHolds_Paging = PcfButton('#PolicyHolds-_Paging');
+	policyHolds__crumb__ = PcfComponent('#PolicyHolds-__crumb__');
+}

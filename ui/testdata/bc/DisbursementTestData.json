@@ -1,0 +1,16 @@
+{
+    "defaultDataSet": {
+        "PolicyNumber": "0000707633",
+        "AccountNumber": "0402617810"
+    },
+    "disbursmentStatus": {
+        "Amount": "$300",
+        "DisbursedAmount": "$25.00",
+        "Reason": "Overpayment"
+    },
+    "automatic_disbursement":{
+        "Amount": "300",
+        "Status": "Approved",
+        "LastRunStatus": "Completed"
+    }
+}
