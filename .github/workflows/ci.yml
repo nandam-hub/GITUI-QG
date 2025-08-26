@@ -115,4 +115,7 @@ jobs:
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
+        env:
+          SKIP_API_BUILD: true
+          GT_SKIP_GRADLE: true
         run: npm run gt-ui-tests -- --cucumberTags=@add_activity

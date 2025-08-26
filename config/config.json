@@ -6,5 +6,6 @@
   "Jutro_SSO_URL": "",
   "dev-test-location-pattern": "ui/tests/**/**/*.js",
   "feature_location_pattern": "behavior/features/**/**/*.feature",
-  "glue_location_pattern": "behavior/steps/**/**/*.js"
+  "glue_location_pattern": "behavior/steps/**/**/*.js",
+  "skip_api_build": true
 }
