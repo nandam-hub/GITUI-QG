@@ -9,10 +9,10 @@ on:
 jobs:
   build-and-test:
     runs-on: windows-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
 
     steps:
-      # 1️⃣ Checkout repository
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -22,7 +22,7 @@ jobs:
       - name: Install VS2019 Build Tools
         run: choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041 --includeRecommended --includeOptional --quiet --norestart" --yes
 
-      # 3️⃣ Setup MSBuild 2019
+      # 3️⃣ Setup MSBuild
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
         with:
@@ -53,25 +53,52 @@ jobs:
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # 8️⃣ Install Gradle 6.5.1 via Chocolatey
-      - name: Install Gradle 6.5.1
-        run: choco install gradle --version=6.5.1 --allow-downgrade -y
+      # 8️⃣ Download Gradle 6.5.1 manually
+      - name: Download Gradle 6.5.1
+        shell: pwsh
+        run: |
+          $gradleVersion = "6.5.1"
+          $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
+          Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
+          Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
+          $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
+          Write-Host "Gradle $gradleVersion downloaded and PATH updated"
 
+      # 9️⃣ Ensure Guidewire JARs exist
+      - name: Verify Guidewire JARs
+        shell: pwsh
+        run: |
+          $requiredJars = @(
+              "libs/guidewire-commons-grn.jar",
+              "libs/helios-client.jar"
+          )
+          foreach ($jar in $requiredJars) {
+              if (-not (Test-Path $jar)) {
+                  Write-Error "Required JAR missing: $jar"
+                  exit 1
+              }
+          }
+          Write-Host "All required Guidewire JARs found."
 
-      # 9️⃣ Clean Gradle and build folders
+      # 🔟 Clean Gradle and build folders
       - name: Clean Gradle and build folders
         shell: pwsh
         run: |
           Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
 
-      # 🔟 Install npm dependencies
+      # 1️⃣1️⃣ Install npm dependencies
       - name: Install npm dependencies
         shell: pwsh
         run: npm ci --prefer-offline
 
-     
+      # 1️⃣2️⃣ Build API module (Gradle)
+      - name: Build API module
+        shell: pwsh
+        run: |
+          gradle :api:createApiJar --build-cache \
+          -Dguidewire.libs.dir=libs
 
-      # 1️⃣2️⃣ Run GT UI Tests
+      # 1️⃣3️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
