@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      # 1️⃣ Checkout repo
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -49,68 +49,31 @@ jobs:
         with:
           python-version: '3.10'
 
-      # 7️⃣ Configure node-gyp
+      # 7️⃣ Configure node-gyp for npm builds
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
 
-      # # 8️⃣ Download Gradle 6.5.1
-      # - name: Download Gradle
-      #   shell: pwsh
-      #   run: |
-      #     $gradleVersion = "6.5.1"
-      #     $gradleZip = "$env:TEMP\gradle-$gradleVersion-bin.zip"
-      #     Invoke-WebRequest -Uri "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip" -OutFile $gradleZip
-      #     Expand-Archive -Path $gradleZip -DestinationPath "$env:TEMP\gradle-$gradleVersion"
-      #     $env:PATH = "$env:TEMP\gradle-$gradleVersion\gradle-$gradleVersion\bin;$env:PATH"
-      #     Write-Host "Gradle 6.5.1 downloaded and PATH updated"
+      # 8️⃣ Install Gradle 6.5.1 via Chocolatey
+      - name: Install Gradle
+        run: choco install gradle --version=6.5.1 -y
 
-      # # 9️⃣ Verify Gradle wrapper exists
-      # - name: Verify Gradle Wrapper
-      #   shell: pwsh
-      #   run: |
-      #     if (-not (Test-Path .\gradlew.bat)) { Write-Error "gradlew.bat missing! Commit wrapper."; exit 1 }
-      #     if (-not (Test-Path .\gradle\wrapper\gradle-wrapper.jar)) { Write-Error "gradle-wrapper.jar missing! Commit wrapper."; exit 1 }
-      #     Write-Host "Gradle wrapper verified successfully"
+      # 9️⃣ Clean Gradle and build folders
+      - name: Clean Gradle and build folders
+        shell: pwsh
+        run: |
+          Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
 
-      # # 🔟 Make Gradle wrapper executable
-      # - name: Make Gradle wrapper executable
-      #   shell: pwsh
-      #   run: icacls .\gradlew.bat /grant Everyone:F
-
-      # # 1️⃣1️⃣ Clean Gradle and build folders
-      # - name: Clean Gradle and build folders
-      #   shell: pwsh
-      #   run: |
-      #     Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
-      
-    
-        
-  
-
-      # 1️⃣2️⃣ Install npm dependencies
+      # 🔟 Install npm dependencies
       - name: Install npm dependencies
-        run: npm install
-          # $maxRetries = 5
-          # $retryDelay = 10
-          # for ($i=1; $i -le $maxRetries; $i++) {
-          #     try {
-          #         npm ci --prefer-offline
-          #         Write-Host "npm ci succeeded"
-          #         break
-          #     } catch {
-          #         if ($i -eq $maxRetries) { Write-Error "npm ci failed after $maxRetries attempts"; exit 1 }
-          #         Write-Host "npm ci failed (attempt $i). Retrying in $retryDelay seconds..."
-          #         Start-Sleep -Seconds $retryDelay
-          #     }
-          # }
+        shell: pwsh
+        run: npm ci --prefer-offline
 
-      - name: Build with Gradle
-        run: ./gradlew build
-        shell: bash
+      # 1️⃣1️⃣ Build API module using system Gradle
+      - name: Build API module
+        shell: pwsh
+        run: gradle :api:createApiJar --build-cache
 
-     
-
-      # 1️⃣4️⃣ Run GT UI Tests
+      # 1️⃣2️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
