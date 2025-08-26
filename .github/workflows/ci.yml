@@ -60,13 +60,13 @@ jobs:
         with:
           gradle-version: wrapper
       - name: Create libs folder
-        shell: pwsh
+        shell: powershell
         run: |
           if (-not (Test-Path "libs")) {
               New-Item -ItemType Directory -Path "libs"
           }
       - name: Download guidewire-commons-grn.jar
-        shell: pwsh
+        shell: powershell
         run: |
           $jarPath = "libs/guidewire-commons-grn.jar"
           if (-not (Test-Path $jarPath)) {
@@ -80,7 +80,7 @@ jobs:
 
       # 9️⃣ Ensure Guidewire JARs exist
       - name: Verify Guidewire JARs
-        shell: pwsh
+        shell: powershell
         run: |
           $requiredJars = @(
               "libs/guidewire-commons-grn.jar"
@@ -96,24 +96,24 @@ jobs:
 
       # 🔟 Clean Gradle and build folders
       - name: Clean Gradle and build folders
-        shell: pwsh
+        shell: powershell
         run: |
           Remove-Item -Recurse -Force .gradle, api/build, build, reports -ErrorAction SilentlyContinue
 
       # 1️⃣1️⃣ Install npm dependencies
       - name: Install npm dependencies
-        shell: pwsh
+        shell: powershell
         run: npm ci --prefer-offline
 
       # 1️⃣2️⃣ Skip Gradle build - use npm only
       - name: Skip API module build
-        shell: pwsh
+        shell: powershell
         run: |
           Write-Host "Skipping Gradle build - using npm scripts only"
 
       # 1️⃣3️⃣ Test URL Access
       - name: Test OrangeHRM URL Access
-        shell: pwsh
+        shell: powershell
         run: |
           try {
             $response = Invoke-WebRequest -Uri "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" -TimeoutSec 30
@@ -125,7 +125,7 @@ jobs:
 
       # 1️⃣4️⃣ Run GT UI Tests
       - name: Run GT UI Tests
-        shell: pwsh
+        shell: powershell
         working-directory: ${{ github.workspace }}
         env:
           SKIP_API_BUILD: true
