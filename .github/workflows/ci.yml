@@ -111,7 +111,19 @@ jobs:
         run: |
           Write-Host "Skipping Gradle build - using npm scripts only"
 
-      # 1️⃣3️⃣ Run GT UI Tests
+      # 1️⃣3️⃣ Test URL Access
+      - name: Test OrangeHRM URL Access
+        shell: pwsh
+        run: |
+          try {
+            $response = Invoke-WebRequest -Uri "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" -TimeoutSec 30
+            Write-Host "URL accessible. Status: $($response.StatusCode)"
+          } catch {
+            Write-Host "URL access failed: $($_.Exception.Message)"
+            exit 1
+          }
+
+      # 1️⃣4️⃣ Run GT UI Tests
       - name: Run GT UI Tests
         shell: pwsh
         working-directory: ${{ github.workspace }}
