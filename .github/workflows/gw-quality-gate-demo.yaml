@@ -20,12 +20,17 @@ jobs:
       - name: Show commitId input
         run: echo "CommitId input was ${{ github.event.inputs.commit_id }}"
 
-      - name: Run a script
-        run: |
-          echo "Running GuideWire Test cases."
+      - name: Run GW Tests
+        run: sleep 5
 
-      - name: Wait for 45 seconds
-        run: sleep 45
+      - name: Security and Vulnerbality Check
+        run: sleep 5
+
+      - name: Code Scanning for PII Data
+        run: sleep 5
+
+      - name: Delay
+        run: sleep 10
 
       - name: Run a script
         run: |
