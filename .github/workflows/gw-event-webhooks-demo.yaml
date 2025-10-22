@@ -45,12 +45,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
-      # 6️⃣ Setup Python 3.10
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
+     
       # 7️⃣ Configure node-gyp for npm builds
       - name: Configure node-gyp
         run: npm config set msvs_version 2019
